@@ -7,43 +7,51 @@ import service_img_4 from "@assets/img/services/services-4.jpg";
 
 const service_data = [
     {
-        id: 1, 
-        alphabet: "P",
-        title: <>Product <br /> development</>,
+        id: 1,
+        alphabet: "W",
+        title: <>Web & Mobile <br /> Development</>,
         img: service_img_1,
-        description: <>As far as we might be concerned making an extraordinary As the complexity as </>,        
+        description: <>Full-stack development services for web and mobile applications with modern frameworks</>,
 
     },
     {
-        id: 2, 
-        alphabet: "V",
-        title: <>Voice Over <br /> Internet Protocol</>,
-        img: service_img_2,
-        description: <>As far as we might be concerned making an extraordinary As the complexity as </>,       
-
-    },
-    {
-        id: 3, 
+        id: 2,
         alphabet: "C",
-        title: <>Clouds <br /> Backup Services</>,
-        img: service_img_3,
-        description: <>As far as we might be concerned making an extraordinary As the complexity as </>,        
-
-    },
-    {
-        id: 4, 
-        alphabet: "M",
-        title: <>Mobile and <br /> Remote Networking</>,
-        img: service_img_4,
-        description: <>As far as we might be concerned making an extraordinary As the complexity as </>,        
-
-    },
-    {
-        id: 5, 
-        alphabet: "D",
-        title: <>Data Backup <br /> and Restoration</>,
+        title: <>Cloud & DevOps <br /> Solutions</>,
         img: service_img_2,
-        description: <>As far as we might be concerned making an extraordinary As the complexity as </>,        
+        description: <>Scalable cloud infrastructure, CI/CD pipelines, and DevOps implementation </>,
+
+    },
+    {
+        id: 3,
+        alphabet: "Q",
+        title: <>QA Testing & <br /> Automation</>,
+        img: service_img_3,
+        description: <>Comprehensive testing services including manual, automated, and performance testing</>,
+
+    },
+    {
+        id: 4,
+        alphabet: "U",
+        title: <>UI/UX Design & <br /> Modernization</>,
+        img: service_img_4,
+        description: <>User-centric design solutions and interface modernization </>,
+
+    },
+    {
+        id: 5,
+        alphabet: "E",
+        title: <>Enterprise <br /> Solutions</>,
+        img: service_img_2,
+        description: <>Custom enterprise software solutions tailored to your business</>,
+
+    },
+    {
+        id: 6,
+        alphabet: "S",
+        title: <>Software Product <br /> Engineering</>,
+        img: service_img_3,
+        description: <>End-to-end product development from concept to deployment with agile methodologies</>,
 
     },
 ]

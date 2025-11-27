@@ -3,7 +3,7 @@ import React from "react";
 import HeroSlider from "./hero-slider";
 import AboutArea from "./about-area";
 import FeatureArea from "./feature-area";
-import ServiceArea from "./service-area"; 
+import ServiceArea from "./service-area";
 import BrandArea from "./brand-area";
 import SupportArea from "./support-area";
 import TestimonialArea from "./testimonial-area";
@@ -21,9 +21,10 @@ const HomeOne = () => {
         <AboutArea />
         <FeatureArea />
         <ServiceArea />
+
         <BrandArea />
         <SupportArea />
-        <TestimonialArea />
+        {/* <TestimonialArea /> */}
         <SliderArea />
         <FaqArea />
         <BlogArea />

@@ -19,7 +19,7 @@ import service_quote from "@assets/img/hero/quot.png";
 // slider setting 
 const setting = {
   slidesPerView: 1,
-  spaceBetween: 0, 
+  spaceBetween: 0,
   effect: "fade",
   autoplay: {
     delay: 5000,
@@ -37,51 +37,51 @@ const slider_data = [
     bg_img: "/assets/img/hero/hero-2.jpg",
     sub_title_1: "best",
     sub_title_2: "it solutions",
-    hero_title_1: "platform of",
-    hero_title_2: "Tech",
-    hero_support: "support",
+    hero_title_1: "Transforming Ideas into",
+    hero_title_2: "Digital",
+    hero_support: "Excellence",
   },
   {
     id: 2,
     bg_img: "/assets/img/hero/hero-1.jpg",
-    sub_title_1: "best",
-    sub_title_2: "it solutions",
-    hero_title_1: "IT service & ",
-    hero_title_2: "Tech",
-    hero_support: "Bundles",
+    sub_title_1: "full-stack",
+    sub_title_2: "it services",
+    hero_title_1: "Project Delivery &",
+    hero_title_2: "Workforce",
+    hero_support: "Hiring",
   },
   {
     id: 3,
     bg_img: "/assets/img/hero/hero-3.jpg",
-    sub_title_1: "best",
-    sub_title_2: "it solutions",
-    hero_title_1: "platform of",
-    hero_title_2: "Tech",
-    hero_support: "Solution",
+    sub_title_1: "scalable",
+    sub_title_2: "tech partner",
+    hero_title_1: "End-to-End",
+    hero_title_2: "IT",
+    hero_support: "Solutions",
   },
 ];
 // shapes 
-const shapes = [ 
-   {id_cls: 1, img: shape_1},
-   {id_cls: 2, img: shape_2},
-   {id_cls: 3, img: shape_3},
-   {id_cls: 4, img: shape_4},
-   {id_cls: 7, img: shape_5},
+const shapes = [
+  { id_cls: 1, img: shape_1 },
+  { id_cls: 2, img: shape_2 },
+  { id_cls: 3, img: shape_3 },
+  { id_cls: 4, img: shape_4 },
+  { id_cls: 7, img: shape_5 },
 ]
 
 const HeroSlider = () => {
   const [isLoop, setIsLoop] = useState(false)
-    useEffect(() => {
-     setIsLoop(true)
-    }, [])
-    
+  useEffect(() => {
+    setIsLoop(true)
+  }, [])
+
 
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <>
-      <section className="tp-hero-area tp-hero-space pb-95">
-        <div className="tp-hero-wrapper p-relative"> 
+      <section className="tp-hero-area tp-hero-space pb-95 overflow-hidden">
+        <div className="tp-hero-wrapper p-relative">
           <div className="hero-active-1 swiper-container">
             <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>
               {slider_data.map((item, i) => (
@@ -89,15 +89,15 @@ const HeroSlider = () => {
                   <div className="tp-hero-inner-1">
                     <div className="container">
                       <div className="tp-hero-shape">
-                        {shapes.map((shape, index)  => 
-                              <Image key={index} 
-                               className={`shape-${shape.id_cls}`} 
-                               src={shape.img} alt="theme-pure" />
+                        {shapes.map((shape, index) =>
+                          <Image key={index}
+                            className={`shape-${shape.id_cls}`}
+                            src={shape.img} alt="theme-pure" />
                         )}
-                       </div>
+                      </div>
                       <div className="tp-hero-1">
                         <div className="tp-hero-bg tp-hero-overlay p-relative"
-                          style={{ backgroundImage: `url(${item.bg_img})`}}></div>
+                          style={{ backgroundImage: `url(${item.bg_img})` }}></div>
                         <div className="row">
                           <div className="col-lg-7">
                             <div className="tp-hero-content p-relative">
@@ -131,13 +131,13 @@ const HeroSlider = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="col-lg-5">
+                          {/* <div className="col-lg-5">
                             <div className="tp-hero-play-btn">
                               <button className="popup-video" onClick={() => setIsVideoOpen(true)}>
                                 <i className="fa-sharp fa-solid fa-play"></i>
                               </button>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -172,21 +172,20 @@ const HeroSlider = () => {
 
           <div
             className="tp-hero-service"
-            style={{ backgroundImage: `url(/assets/img/hero/shape-6.png)` }} 
+            style={{ backgroundImage: `url(/assets/img/hero/shape-6.png)` }}
           >
             <div className="tp-hero-service-shape">
               <Image src={service_shape} alt="theme-pure" />
             </div>
             <p>
-              Our company provides a full range of <span>services</span> for the
-              cons <br />
-              private houses and cottages since 19
+              Empowering businesses with scalable <span>IT solutions</span>,
+              skilled talent, and end-to-end project execution.
             </p>
             <div className="tp-hero-service-quote">
               <Image src={service_quote} alt="theme-pure" />
             </div>
           </div>
-          
+
         </div>
       </section>
 
