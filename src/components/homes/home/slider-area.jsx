@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Slider from "react-slick";
 
 const slider_data = [
-    {id: 1,  title: <>Backup <span>Services</span></>},
-    {id: 2,  title: <>Backup <span>Services</span></>},
-    {id: 3,  title: <>Machine <span>Learning</span></>},
-    {id: 4,  title: <>Programming <span>Learning</span></>},
-    {id: 5,  title: <>website <span>Learning</span></>},
-    {id: 6,  title: <>Graphics <span>Learning</span></>},
+    {id: 1,  title: <>Web & Mobile <span> Application Development</span></>},
+    {id: 2,  title: <>Software Product <span>Engineering</span></>},
+    {id: 3,  title: <>Cloud & <span>DevOps Solutions</span></>},
+    {id: 4,  title: <>UI/UX Design & <span>Modernizaton</span></>},
+    {id: 5,  title: <>QA Testing & <span>Automation</span></>},
+    {id: 6,  title: <>Custom <span>Enterprise Solutions</span></>},
 ]
 
 const setting = {
