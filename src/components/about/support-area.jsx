@@ -13,30 +13,45 @@ import support_img_3 from "@assets/img/about/home-3/img-3.jpg";
 import support_shape from "@assets/img/about/home-3/shape-1.png";
 
 const support_contact = {
-   sub_title_1: "We’ve been stay",
-   sub_title_2: " 38 years",
-   info: <>Our company provides a full range of services for the <br /> construction of private houses and cottages since 19</>,
+   sub_title_1: "Building Digital Success",
+   sub_title_2: "Through Expertise, Innovation & Integrity",
+   info: <>Purnavi IT Solutions Pvt. Ltd. delivers high-quality IT solutions, project-based development, and specialized workforce hiring for businesses worldwide.</>,
+   journey: <>Founded to bridge the gap between talent and technology, we pair reliable project execution with transparent communication and measurable accountability for every engagement.</>,
+   values_intro: "What we stand for is clear, consistent, and repeatable across every project:",
    lists: [
-      <>series of manual and semi-manual activities.</>,
-      <>Construction is different from other industries.</>,
-      <>Construction is different from other industries.</>,
+      {
+         title: "Reliability",
+         description: "We take complete ownership of outcomes, uphold processes, and keep commitments."
+      },
+      {
+         title: "Quality",
+         description: "Every design, line of code, and deployment follows a structured quality framework."
+      },
+      {
+         title: "Innovation",
+         description: "Modern, scalable, and efficient solutions that keep our clients ahead of change."
+      },
+      {
+         title: "Integrity",
+         description: "Honesty, accountability, and ethical practices are the foundation of how we operate."
+      },
    ]
    
 }
-const {sub_title_1, sub_title_2, info, lists} = support_contact
+const {sub_title_1, sub_title_2, info, journey, values_intro, lists} = support_contact
 
 const SupportArea = ()  => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
     return(
         <>
-        <section className="tp-support-breadcrumb fix pt-120 pb-210">
+        <section className="tp-support-breadcrumb fix pt-70 pb-5">
          <div className="container">
             <div className="row">
                <div className="col-lg-6">
                   <div className="tp-fun-fact-title-wrapper support-breadcrumb">
                      <span className="tp-section-title__pre">
-                        service <span className="title-pre-color">IT Solutions</span>
+                        about <span className="title-pre-color">Purnavi IT</span>
                         <AngleArrow /> 
                      </span>
                      <h3 className="tp-section-title">
@@ -49,13 +64,20 @@ const SupportArea = ()  => {
                         </span>
                      </h3>
                      <p>{info}</p>
-                     <ul className="mb-65">
-                        {lists.map((list, i)  => 
-                           <li key={i}> <span> <RightSymbol /></span> {list}</li>
+                     <p>{journey}</p>
+                     <p className="tp-support-intro">{values_intro}</p>
+                     <div className="row gy-4 mb-65">
+                        {lists.map((item, i)  => 
+                           <div key={i} className="col-sm-6">
+                              <div className="tp-support-value">
+                                 <h5><span><RightSymbol /></span>{item.title}</h5>
+                                 <p>{item.description}</p>
+                              </div>
+                           </div>
                         )} 
-                     </ul>
+                     </div>
                      <div className="tp-support-breadcrumb-btn mb-30">
-                        <Link className="tp-btn" href="/service-details">Tell us How Can We Help</Link>
+                        <Link className="tp-btn" href="/contact">Share Your Requirements</Link>
                      </div>
                   </div>
                </div>

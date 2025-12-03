@@ -5,28 +5,28 @@ const counter_data = [
   {
     id: 1,
     count: 560,
-    text: "Total Services",
-    symbol: "",
+    text: "Projects Delivered",
+    symbol: "+",
     border: "tp-counter-border",
   },
   {
     id: 2,
     count: 98,
-    text: "Client Satisfiction",
+    text: "Client Satisfaction",
     symbol: "%",
     border: "tp-counter-border",
   },
   {
     id: 3,
-    count: 3,
-    text: "Monthly Review",
-    symbol: "m+",
+    count: 120,
+    text: "Experts On Payroll",
+    symbol: "+",
     border: "tp-counter-border",
   },
   {
     id: 4,
     count: 30,
-    text: "Years Experince",
+    text: "Industries Served",
     symbol: "+",
     border: "",
   },
@@ -35,7 +35,7 @@ const counter_data = [
 const CounterArea = ({about}) => {
   return (
     <> 
-      <section className={`tp-counter-area ${about ? "p-relative counter-breadcrumb pb-100" : "pb-85"}`}>
+      <section className={`tp-counter-area ${about ? "p-relative counter-breadcrumb pb-70" : "pb-60"}`}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">

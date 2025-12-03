@@ -8,10 +8,12 @@ import React from 'react';
 import blog_shape_1 from "@assets/img/blog/shaep-2.png";
 import blog_shape_2 from "@assets/img/blog/shaep-2.png";
 
-const BlogArea = ({service}) => {
+const BlogArea = ({service, compact}) => {
     return (
         <> 
-            <section className={`tp-blog-3-area p-relative fix ${service ? "pb-100" : "pt-100 pb-90"}`}>
+            <section className={`tp-blog-3-area p-relative fix ${
+                service ? "pb-100" : compact ? "pt-10 pb-90" : "pt-20 pb-90"
+            }`}>
                 <div className="tp-blog-3-shape">
                 <Image className="shape-1" src={blog_shape_1} alt="theme-pure" />
                 <Image className="shape-2" src={blog_shape_2} alt="theme-pure" /> 

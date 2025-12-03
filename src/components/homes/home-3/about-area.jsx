@@ -25,6 +25,35 @@ const AboutArea = ({about}) => {
     const percentage2 = 75;
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
+    const aboutHeroCopy = {
+        strapline: "We build and support practical web and mobile solutions for growing businesses.",
+        intro: "We also provide project‑ready engineers on our payroll, so you can add capacity without increasing headcount.",
+        pillars: [
+            {
+                title: "Project Delivery",
+                text: "From first brief to go‑live, we take care of design, build, and rollout with realistic timelines."
+            },
+            {
+                title: "People On Payroll",
+                text: "Developers, testers, designers, and cloud specialists who stay on our payroll and plug into your team."
+            },
+            {
+                title: "How We Work",
+                text: "Simple updates, one point of contact, and a focus on stable, fast, and maintainable systems."
+            }
+        ],
+        assurance: "Less noise, more work done — with a team you can reach and rely on.",
+        contact: {
+            closing: "Kind Regards,",
+            name: "Asish Makineni",
+            role: "Co-Founder & CEO - SOCIAL AUCTUS",
+            mobile: "+91 9381736309",
+            email: "asish@social.auctus.com",
+            location: "Hyderabad, India",
+            website: "www.socialauctus.com"
+        }
+    };
+
     return (
         <>
             <section className={`${about ? "tp-about-breadcrumb pt-100 pb-90" : "tp-about-3-area pt-185 pb-170"} p-relative`}>
@@ -70,18 +99,121 @@ const AboutArea = ({about}) => {
                         <div className="tp-about-3-wrapper">
                             <div className="tp-about-3-title-wrapper"> 
                                 <span className="tp-section-title__pre">
-                                    about <span className="title-pre-color">IT Solutions</span>
+                                    {about ? (
+                                        <>About <span className="title-pre-color">Purnavi IT Solutions Pvt. Ltd.</span></>
+                                    ) : (
+                                        <>about <span className="title-pre-color">IT Solutions</span></>
+                                    )}
                                     <AngleArrow /> 
                                 </span>
                                 <h3 className="tp-section-title">
-                                    Best Digital <span className="title-color">Technology</span> <br /> Agency For People
+                                    {about ? (
+                                        <>Transforming Ideas into <span className="title-color">Digital Excellence</span></>
+                                    ) : (
+                                        <>Best Digital <span className="title-color">Technology</span> <br /> Agency For People</>
+                                    )}
                                 </h3> 
                             </div>
-                            <p className="text">
-                                Transmax is the world’s driving worldwide coordinations supplier — we <br /> uphold industry and exchange the worldwide trade of merchandise <br /> through land transport.
-                            </p>
-                            <div className="tp-about-progressbar-inner d-flex flex-wrap pt-20">
-                            <div className="tp-about-3-progressbar d-flex align-items-center">
+                            {about ? (
+                                <div className="tp-about-3-copy-stack">
+                                    <p className="text mb-20">{aboutHeroCopy.strapline}</p>
+                                    <p className="tp-about-3-copy mb-25">{aboutHeroCopy.intro}</p>
+                                    <div className="tp-about-3-pillars">
+                                        {aboutHeroCopy.pillars.map((pillar, idx) => (
+                                            <div key={idx} className="tp-about-3-pillar">
+                                                <h4>{pillar.title}</h4>
+                                                <p className="tp-about-3-pillar-text">
+                                                    {pillar.text}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <p className="tp-about-3-copy mb-0">
+                                        {aboutHeroCopy.assurance}
+                                    </p>
+                                </div>
+                            ) : (
+                                <p className="text">
+                                    Transmax is the world’s driving worldwide coordinations supplier — we <br /> uphold industry and exchange the worldwide trade of merchandise <br /> through land transport.
+                                </p>
+                            )}
+                            {!about && (
+                                <div className="tp-about-progressbar-inner d-flex flex-wrap pt-20">
+                                    <div className="tp-about-3-progressbar d-flex align-items-center">
+                                        <div className="circular tl-progress"> 
+                                            <CircularProgressbar
+                                            value={percentage}
+                                            text={`${percentage}%`}
+                                            strokeWidth={5}   
+                                            className="knob"
+                                            />
+                                        </div>
+                                        <div className="tp-about-3-progressbar-title">
+                                            <p>Business <br /> Strategy Growth</p>
+                                        </div>
+                                    </div>
+                                    <div className="tp-about-3-progressbar d-flex align-items-center">
+                                        <div className="circular tl-progress"> 
+                                            <CircularProgressbar
+                                            value={percentage2}
+                                            text={`${percentage2}%`}
+                                            strokeWidth={5} 
+                                            />
+                                        </div>
+                                        <div className="tp-about-3-progressbar-title">
+                                            <p>Health Valuable <br /> Ideas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                            <div className="tp-about-3-btn-inner d-flex flex-wrap">
+                            <div className="tp-about-btn ">
+                                {about ? (
+                                    <Link className="tp-btn" href="/contact">Hire Our Team 
+                                        <i className="fa-regular fa-arrow-right-long"></i>
+                                    </Link>
+                                ) : (
+                                    <Link className="tp-btn" href="/about">Our History 
+                                        <i className="fa-regular fa-arrow-right-long"></i>
+                                    </Link>
+                                )}
+                            </div>
+                            <div className="tp-about-3-year">
+                                {about ? (
+                                    <div className="tp-about-3-contact-card">
+                                        <Link className="tp-about-link" href="/contact">Join Our Workforce</Link>
+                                        <p className="mb-5">{aboutHeroCopy.contact.closing}</p>
+                                        <p className="tp-about-contact-name">
+                                            {aboutHeroCopy.contact.name}
+                                            <br />
+                                            <span>{aboutHeroCopy.contact.role}</span>
+                                        </p>
+                                        <ul className="tp-about-contact-details">
+                                            <li><span>Mobile:</span> {aboutHeroCopy.contact.mobile}</li>
+                                            <li><span>Email:</span> {aboutHeroCopy.contact.email}</li>
+                                            <li><span>Location:</span> {aboutHeroCopy.contact.location}</li>
+                                            <li><span>Website:</span> {aboutHeroCopy.contact.website}</li>
+                                        </ul>
+                                    </div>
+                                ) : (
+                                    <p>
+                                        BRENDON GARREY
+                                        <br />
+                                        <span>
+                                            mayor, since 21st Oct , 2019
+                                        </span>
+                                    </p>
+                                )}
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                {about && (
+                    <div className="row tp-about-progressbar-row pt-40">
+                        <div className="col-md-6">
+                            <div className="tp-about-3-progressbar d-flex align-items-center justify-content-center">
                                 <div className="circular tl-progress"> 
                                     <CircularProgressbar
                                     value={percentage}
@@ -90,11 +222,13 @@ const AboutArea = ({about}) => {
                                     className="knob"
                                     />
                                 </div>
-                                <div className="tp-about-3-progressbar-title">
-                                    <p>Business <br /> Strategy Growth</p>
+                                <div className="tp-about-3-progressbar-title ms-3">
+                                    <p>Project Delivery <br /> Confidence</p>
                                 </div>
                             </div>
-                            <div className="tp-about-3-progressbar d-flex align-items-center">
+                        </div>
+                        <div className="col-md-6">
+                            <div className="tp-about-3-progressbar d-flex align-items-center justify-content-center">
                                 <div className="circular tl-progress"> 
                                     <CircularProgressbar
                                     value={percentage2}
@@ -102,31 +236,13 @@ const AboutArea = ({about}) => {
                                     strokeWidth={5} 
                                     />
                                 </div>
-                                <div className="tp-about-3-progressbar-title">
-                                    <p>Health Valuable <br /> Ideas</p>
+                                <div className="tp-about-3-progressbar-title ms-3">
+                                    <p>Workforce Readiness <br /> Index</p>
                                 </div>
-                            </div>
-                            </div>
-                            <div className="tp-about-3-btn-inner d-flex flex-wrap">
-                            <div className="tp-about-btn ">
-                                <Link className="tp-btn" href="/about">Our History 
-                                    <i className="fa-regular fa-arrow-right-long"></i>
-                                </Link>
-                            </div>
-                            <div className="tp-about-3-year">
-                                <p>
-                                    BRENDON GARREY
-                                    <br />
-                                    <span>
-                                        mayor, since 21st Oct , 2019
-                                    </span>
-                                </p>
-                            </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
+                )}
                 </div>
             </section>
 

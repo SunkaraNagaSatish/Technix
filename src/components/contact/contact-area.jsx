@@ -47,7 +47,7 @@ const ContactArea = () => {
                                     <h3 className="tp-contact-location-title">
                                         Office Location {" "}
                                     <i className="fa-regular fa-arrow-down"></i></h3>
-                                    <p>4517 Washington Ave. Manch ester, Kentucky 39495</p>
+                                    <p>CGTrix Madhapur, Phase-2 ,Hyderabad 500060</p>
                                 </div>
                             </div>
                             </div>

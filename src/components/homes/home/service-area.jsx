@@ -132,7 +132,7 @@ const ServiceArea = () => {
                                     </div>
                                     <p className="hide-text">{item.description}</p>
                                     <div className="tp-service-btn">
-                                       <Link href="/service-details">Read Out More
+                                       <Link href={`/service-details/${item.id}`}>Read Out More
                                           <i className="fa-solid fa-arrow-up-right"></i>
                                        </Link>
                                     </div>
@@ -147,7 +147,7 @@ const ServiceArea = () => {
                   <div className="row">
                      <div className="col-lg-12">
                         <div className="tp-service-all-btn text-center fadeUp">
-                           <Link className="tp-btn" href="/service-details">View all Services</Link>
+                           <Link className="tp-btn" href="/service-details/1">View all Services</Link>
                         </div>
                      </div>
                   </div>
@@ -204,15 +204,19 @@ const ServiceArea = () => {
                               <ul>
                                  <li>
                                     <span> <GreenRightArrow /></span>
-                                    Reliability - Full ownership of every project and assignment
+                                    Reliability - We take full ownership of every project and assignment, ensuring processes are followed and commitments are met.
                                  </li>
                                  <li>
                                     <span><GreenRightArrow /> </span>
-                                    Quality - Structured framework for dependable results
+                                    Quality - Every line of code, design module, and deployment goes through a structured quality framework.
                                  </li>
                                  <li>
                                     <span><GreenRightArrow /> </span>
-                                    Innovation - Modern, scalable, efficient tech solutions
+                                    Innovation - We focus on modern, scalable and efficient tech solutions that help businesses stay ahead.
+                                 </li>
+                                 <li>
+                                    <span><GreenRightArrow /> </span>
+                                    Integrity - Honesty, accountability, and ethical practices form the foundation of how we operate.
                                  </li>
                               </ul>
                               <div className="tp-fun-fact-btn">

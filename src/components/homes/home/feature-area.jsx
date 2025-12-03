@@ -19,19 +19,19 @@ const feature_content = {
             id: 1,
             img: feature_img_1,
             title: "Skilled Workforce",
-            description: <>Access a vetted pool of IT professionals <br /> across multiple tech stacks and domains.</>,
+            description: <>Access a vetted pool of IT professionals across multiple tech stacks and domains.</>,
         },
         {
             id: 2,
             img: feature_img_2,
             title: "One-Stop Tech Partner",
-            description: <>From manpower to full-scale development, <br />we cater to all IT needs.</>,
+            description: <>From manpower to full-scale development, we cover every IT need.</>,
         },
         {
             id: 3,
             img: feature_img_3,
             title: "Quality That Speaks",
-            description: <>Each solution is built with precision, <br /> innovation, and long-term value.</>,
+            description: <>Every solution blends precision, innovation, and long-term value.</>,
         },
     ],
 
@@ -42,7 +42,7 @@ const { feature_data } = feature_content
 const FeatureArea = ({ about }) => {
     return (
         <>
-            <section className={`tp-feature-area ${about ? "feature-breadcrumb pb-100" : ""}`}>
+            <section className={`tp-feature-area ${about ? "feature-breadcrumb pb-50" : ""}`}>
                 {about ? null :
                     <div className="tp-feature-shape">
                         <Image src={shape_1} alt="theme-pure" />

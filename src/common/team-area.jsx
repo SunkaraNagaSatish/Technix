@@ -48,40 +48,26 @@ const TeamArea = () => {
     
     return (
         <>
-            <section className="tp-team-area p-relative pb-100">
+            <section className="tp-team-area p-relative pb-50">
                 <div className="tp-team-shape">
-                    <Image src={team_shape_1} alt="theme-pure" />
+                    {/* <Image src={team_shape_1} alt="theme-pure" /> */}
                 </div>
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className="tp-team-title-wrapper">
+                    <div className="row align-items-center mt-30">
+                        <div className="col-lg-6 ">
+                            <div className="tp-team-title-wrapper ">
                                 <span className="tp-section-title__pre">
                                 best <span className="title-pre-color">IT Solutions</span>
                                 <AngleArrow /> 
                                 </span>
-                                <h3 className="tp-section-title">Best Digital 
-                                <span className="title-color">
-                                    Technology
+                                <h3 className="tp-section-title">Best Digital   
+                                 <span className="title-color">
+                                     Technology
                                 </span> <br /> Agency For People
                                 </h3>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="tp-team-nav d-flex justify-content-start justify-content-lg-end align-items-end mb-30">
-                                <button type="button"  
-                                className="team-button-prev-1 tp-btn-hover-clear alt-color" 
-                                tabIndex="-1" aria-label="Previous slide">
-                                    <i className="fa-regular fa-arrow-left"></i>
-                                <b></b>
-                                </button>
-                                <button type="button" className="team-button-next-1 tp-btn-hover-clear alt-color" 
-                                tabIndex="-1" aria-label="Next slide">
-                                    <i className="fa-regular fa-arrow-right"></i>
-                                <b></b>
-                                </button> 
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -114,6 +100,47 @@ const TeamArea = () => {
                                 </SwiperSlide>
                             )}
                         </Swiper>
+                        <div className="col-lg-6 w-100">
+    <div className="tp-team-nav d-flex w-100 justify-content-center align-items-center mb-5 mt-40">
+        
+        <button 
+            type="button"  
+            className="team-button-prev-1 tp-btn-hover-clear alt-color" 
+            tabIndex="-1" 
+            aria-label="Previous slide"
+        >
+            <i className="fa-regular fa-arrow-left"></i>
+            <b></b>
+        </button>
+
+        <button 
+            type="button" 
+            className="team-button-next-1 tp-btn-hover-clear alt-color" 
+            tabIndex="-1" 
+            aria-label="Next slide"
+        >
+            <i className="fa-regular fa-arrow-right"></i>
+            <b></b>
+        </button> 
+
+    </div>
+</div>
+
+                        {/* <div className="col-lg-6">
+                            <div className="tp-team-nav d-flex justify-content-end justify-content-lg-end align-items-end mb-5 mt-40 ml-56">
+                                <button type="button"  
+                                className="team-button-prev-1 tp-btn-hover-clear alt-color" 
+                                tabIndex="-1" aria-label="Previous slide">
+                                    <i className="fa-regular fa-arrow-left"></i>
+                                <b></b>
+                                </button>
+                                <button type="button" className="team-button-next-1 tp-btn-hover-clear alt-color" 
+                                tabIndex="-1" aria-label="Next slide">
+                                    <i className="fa-regular fa-arrow-right"></i>
+                                <b></b>
+                                </button> 
+                            </div>
+                        </div> */}
                     </div>
                 </div>                
             </section>

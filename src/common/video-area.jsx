@@ -9,7 +9,7 @@ const VideoArea = ({service})  => {
 
     return (
         <>
-            <div className={`tp-video-area ${service ? "pt-105" : "pt-50"}`}>
+            <div className={`tp-video-area ${service ? "pt-80" : "pt-50"}`}>
                 <div className="container-fluid gx-0">
                     <div className="row gx-0">
                     <div className="col-xl-12">
