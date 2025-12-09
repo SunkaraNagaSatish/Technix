@@ -132,7 +132,7 @@ const ServiceArea = () => {
                                     </div>
                                     <p className="hide-text">{item.description}</p>
                                     <div className="tp-service-btn">
-                                       <Link href={`/service-details/${item.id}`}>Read Out More
+                                       <Link href={item.link ? item.link : `/service-details/${item.id}`}>Read Out More
                                           <i className="fa-solid fa-arrow-up-right"></i>
                                        </Link>
                                     </div>

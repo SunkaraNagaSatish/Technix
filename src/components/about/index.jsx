@@ -12,23 +12,23 @@ import FooterContact from '@/src/layout/footers/footer-contact';
 import FooterThree from '@/src/layout/footers/footer-3';
 
 const About = () => {
-    return (
-        <>
-          <HeaderOne />  
-          <main>
-            <Breadcrumb top_title="About Us"  page_title="About Us" />
-            <AboutArea about={true} /> 
-            <CounterArea about={true} />
-            <FeatureArea about={true} />
-            <SupportArea />
-            <VideoArea />
-            <TeamArea />
-            <BlogArea />
-            <FooterContact />
-          </main>
-          <FooterThree />
-        </>
-    );
+  return (
+    <>
+      <HeaderOne />
+      <main>
+        <Breadcrumb top_title="About Us" page_title="About Us" />
+        <AboutArea about={true} />
+        <CounterArea about={true} />
+        <FeatureArea about={true} />
+        <SupportArea />
+        <VideoArea />
+        <TeamArea />
+        <BlogArea />
+        <FooterContact />
+      </main>
+      <FooterThree />
+    </>
+  );
 };
 
 export default About;

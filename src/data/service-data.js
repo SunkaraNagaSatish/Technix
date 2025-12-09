@@ -132,5 +132,145 @@ const service_data = [
             <>Maintenance & Support</>
         ]
     },
+    {
+        id: 7,
+        alphabet: "P",
+        title: <>End-To-End IT <br /> Project Delivery</>,
+        img: service_img_1,
+        description: <>Turn ideas into working digital solutions without unnecessary delays or confusion</>,
+        link: "/end-to-end-it-project-delivery",
+        detail_title: "End-To-End IT Project Delivery",
+        detail_description: <>
+            <p>Purnavi IT Solutions approaches project delivery with a direct, execution-first mindset. When a business hands over an idea, the objective is simple: turn it into a working digital solution without unnecessary delays, confusion, or back-and-forth. The team takes responsibility for every step, whether it’s building a web application, developing a mobile product, or engineering a full software platform from scratch.</p>
+            <p>The development process is supported by strong UI and UX practices, modern cloud and DevOps implementations, and a quality assurance approach that relies on both manual scrutiny and automation to keep the output clean, reliable, and ready for scale. Each project is handled with a structure that keeps clients in control while allowing the team to focus on actual delivery rather than corporate theatrics.</p>
+            <p>The goal isn’t to chase trends or overload businesses with jargon; it’s to make sure the final product works, performs, and aligns with what the client needs today and what they may expect tomorrow. With clear communication, transparent updates, and an emphasis on measurable results, the company ensures that projects don’t just get completed — they get completed properly, with long-term value embedded into every build.</p>
+        </>,
+        detail_features: [
+            <>Execution-First Mindset</>,
+            <>Full-Cycle Development (Web, Mobile, Platform)</>,
+            <>Strong UI/UX Practices</>,
+            <>Modern Cloud & DevOps Implementation</>,
+            <>Manual & Automated QA</>,
+            <>Transparent Communication & Updates</>
+        ]
+    },
+    {
+        id: 8,
+        alphabet: "H",
+        title: <>Workforce Hiring <br /> Under Our Payroll</>,
+        img: service_img_4,
+        description: <>Skilled professionals directly under our payroll for ready-to-work talent</>,
+        link: "/workforce-hiring",
+        detail_title: "Workforce Hiring Under Our Payroll",
+        detail_description: <>
+            <p>Many companies struggle with slow recruitment cycles, inconsistent talent quality, and the overhead that comes with maintaining a growing technical workforce. Purnavi IT Solutions addresses this by providing skilled professionals directly under its payroll, allowing businesses to onboard ready-to-work talent without being dragged into a lengthy hiring process.</p>
+            <p>The people offered through this model are screened, trained, and prepared for real project environments, covering critical roles across development, quality engineering, design, cloud and data operations, project oversight, and ongoing technical support. Instead of dealing with administrative complexities, businesses get access to a reliable pool of professionals who can join ongoing work immediately and adapt to internal processes without friction.</p>
+            <p>This setup gives companies the freedom to scale their teams based on actual demand, avoid unnecessary overhead, and maintain accountability without compromising on talent quality. It’s a straightforward way to strengthen a team, stabilize delivery timelines, and keep operations running smoothly, backed by a partner that takes responsibility for both performance and consistency.</p>
+        </>,
+        detail_features: [
+            <>Ready-to-Work Talent</>,
+            <>Screened & Trained Professionals</>,
+            <>Roles: Dev, QA, Design, Cloud, Data, PM</>,
+            <>Immediate Onboarding</>,
+            <>Scalable Teams</>,
+            <>Reduced Administrative Overhead</>
+        ]
+    },
+    {
+        id: 9,
+        alphabet: "C",
+        title: <>Client-Centric <br /> Project Outsourcing</>,
+        img: service_img_2,
+        description: <>Dedicated teams and managed IT services with complete ownership and agile execution</>,
+        link: "/client-centric-project-outsourcing",
+        detail_title: "Client-Centric Project Outsourcing",
+        detail_description: <>
+            <p>In today’s fast-paced digital landscape, businesses need more than just a vendor; they need a partner who understands their vision and takes ownership of their success. Our Client-Centric Project Outsourcing model is designed to bridge the gap between your internal goals and external execution. We provide dedicated teams that integrate seamlessly with your operations, ensuring that culture, communication, and quality are never compromised.</p>
+            <p>We move beyond the traditional transactional outsourcing model by adopting a results-oriented approach. Whether you need to scale your development capacity, modernize legacy systems, or build a new product from the ground up, our teams work with an agile mindset to deliver incremental value. We handle the heavy lifting of project management, technical architecture, and quality assurance, allowing you to focus on your core business strategy while maintaining full visibility and control over the project's progress.</p>
+            <p>Transparency and accountability are at the heart of our service. We believe in open communication, regular updates, and a shared commitment to your milestones. By aligning our incentives with your success, we ensure that every deliverable meets your standards and drives tangible business outcomes. With Purnavi IT Solutions, you get the flexibility of outsourcing with the reliability and dedication of an in-house team.</p>
+        </>,
+        detail_features: [
+            <>Dedicated Development Teams</>,
+            <>Managed IT Services</>,
+            <>Agile Execution & Delivery</>,
+            <>Complete Project Ownership</>,
+            <>Scalable Support Models</>,
+            <>Transparent Reporting & Metrics</>
+        ]
+    },
+    {
+        id: 10,
+        alphabet: "A",
+        title: "About Us",
+        img: service_img_1,
+        description: <>A No-nonsense, Execution-first technology partner.</>,
+        link: "/about-us",
+        detail_title: "About Us",
+        detail_description: <>
+            <p>We are a no-nonsense, execution-first technology partner committed to turning your ambitious ideas into working digital solutions—without the corporate delays or unnecessary jargon. We exist to simplify the complex journey of software development, ensuring your product is built right, delivered fast, and prepared to scale.</p>
+            <h4 className="mb-20">🎯 Our Philosophy: Results Over Rhetoric</h4>
+            <p>At Purnavi IT Solutions, the objective is simple: deliver working software and measurable results.</p>
+            <p><strong>Execution-First Mindset:</strong> We focus on getting the job done. We take end-to-end responsibility for project success, ensuring projects are completed properly and aligned with your long-term value.</p>
+            <p><strong>Full-Stack Responsibility:</strong> We handle the entire lifecycle—from design and development to cloud deployment and quality assurance. You hand us the idea; we deliver the finished, scalable product.</p>
+            <p><strong>Agile & Iterative:</strong> We use an agile development process that is transparent, adaptive, and designed to deliver value at every stage, cutting through delays and confusion.</p>
+            <h4 className="mb-20">🛠️ What We Do: End-to-End Technical Mastery</h4>
+            <p>We leverage modern, high-demand frameworks and robust process discipline to guarantee high performance and stability.</p>
+            <p><strong>Modern Development:</strong> Robust, scalable applications (Web, Mobile, PWA, E-commerce) using React, Next.js, Node.js, Flutter, React Native.</p>
+            <p><strong>Cloud & DevOps:</strong> Accelerate delivery with automation, CI/CD, and "Cloud First" strategies using AWS, Azure, GCP, Docker, Kubernetes, Terraform.</p>
+            <p><strong>Quality Assurance:</strong> Guarantee reliability through comprehensive, integrated testing using Selenium, Cypress, Performance & Security Testing.</p>
+            <p><strong>UI/UX Design:</strong> Design intuitive interfaces that drive business results, not just visual appeal, with User Research, Prototyping, WCAG Accessibility.</p>
+            <p><strong>Enterprise Solutions:</strong> Custom ERP/CRM, Supply Chain, and process automation software with robust, scalable architectures for mission-critical systems.</p>
+            <h4 className="mb-20">👥 Strategic Advantage: Talent Without the Headache</h4>
+            <p>We tackle the painful challenges of recruitment head-on, giving you immediate access to top-tier technical capacity.</p>
+            <p><strong>Workforce Hiring Under Our Payroll:</strong> Tired of slow recruitment cycles and inconsistent talent quality? We offer a straightforward solution: We provide skilled professionals directly under our payroll. These are screened, trained, and project-ready experts (in development, QA, design, and DevOps) who can integrate with your team instantly.</p>
+            <p>This model allows you to scale immediately based on demand, not HR lead times, avoid administrative overhead and recruitment complexities, and maintain accountability with a partner responsible for performance and consistency.</p>
+            <p>We are Purnavi IT Solutions. We don't chase trends. We build what works.</p>
+        </>,
+        detail_features: [
+            <>Execution-First Mindset</>,
+            <>Full-Stack Responsibility</>,
+            <>Agile & Iterative Process</>,
+            <>Modern Development Frameworks</>,
+            <>Cloud & DevOps Expertise</>,
+            <>Comprehensive QA Testing</>,
+            <>Strategic Talent Solutions</>
+        ]
+    },
+    {
+        id: 11,
+        alphabet: "W",
+        title: "Why Choose Us?",
+        img: service_img_2,
+        description: <>Offering a fully integrated, modern, and accountable approach.</>,
+        link: "/why-choose-us",
+        detail_title: "Why Choose Purnavi IT Solutions?",
+        detail_description: <>
+            <p>We're not just a vendor; we're your execution-first technology partner. We eliminate the typical bottlenecks of software development—from slow talent acquisition to technical debt—by offering a fully integrated, modern, and accountable approach.</p>
+            <h4 className="mb-20">1. Speed, Quality, and Accountability</h4>
+            <p>We guarantee a reliable outcome by combining modern technology with rigorous processes.</p>
+            <p><strong>Execution-First Delivery:</strong> We operate with a direct, "turn-it-into-a-working-solution" mindset. We take full responsibility for the entire project lifecycle, ensuring the final product works, performs, and aligns with your business goals—without the unnecessary delays or corporate theatrics.</p>
+            <p><strong>Modern Architecture (Built to Scale):</strong> We adopt a "Cloud First" approach and build with future-proof technologies like React, Flutter, AWS, and Kubernetes. Our solutions are inherently scalable, secure, and cost-efficient from day one.</p>
+            <p><strong>DevOps & CI/CD Integration:</strong> Quality and speed are non-negotiable. We implement CI/CD Pipelines and Infrastructure as Code (IaC) (using Terraform/CloudFormation) to automate workflows and ensure faster, more reliable deployments and continuous improvement.</p>
+            <p><strong>Guaranteed Quality Assurance:</strong> We integrate rigorous testing—from functional and Performance & Load Testing to Security & Penetration Testing—into the CI/CD process. Our use of tools like Selenium and Cypress ensures your product is flawless and ready for high traffic.</p>
+            <h4 className="mb-20">2. Your Talent Problem Solved</h4>
+            <p>The biggest challenge in tech is finding great people. We solve that by simplifying talent acquisition with our unique staffing model.</p>
+            <p><strong>Ready-to-Work Professionals:</strong> We provide skilled developers, QA engineers, designers, and cloud experts directly under our payroll.</p>
+            <p><strong>Zero Recruitment Overhead:</strong> Say goodbye to slow recruitment cycles and inconsistent talent. You gain access to a reliable, pre-vetted pool of professionals who can join your team and adapt to your process immediately.</p>
+            <p><strong>Flexibility and Scale:</strong> Our model gives you the freedom to scale your technical teams based on actual demand, maintaining accountability and consistent quality without administrative drag.</p>
+            <h4 className="mb-20">3. Comprehensive, End-to-End Expertise</h4>
+            <p>We don't do partial solutions. We cover the entire digital stack, allowing us to manage your project holistically.</p>
+            <p><strong>Full Spectrum of Services:</strong> From creating engaging UI/UX Designs (including WCAG Accessibility Compliance) and Custom Web/Mobile Apps to developing complex Custom ERP & CRM Systems and Legacy Application Modernization.</p>
+            <p><strong>Product Engineering Partner:</strong> We treat your idea like our own product, handling the full Software Product Engineering lifecycle—from defining the Product Roadmap and MVP Development to ongoing maintenance and support.</p>
+        </>,
+        detail_features: [
+            <>Execution-First Delivery</>,
+            <>Modern Architecture (Cloud First)</>,
+            <>DevOps & CI/CD Integration</>,
+            <>Guaranteed Quality Assurance</>,
+            <>Ready-to-Work Professionals</>,
+            <>Zero Recruitment Overhead</>,
+            <>Comprehensive End-to-End Expertise</>
+        ]
+    }
 ]
 export default service_data

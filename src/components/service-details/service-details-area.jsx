@@ -18,22 +18,8 @@ const ServiceDetailsArea = ({ service }) => {
          <section className="tp-service-details-area pt-120 pb-120">
             <div className="container">
                <div className="row">
-                  <div className="col-lg-4">
+                  <div className="col-lg-2">
                      <div className="tp-service-widget">
-
-                        <div className="tp-service-widget-item mb-40">
-                           <div className="tp-service-widget-tab">
-                              <ul>
-                                 {service_data.map((item, i) =>
-                                    <li key={i}>
-                                       <Link className={item.id === currentService.id ? "active" : ""} href={`/service-details/${item.id}`}>
-                                          {item.title} <i className="fa-regular fa-arrow-right-long"></i>
-                                       </Link>
-                                    </li>
-                                 )}
-                              </ul>
-                           </div>
-                        </div>
 
                      </div>
                   </div>
@@ -44,9 +30,9 @@ const ServiceDetailsArea = ({ service }) => {
                               <i className="fa-solid fa-arrow-left me-2"></i> Back to Home
                            </Link>
                         </div>
-                        <div className="tp-service-details-thumb">
+                        {/* <div className="tp-service-details-thumb">
                            <Image src={service_details_thumb} alt="theme-pure" />
-                        </div>
+                        </div> */}
                         <h3 className="tp-service-details-title">{currentService.detail_title}</h3>
                         <div className="tp-service-details-desc">
                            {currentService.detail_description}
@@ -65,8 +51,7 @@ const ServiceDetailsArea = ({ service }) => {
                            </div>
                            <div className="col-lg-6">
                               <div className="tp-service-details-list">
-                                 <h3 className="tp-service-details-title">Key Features</h3>
-                                 <p>Our solutions are designed to deliver maximum value with these key features:</p>
+                                
                                  <ul>
                                     {currentService.detail_features && currentService.detail_features.map((feature, i) =>
                                        <li key={i}><span> <RightSymbol /></span>{feature}</li>

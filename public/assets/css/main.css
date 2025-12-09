@@ -2729,12 +2729,12 @@ div.demo img {
   font-style: italic;
   font-weight: 500;
   font-size: 16px;
-  text-transform: lowercase;
+  text-transform: none !important;
   color: var(--tp-text-2);
   display: inline-block;
   margin-bottom: 22px;
 }
-.tp-section-title__pre .title-pre-color {
+.tp-section-title__pre{
   color: var(--tp-theme-secondary);
 }
 .tp-section-title__pre svg {

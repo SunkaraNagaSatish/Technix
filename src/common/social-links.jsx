@@ -13,7 +13,7 @@ const social_links = [
     icon: "fab fa-twitter", 
   },
   {
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/purnaviitsolutions?igsh=MW1zbjJqZjc5dTM3Yw==",
     target: "_blank",
     icon: "fa-brands fa-instagram", 
   }, 

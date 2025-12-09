@@ -38,17 +38,10 @@ const menu_data = [
   {
     id: 4,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Careers",
-    link: "/about",
+    link: "/careers",
     active: "",
-    sub_menus: [
-      { link: "/portfolio", title: "Portfolio" },
-      { link: "/portfolio-details", title: "Portfolio Details" },
-      { link: "/team", title: "Team" },
-      { link: "/team-details", title: "Team Details" },
-      { link: "/404", title: "404" },
-    ],
   },
 
   {

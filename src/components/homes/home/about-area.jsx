@@ -18,36 +18,42 @@ const about_data = [
         img: about_img_1,
         title: "End-to-End IT Project Delivery",
         description: <>From concept to completion: Web/mobile development, <br /> cloud solutions, UI/UX design, <br /> QA testing & automation</>,
+        link: "/end-to-end-it-project-delivery",
     },
     {
         id: 2,
         img: about_img_2,
         title: "Workforce Hiring Under Our Payroll",
         description: <>Verified, trained, project-ready talent: <br /> Developers, QA engineers, designers, <br /> cloud & data professionals</>,
+        link: "/workforce-hiring",
     },
     {
         id: 3,
         img: about_img_3,
         title: "Client-Centric Project Outsourcing",
         description: <>Dedicated teams, managed IT services, <br /> agile execution, scalable support <br /> with complete ownership</>,
+        link: "/client-centric-project-outsourcing",
     },
     {
         id: 4,
         img: about_img_1,
         title: "End-to-End IT Project Delivery",
         description: <>From concept to completion: Web/mobile development, <br /> cloud solutions, UI/UX design, <br /> QA testing & automation</>,
+        link: "/end-to-end-it-project-delivery",
     },
     {
         id: 5,
         img: about_img_2,
         title: "Workforce Hiring Under Our Payroll",
         description: <>Verified, trained, project-ready talent: <br /> Developers, QA engineers, designers, <br /> cloud & data professionals</>,
+        link: "/workforce-hiring",
     },
     {
         id: 6,
         img: about_img_3,
         title: "Client-Centric Project Outsourcing",
         description: <>Dedicated teams, managed IT services, <br /> agile execution, scalable support <br /> with complete ownership</>,
+        link: "/client-centric-project-outsourcing",
     },
 ]
 
@@ -163,7 +169,7 @@ const AboutArea = () => {
                                                     <h4 className="about-title">{item.title}</h4>
                                                     <p>{item.description}</p>
                                                     <div className="tp-about-item-btn">
-                                                        <Link href="/about">
+                                                        <Link href={item.link || "/about"}>
                                                             <i className="fa-regular fa-arrow-right"></i>
                                                         </Link>
                                                     </div>

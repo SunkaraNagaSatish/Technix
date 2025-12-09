@@ -57,16 +57,14 @@ const TeamArea = () => {
                         <div className="col-lg-6 ">
                             <div className="tp-team-title-wrapper ">
                                 <span className="tp-section-title__pre">
-                                best <span className="title-pre-color">IT Solutions</span>
+                                Best <span className="title-pre-color">IT Solutions</span>
                                 <AngleArrow /> 
                                 </span>
-                                <h3 className="tp-section-title">Best Digital   
-                                 <span className="title-color">
-                                     Technology
-                                </span> <br /> Agency For People
+                                <h3 className="tp-section-title">Best Digital <span className="title-color">Technology</span> <br /> Agency For People
                                 </h3>
                             </div>
                         </div>
+   
                         
                     </div>
                 </div>

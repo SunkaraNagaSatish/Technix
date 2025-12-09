@@ -18,20 +18,16 @@ const feature_content = {
         {
             id: 1,
             img: feature_img_1,
-            title: "Skilled Workforce",
-            description: <>Access a vetted pool of IT professionals across multiple tech stacks and domains.</>,
+            title: "About Us",
+            description: <>A No-nonsense, Execution-first technology partner.</>,
+            link: "/about-us",
         },
         {
             id: 2,
             img: feature_img_2,
-            title: "One-Stop Tech Partner",
-            description: <>From manpower to full-scale development, we cover every IT need.</>,
-        },
-        {
-            id: 3,
-            img: feature_img_3,
-            title: "Quality That Speaks",
-            description: <>Every solution blends precision, innovation, and long-term value.</>,
+            title: "Why Choose Us?",
+            description: <>Offering a fully integrated, modern, and accountable approach.</>,
+            link: "/why-choose-us",
         },
     ],
 
@@ -70,7 +66,7 @@ const FeatureArea = ({ about }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row justify-content-center">
                         {feature_data.map((item, i) =>
                             <div key={i} className="col-lg-4 col-md-6">
                                 <div className="tp-feature-item-box p-relative wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
@@ -87,7 +83,7 @@ const FeatureArea = ({ about }) => {
                                             </div>
                                             <div className="tp-feature-item-content">
                                                 <h3 className="feature-title">
-                                                    <Link href="/about">{item.title}</Link>
+                                                    <Link href={item.link || "/about"}>{item.title}</Link>
                                                     <span>
                                                         <AngleArrow />
                                                     </span>
@@ -97,7 +93,7 @@ const FeatureArea = ({ about }) => {
                                         </div>
                                     </div>
                                     <div className="tp-feature-item-btn">
-                                        <Link href="/about"><i className="fa-regular fa-arrow-right"></i></Link>
+                                        <Link href={item.link || "/about"}><i className="fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                 </div>
                             </div>

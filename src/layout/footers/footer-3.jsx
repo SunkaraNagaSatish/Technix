@@ -7,11 +7,11 @@ import SocialLinks, { CopyRight } from '@/src/common/social-links';
 import EmailAeroplan from '@/src/svg/email-aeroplan';
 const footer_contact = {
     bg_img: "assets/img/footer/footer-bg.jpg",
-    footer_info: <>The world’s first and largest digital marketplace <br />for crypto collectibles and non-fungible tokens (NFTs). Buy</>,
-    map_link: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
-    address: <>86 Road Broklyn Street, 600 <br /> New York, USA</>,
-    mail: "needhelp@company.com",
-    phone: "+92 666 888 0000",
+    footer_info: <>Purnavi IT Solutions Pvt. Ltd. - Delivering high-quality IT solutions, project-based development, and specialized workforce hiring for businesses worldwide.</>,
+    map_link: "https://maps.app.goo.gl/VpeUVQdM8ttsFSKY6",
+    address: <>Hyderabad, Telangana<br /> India</>,
+    mail: "asish@social.auctus.com",
+    phone: "+91 9381736309",
     service_links: [
         {title: "Parking permission", link: "#"},
         {title: "Fire Service Noc", link: "#"},

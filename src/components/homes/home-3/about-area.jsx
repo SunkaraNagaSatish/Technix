@@ -102,7 +102,7 @@ const AboutArea = ({about}) => {
                                     {about ? (
                                         <>About <span className="title-pre-color">Purnavi IT Solutions Pvt. Ltd.</span></>
                                     ) : (
-                                        <>about <span className="title-pre-color">IT Solutions</span></>
+                                        <>About <span className="title-pre-color">IT Solutions</span></>
                                     )}
                                     <AngleArrow /> 
                                 </span>
