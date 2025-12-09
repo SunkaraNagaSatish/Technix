@@ -41,24 +41,6 @@ const slider_data = [
     hero_title_2: "Digital",
     hero_support: "Excellence",
   },
-  {
-    id: 2,
-    bg_img: "/assets/img/hero/hero-1.jpg",
-    sub_title_1: "full-stack",
-    sub_title_2: "it services",
-    hero_title_1: "Project Delivery &",
-    hero_title_2: "Workforce",
-    hero_support: "Hiring",
-  },
-  {
-    id: 3,
-    bg_img: "/assets/img/hero/hero-3.jpg",
-    sub_title_1: "scalable",
-    sub_title_2: "tech partner",
-    hero_title_1: "End-to-End",
-    hero_title_2: "IT",
-    hero_support: "Solutions",
-  },
 ];
 // shapes 
 const shapes = [
@@ -80,7 +62,7 @@ const HeroSlider = () => {
 
   return (
     <>
-      <section className="tp-hero-area tp-hero-space pb-95 overflow-hidden">
+      <section className="tp-hero-area tp-hero-space pb-95 overflow-hidden" style={{ paddingLeft: '0' }}>
         <div className="tp-hero-wrapper p-relative">
           <div className="hero-active-1 swiper-container">
             <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>
@@ -147,20 +129,7 @@ const HeroSlider = () => {
             </Swiper>
           </div>
 
-          <div className="tp-hero-nav d-none d-xxl-block">
-            <button type="button"
-              className="hero-button-prev-1 tp-btn-hover-clear alt-color">
-              <i className="fa-regular fa-arrow-left"></i>
-              <b></b>
-            </button>
-            <button
-              type="button"
-              className="hero-button-next-1 tp-btn-hover-clear alt-color"
-            >
-              <i className="fa-regular fa-arrow-right"></i>
-              <b></b>
-            </button>
-          </div>
+
 
           <div className="tp-hero-bottom">
             <div className="tp-hero-experince">

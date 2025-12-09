@@ -3,24 +3,14 @@ import Link from "next/link";
 
 const social_links = [
   {
-    link: "http://facebook.com",
-    target: "_blank",
-    icon: "fab fa-facebook-f", 
-  },
-  {
-    link: "http://twitter.com",
-    target: "_blank",
-    icon: "fab fa-twitter", 
-  },
-  {
     link: "https://www.instagram.com/purnaviitsolutions?igsh=MW1zbjJqZjc5dTM3Yw==",
     target: "_blank",
-    icon: "fa-brands fa-instagram", 
-  }, 
+    icon: "fa-brands fa-instagram",
+  },
   {
-    link: "https://www.pinterest.com",
+    link: "https://www.linkedin.com/company/purnavi-it-solutions",
     target: "_blank",
-    icon: "fa-brands fa-pinterest", 
+    icon: "fa-brands fa-linkedin-in",
   },
 ];
 
@@ -33,6 +23,7 @@ const SocialLinks = () => {
           href={l.link}
           className={l.color}
           target={l.target ? l.target : ""}
+          style={{ fontSize: '32px' }}
         >
           <i className={l.icon}></i>
         </Link>
@@ -51,12 +42,12 @@ export default SocialLinks;
 const copy_right_text = {
   copy_right: <>© Copyright <span>©{new Date().getFullYear()}</span> Themepure. All Rights Reserved </>,
 }
-const {copy_right}  = copy_right_text
+const { copy_right } = copy_right_text
 
-export const CopyRight = ()  => {
+export const CopyRight = () => {
   return (
     <>
-    {copy_right}
+      {copy_right}
     </>
   )
 }
@@ -69,41 +60,41 @@ const social_links_two = [
   {
     link: "http://facebook.com",
     target: "_blank",
-    icon: "fab fa-facebook-f", 
+    icon: "fab fa-facebook-f",
   },
   {
     link: "http://twitter.com",
     target: "_blank",
-    icon: "fab fa-twitter",  
+    icon: "fab fa-twitter",
   },
   {
     link: "https://www.linkedin.com",
     target: "_blank",
-    icon: "fab fa-linkedin-in", 
-  }, 
+    icon: "fab fa-linkedin-in",
+  },
   {
     link: "https://www.youtube.com",
     target: "_blank",
-    icon: "fab fa-youtube",  
-},
+    icon: "fab fa-youtube",
+  },
 
 ];
- 
 
-export const  SocialLinksTwo = ()  => {
-   return (
-     <>
-        {social_links_two.map((link, i) => (
-          <Link
-            key={i}
-            target={link.target}
-            className={`icon-color-${link.color}`}
-            href={link.link}
-          >
-            <i className={link.icon}></i>
-            <span></span>
-          </Link>
-        ))}
-     </>
-   );
+
+export const SocialLinksTwo = () => {
+  return (
+    <>
+      {social_links_two.map((link, i) => (
+        <Link
+          key={i}
+          target={link.target}
+          className={`icon-color-${link.color}`}
+          href={link.link}
+        >
+          <i className={link.icon}></i>
+          <span></span>
+        </Link>
+      ))}
+    </>
+  );
 }

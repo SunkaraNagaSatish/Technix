@@ -68,7 +68,7 @@ const FeatureArea = ({ about }) => {
                     </div>
                     <div className="row justify-content-center">
                         {feature_data.map((item, i) =>
-                            <div key={i} className="col-lg-4 col-md-6">
+                            <div key={i} className="col-lg-5 col-md-6">
                                 <div className="tp-feature-item-box p-relative wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                     <div className="tp-feature-item p-relative mb-30">
                                         <div className="tp-feature-item-shape">
