@@ -3010,6 +3010,7 @@ div.demo img {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-header-main-right .tp-header-btn {
     padding-left: 15px;
+   
   }
 }
 .tp-header-hamburger-btn {
@@ -7865,7 +7866,7 @@ div.demo img {
   color: var(--tp-common-white);
   background: var(--tp-theme-secondary);
   position: absolute;
-  bottom: -25px;
+  bottom: -1px;
   left: 43%;
   text-align: center;
   transition: 0.3s;
@@ -7873,6 +7874,7 @@ div.demo img {
   visibility: hidden;
   scale: 0;
   z-index: 2;
+  
 }
 .tp-feature-item-box .tp-feature-item-btn a:hover i {
   animation: tfLeftToRight 0.5s forwards;

@@ -26,8 +26,15 @@ const feature_content = {
             id: 2,
             img: feature_img_2,
             title: "Why Choose Us?",
-            description: <>Offering a fully integrated, modern, and accountable approach.</>,
+            description: <>Offering a fully integrated and accountable approach.</>,
             link: "/why-choose-us",
+        },
+        {
+            id: 3,
+            img: feature_img_3,
+            title: "What We Do",
+            description: <>Delivering end-to-end IT solutions, staffing services.</>,
+            link: "/what-we-do",
         },
     ],
 
@@ -66,9 +73,9 @@ const FeatureArea = ({ about }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center align-items-stretch">
                         {feature_data.map((item, i) =>
-                            <div key={i} className="col-lg-5 col-md-6">
+                            <div key={i} className="col-lg-4 col-md-6 h-100">
                                 <div className="tp-feature-item-box p-relative wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                     <div className="tp-feature-item p-relative mb-30">
                                         <div className="tp-feature-item-shape">

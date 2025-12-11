@@ -141,9 +141,9 @@ const service_data = [
         link: "/end-to-end-it-project-delivery",
         detail_title: "End-To-End IT Project Delivery",
         detail_description: <>
-            <p>Purnavi IT Solutions approaches project delivery with a direct, execution-first mindset. When a business hands over an idea, the objective is simple: turn it into a working digital solution without unnecessary delays, confusion, or back-and-forth. The team takes responsibility for every step, whether it’s building a web application, developing a mobile product, or engineering a full software platform from scratch.</p>
+            <p>Purnavi IT Solutions approaches project delivery with a direct, execution-first mindset. When a business hands over an idea, the objective is simple: turn it into a working digital solution without unnecessary delays, confusion, or back-and-forth. The team takes responsibility for every step, whether it's building a web application, developing a mobile product, or engineering a full software platform from scratch.</p>
             <p>The development process is supported by strong UI and UX practices, modern cloud and DevOps implementations, and a quality assurance approach that relies on both manual scrutiny and automation to keep the output clean, reliable, and ready for scale. Each project is handled with a structure that keeps clients in control while allowing the team to focus on actual delivery rather than corporate theatrics.</p>
-            <p>The goal isn’t to chase trends or overload businesses with jargon; it’s to make sure the final product works, performs, and aligns with what the client needs today and what they may expect tomorrow. With clear communication, transparent updates, and an emphasis on measurable results, the company ensures that projects don’t just get completed — they get completed properly, with long-term value embedded into every build.</p>
+            <p>The goal isn't to chase trends or overload businesses with jargon; it's to make sure the final product works, performs, and aligns with what the client needs today and what they may expect tomorrow. With clear communication, transparent updates, and an emphasis on measurable results, the company ensures that projects don't just get completed — they get completed properly, with long-term value embedded into every build.</p>
         </>,
         detail_features: [
             <>Execution-First Mindset</>,
@@ -165,7 +165,7 @@ const service_data = [
         detail_description: <>
             <p>Many companies struggle with slow recruitment cycles, inconsistent talent quality, and the overhead that comes with maintaining a growing technical workforce. Purnavi IT Solutions addresses this by providing skilled professionals directly under its payroll, allowing businesses to onboard ready-to-work talent without being dragged into a lengthy hiring process.</p>
             <p>The people offered through this model are screened, trained, and prepared for real project environments, covering critical roles across development, quality engineering, design, cloud and data operations, project oversight, and ongoing technical support. Instead of dealing with administrative complexities, businesses get access to a reliable pool of professionals who can join ongoing work immediately and adapt to internal processes without friction.</p>
-            <p>This setup gives companies the freedom to scale their teams based on actual demand, avoid unnecessary overhead, and maintain accountability without compromising on talent quality. It’s a straightforward way to strengthen a team, stabilize delivery timelines, and keep operations running smoothly, backed by a partner that takes responsibility for both performance and consistency.</p>
+            <p>This setup gives companies the freedom to scale their teams based on actual demand, avoid unnecessary overhead, and maintain accountability without compromising on talent quality. It's a straightforward way to strengthen a team, stabilize delivery timelines, and keep operations running smoothly, backed by a partner that takes responsibility for both performance and consistency.</p>
         </>,
         detail_features: [
             <>Ready-to-Work Talent</>,
@@ -185,7 +185,7 @@ const service_data = [
         link: "/client-centric-project-outsourcing",
         detail_title: "Client-Centric Project Outsourcing",
         detail_description: <>
-            <p>In today’s fast-paced digital landscape, businesses need more than just a vendor; they need a partner who understands their vision and takes ownership of their success. Our Client-Centric Project Outsourcing model is designed to bridge the gap between your internal goals and external execution. We provide dedicated teams that integrate seamlessly with your operations, ensuring that culture, communication, and quality are never compromised.</p>
+            <p>In today's fast-paced digital landscape, businesses need more than just a vendor; they need a partner who understands their vision and takes ownership of their success. Our Client-Centric Project Outsourcing model is designed to bridge the gap between your internal goals and external execution. We provide dedicated teams that integrate seamlessly with your operations, ensuring that culture, communication, and quality are never compromised.</p>
             <p>We move beyond the traditional transactional outsourcing model by adopting a results-oriented approach. Whether you need to scale your development capacity, modernize legacy systems, or build a new product from the ground up, our teams work with an agile mindset to deliver incremental value. We handle the heavy lifting of project management, technical architecture, and quality assurance, allowing you to focus on your core business strategy while maintaining full visibility and control over the project's progress.</p>
             <p>Transparency and accountability are at the heart of our service. We believe in open communication, regular updates, and a shared commitment to your milestones. By aligning our incentives with your success, we ensure that every deliverable meets your standards and drives tangible business outcomes. With Purnavi IT Solutions, you get the flexibility of outsourcing with the reliability and dedication of an in-house team.</p>
         </>,
@@ -270,6 +270,53 @@ const service_data = [
             <>Ready-to-Work Professionals</>,
             <>Zero Recruitment Overhead</>,
             <>Comprehensive End-to-End Expertise</>
+        ]
+    },
+    {
+        id: 12,
+        alphabet: "W",
+        title: "What We Do",
+        img: service_img_3,
+        description: <>Delivering comprehensive IT solutions from development to deployment.</>,
+        link: "/what-we-do",
+        detail_title: "What We Do - Our Core Services",
+        detail_description: <>
+            <p>At Purnavi IT Solutions, we deliver end-to-end technology solutions that transform ideas into scalable, high-performance digital products. Our approach is straightforward: we take ownership of the entire development lifecycle, ensuring that every project is executed with precision, efficiency, and a commitment to measurable results.</p>
+            <h4 className="mb-20">💻 Full-Stack Development Services</h4>
+            <p>We build modern web and mobile applications using cutting-edge frameworks like React, Next.js, Node.js, Flutter, and React Native. Whether you need a responsive website, a native mobile app, or a cross-platform solution, our full-stack development team creates robust, scalable applications tailored to your business needs.</p>
+            <p><strong>Web Development:</strong> Custom web applications, Progressive Web Apps (PWAs), and e-commerce platforms designed for performance and user engagement.</p>
+            <p><strong>Mobile Development:</strong> Native iOS and Android apps, as well as cross-platform solutions that deliver seamless experiences across all devices.</p>
+            <h4 className="mb-20">☁️ Cloud & DevOps Excellence</h4>
+            <p>We accelerate your software delivery through modern cloud infrastructure and DevOps practices. Our team implements CI/CD pipelines, Infrastructure as Code (IaC) using Terraform and CloudFormation, and containerization with Docker and Kubernetes. We work with major cloud platforms including AWS, Azure, and Google Cloud to ensure your applications are secure, scalable, and cost-efficient.</p>
+            <p><strong>Cloud Migration:</strong> Seamless transition to cloud environments with minimal downtime and optimized performance.</p>
+            <p><strong>DevOps Implementation:</strong> Automated workflows, continuous integration, and deployment pipelines that reduce time-to-market.</p>
+            <h4 className="mb-20">🧪 Quality Assurance & Testing</h4>
+            <p>We ensure the highest quality standards through comprehensive testing services. Our QA team employs both manual and automated testing methodologies, including functional testing, performance testing, security testing, and penetration testing. Using industry-standard tools like Selenium and Cypress, we integrate testing into the CI/CD pipeline for continuous quality assurance.</p>
+            <p><strong>Test Automation:</strong> Reduce testing time and increase coverage with robust automation frameworks.</p>
+            <p><strong>Performance Testing:</strong> Ensure your applications can handle high traffic loads and deliver smooth user experiences.</p>
+            <h4 className="mb-20">🎨 UI/UX Design & Modernization</h4>
+            <p>We create intuitive, visually stunning interfaces that enhance user satisfaction and drive business results. Our design process includes user research, wireframing, prototyping, and visual design, ensuring that every interface is user-centric and accessible. We also specialize in legacy application modernization, transforming outdated systems into modern, responsive experiences.</p>
+            <p><strong>User Research:</strong> Deep dive into user needs and behaviors to inform design decisions.</p>
+            <p><strong>Accessibility:</strong> WCAG-compliant designs that ensure usability for all users.</p>
+            <h4 className="mb-20">🏢 Enterprise & Product Engineering</h4>
+            <p>We develop custom enterprise solutions including ERP and CRM systems, business process automation tools, and data analytics platforms. Our product engineering services cover the entire product lifecycle, from concept and MVP development to full-scale deployment and ongoing maintenance. We handle complex integrations, legacy system modernization, and scalable architecture design for mission-critical applications.</p>
+            <p><strong>Custom Solutions:</strong> Tailored software that addresses your unique business challenges.</p>
+            <p><strong>Product Development:</strong> From idea to market-ready product, we manage every stage with agile methodologies.</p>
+            <h4 className="mb-20">🤝 Strategic Delivery Models</h4>
+            <p>Beyond traditional development services, we offer flexible engagement models that address your specific needs:</p>
+            <p><strong>End-to-End IT Project Delivery:</strong> Complete ownership of projects from requirement gathering to deployment, with transparent communication and measurable results.</p>
+            <p><strong>Workforce Hiring Under Our Payroll:</strong> Access skilled, pre-vetted professionals (developers, QA engineers, designers, DevOps specialists) directly under our payroll for immediate team scaling.</p>
+            <p><strong>Client-Centric Project Outsourcing:</strong> Dedicated teams that integrate seamlessly with your operations, providing the flexibility of outsourcing with the reliability of an in-house team.</p>
+            <p>At Purnavi IT Solutions, we don't just build software—we build partnerships. We combine technical excellence with business acumen to deliver solutions that work, perform, and drive long-term value for your organization.</p>
+        </>,
+        detail_features: [
+            <>Full-Stack Web & Mobile Development</>,
+            <>Cloud Migration & DevOps Automation</>,
+            <>Comprehensive QA & Test Automation</>,
+            <>UI/UX Design & Accessibility</>,
+            <>Custom Enterprise Solutions</>,
+            <>Product Engineering & MVP Development</>,
+            <>Flexible Delivery & Staffing Models</>
         ]
     }
 ]
