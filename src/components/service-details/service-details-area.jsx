@@ -37,7 +37,7 @@ const ServiceDetailsArea = ({ service }) => {
                         <div className="tp-service-details-desc">
                            {currentService.detail_description}
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
                            <div className="col-lg-6">
                               <div className="tp-service-details-thumb p-relative">
                                  <Image src={service_video_thumb} alt="theme-pure" />
@@ -51,7 +51,7 @@ const ServiceDetailsArea = ({ service }) => {
                            </div>
                            <div className="col-lg-6">
                               <div className="tp-service-details-list">
-                                
+
                                  <ul>
                                     {currentService.detail_features && currentService.detail_features.map((feature, i) =>
                                        <li key={i}><span> <RightSymbol /></span>{feature}</li>
@@ -59,7 +59,7 @@ const ServiceDetailsArea = ({ service }) => {
                                  </ul>
                               </div>
                            </div>
-                        </div>
+                        </div> */}
                      </div>
                   </div>
                </div>

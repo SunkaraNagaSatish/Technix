@@ -13,7 +13,7 @@ const Count = ({ number, text, add_style }) => {
   };
   return (
     <>
-      <CountUp start={focus ? 0 : null} end={number} duration={1}>
+      <CountUp start={focus ? 0 : null} end={number} duration={0}>
         {({ countUpRef }) => (
           <div className={`d-flex ${add_style ? 'align-items-center justify-content-center' : ''}`}>
             <span ref={countUpRef} />

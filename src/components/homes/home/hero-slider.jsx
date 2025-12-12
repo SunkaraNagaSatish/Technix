@@ -35,11 +35,11 @@ const slider_data = [
   {
     id: 1,
     bg_img: "/assets/img/hero/hero-2.jpg",
-    sub_title_1: "best",
-    sub_title_2: "it solutions",
-    hero_title_1: "Transforming Ideas into",
-    hero_title_2: "Digital",
-    hero_support: "Excellence",
+    sub_title_1: "Best",
+    sub_title_2: "IT Solutions",
+    hero_title_1: "Your Trusted IT Staffing Partner",
+    hero_title_2: "&",
+    hero_support: "Technology Solutions Provider",
   },
 ];
 // shapes 
@@ -132,11 +132,11 @@ const HeroSlider = () => {
 
 
           <div className="tp-hero-bottom">
-            <div className="tp-hero-experince">
-              <span className="year"> 13
-                <br /> <i className="experince">Years of Experince</i>
+            {/* <div className="tp-hero-experince">
+              <span className="year">
+                <br /> <i className="experince">A young and growing team</i>
               </span>
-            </div>
+            </div> */}
           </div>
 
           <div
@@ -147,8 +147,9 @@ const HeroSlider = () => {
               <Image src={service_shape} alt="theme-pure" />
             </div>
             <p>
-              Empowering businesses with scalable <span>IT solutions</span>,
-              skilled talent, and end-to-end project execution.
+               Connecting businesses with skilled <span>IT professionals</span> through permanent staffing, 
+              contract hiring, and workforce outsourcing—while also delivering select project-based 
+              development solutions.
             </p>
             <div className="tp-hero-service-quote">
               <Image src={service_quote} alt="theme-pure" />

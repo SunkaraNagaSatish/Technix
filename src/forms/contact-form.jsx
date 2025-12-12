@@ -18,6 +18,16 @@ const ContactForm = () => {
           <div className="col-md-6">
             <div className="tp-contact-input">
               <input
+                name="company"
+                type="text"
+                placeholder="Company Name*"
+                required
+              />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="tp-contact-input">
+              <input
                 name="email"
                 type="email"
                 placeholder="Email Address*"
@@ -28,28 +38,31 @@ const ContactForm = () => {
           <div className="col-md-6">
             <div className="tp-contact-input">
               <input
-                name="text"
+                name="phone"
                 type="text"
-                placeholder="Service Type"
-                required
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="tp-contact-input">
-              <input
-                name="text"
-                type="text"
-                placeholder="Phone Number"
+                placeholder="Phone Number*"
                 required
               />
             </div>
           </div>
           <div className="col-md-12">
             <div className="tp-contact-input">
+              <select name="interest" className="nice-select" required style={{ width: '100%', height: '60px', border: '1px solid #e5e5e5', padding: '0 20px', borderRadius: '0', marginBottom: '20px', color: '#687077' }}>
+                <option value="" disabled selected>I'm Interested In*</option>
+                <option value="Permanent Staffing">Permanent Staffing</option>
+                <option value="Contract Staffing">Contract Staffing</option>
+                <option value="HR & Payroll Management">HR & Payroll Management</option>
+                <option value="Project Development">Project Development</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div className="col-md-12">
+            <div className="tp-contact-input">
               <textarea
                 name="message"
-                placeholder="Enter Your Message here"
+                placeholder="Tell Us About Your Requirements*"
+                required
               ></textarea>
             </div>
           </div>

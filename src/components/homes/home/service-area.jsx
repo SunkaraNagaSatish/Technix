@@ -19,6 +19,16 @@ import fun_fact_shape_5 from "@assets/img/fun-fact/shadow.png";
 
 import reload_img from "@assets/img/fun-fact/world.png";
 
+// Service icons mapping
+const serviceIcons = {
+   1: "fa-solid fa-users", // Permanent IT Staffing
+   2: "fa-solid fa-file-contract", // Contract Staffing
+   3: "fa-solid fa-clipboard-check", // HR, Payroll & Compliance
+   4: "fa-solid fa-code", // Project-Based Development
+   10: "fa-solid fa-building", // Who We Are
+   11: "fa-solid fa-cogs", // What We Do
+   12: "fa-solid fa-award", // Why Choose Us
+};
 
 const counter_content = [
    {
@@ -106,10 +116,10 @@ const ServiceArea = () => {
                      <div className="col-lg-12">
                         <div className="tp-service-title-wrapper text-center">
                            <span className="tp-section-title__pre">
-                              service <span className="title-pre-color">IT Solutions</span>
+                              Comprehensive <span className="title-pre-color">IT Staffing & Development</span>
                               <AngleArrow />
                            </span>
-                           <h3 className="tp-section-title">All Professional <i>IT Solutions</i> & Services
+                           <h3 className="tp-section-title">Our <i>Services</i>
                               <span className="title-center-shape">
                                  <LineArrowTwo />
                               </span>
@@ -122,17 +132,18 @@ const ServiceArea = () => {
                            className="service-active splide">
                            {service_data.map((item, i) =>
                               <SplideSlide key={i}>
-                                 <div className="tp-service-wrapper p-relative mb-55">
+                                 <div className="tp-service-wrapper tp-service-wrapper-no-img p-relative mb-55">
                                     <div className="tp-service-designation">
                                        <p>{item.alphabet}</p>
                                     </div>
                                     <h3 className="service-title">{item.title}</h3>
-                                    <div className="tp-service-icon">
-                                       <Image src={item.img} alt="theme-pure" />
+                                    <div className="tp-service-icon-box">
+                                       <i className={serviceIcons[item.id] || "fa-solid fa-briefcase"}></i>
                                     </div>
                                     <p className="hide-text">{item.description}</p>
                                     <div className="tp-service-btn">
-                                       <Link href={item.link ? item.link : `/service-details/${item.id}`}>Read Out More
+                                       <Link href={item.link ? item.link : `/service-details/${item.id}`}>
+                                          {item.cta || "Read Out More"}
                                           <i className="fa-solid fa-arrow-up-right"></i>
                                        </Link>
                                     </div>
@@ -147,7 +158,7 @@ const ServiceArea = () => {
                   <div className="row">
                      <div className="col-lg-12">
                         <div className="tp-service-all-btn text-center fadeUp">
-                           <Link className="tp-btn" href="/service-details/1">View all Services</Link>
+                           <Link className="tp-btn" href="/contact">Get Started Today</Link>
                         </div>
                      </div>
                   </div>

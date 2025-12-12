@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 import headphone from "@assets/img/footer/headphone.png";
 import footer_logo from "@assets/img/logo/footer-logo.png";
-import user from "@assets/img/footer/user.png";
 import EmailAeroplan from '@/src/svg/email-aeroplan';
 import SocialLinks, { CopyRight } from '@/src/common/social-links';
 
@@ -21,18 +20,28 @@ const footer_content = {
 
 
     service_links: [
-        "End-to-End IT Project Delivery",
-        "Workforce Hiring Solutions",
-        "Web & Mobile Development",
-        "Cloud & DevOps Services",
-        "QA Testing & Automation",
-        "Custom Enterprise Solutions",
+        { title: "Permanent IT Staffing", link: "/service-details" },
+        { title: "Contract Staffing Solutions", link: "/service-details" },
+        { title: "HR & Payroll Management", link: "/service-details" },
+        { title: "Talent Outsourcing", link: "/service-details" },
+        { title: "Project-Based Development", link: "/end-to-end-it-project-delivery" },
+        { title: "Web & Mobile Apps", link: "/service-details" },
+        { title: "Cloud & DevOps", link: "/service-details" },
+        { title: "QA Testing Services", link: "/service-details" },
+    ],
+    quick_links: [
+        { title: "About Us", link: "/about" },
+        { title: "All Services", link: "/service-details" },
+        { title: "Careers", link: "/career" },
+        { title: "Contact Us", link: "/contact" },
+        { title: "Privacy Policy", link: "/privacy-policy" },
+        { title: "Terms & Conditions", link: "/terms-conditions" },
     ]
 
 
 
 }
-const { contact_us, mail, contact_text, phone, info, map, address, mail_2, mail_phone, service_links } = footer_content
+const { contact_us, mail, contact_text, phone, info, map, address, mail_2, mail_phone, service_links, quick_links } = footer_content
 
 
 const Footer = () => {
@@ -96,7 +105,7 @@ const Footer = () => {
                                     <h3 className="tp-footer-widget-title">Our Services</h3>
                                     <div className="tp-footer-widget-content">
                                         <ul>
-                                            {service_links.map((link, i) => <li key={i}><Link href="/service-details">{link}</Link></li>)}
+                                            {service_links.map((item, i) => <li key={i}><Link href={item.link}>{item.title}</Link></li>)}
                                         </ul>
                                     </div>
                                 </div>
@@ -105,18 +114,8 @@ const Footer = () => {
                                 <div className="tp-footer-widget tp-footer-col-3">
                                     <h3 className="tp-footer-widget-title">Quick Links</h3>
                                     <div className="tp-footer-widget-content">
-                                        <div className="tp-footer-author d-flex">
-                                            <div className="tp-footer-author-thumb">
-                                                <Image src={user} alt="theme-pure" />
-                                            </div>
-                                            <div className="tp-footer-author-content">
-                                                <span>Get in Touch <br /> Contact Us Today</span>
-                                            </div>
-                                        </div>
                                         <ul>
-                                            <li><Link href="/about">About Us</Link></li>
-                                            <li><Link href="/service-details">Our Services</Link></li>
-                                            <li><Link href="/contact">Contact Us</Link></li>
+                                            {quick_links.map((item, i) => <li key={i}><Link href={item.link}>{item.title}</Link></li>)}
                                         </ul>
                                     </div>
                                 </div>

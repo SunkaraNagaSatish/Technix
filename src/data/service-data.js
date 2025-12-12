@@ -1,233 +1,561 @@
 
-// import img here 
+import Link from 'next/link';
+import service_staffing_img from "@assets/img/services/service-staffing.png";
+import service_dev_img from "@assets/img/services/service-development.png";
+import service_hr_img from "@assets/img/services/service-hr.png";
 import service_img_1 from "@assets/img/services/services-1.jpg";
 import service_img_2 from "@assets/img/services/services-2.jpg";
 import service_img_3 from "@assets/img/services/services-3.jpg";
 import service_img_4 from "@assets/img/services/services-4.jpg";
 
 const service_data = [
+    // PRIMARY SERVICES
     {
         id: 1,
-        alphabet: "W",
-        title: <>Web & Mobile <br /> Development</>,
-        img: service_img_1,
-        description: <>Full-stack development services for web and mobile applications with modern frameworks</>,
-        detail_title: "Web & Mobile Application Development",
+        alphabet: "P",
+        title: "Permanent IT Staffing",
+        img: service_staffing_img,
+        description: <>End-to-end recruitment for permanent IT positions across all technology domains.</>,
+        detail_title: "Permanent IT Staffing & Recruitment",
         detail_description: <>
-            <p>We build robust, scalable, and high-performance web and mobile applications tailored to your business needs. Our full-stack development team leverages modern frameworks and best practices to deliver seamless user experiences across all devices. From simple websites to complex enterprise-grade applications, we ensure your digital presence is powerful and effective.</p>
-            <p>Our development process is agile and iterative, ensuring that we adapt to your changing requirements and deliver value at every stage. We focus on writing clean, maintainable code and implementing rigorous testing to guarantee the reliability and security of your applications. Whether you need a native iOS app, an Android app, or a cross-platform solution using React Native or Flutter, we have the expertise to bring your vision to life.</p>
-            <p>We also specialize in Progressive Web Apps (PWAs) that offer a native app-like experience on the web, providing offline capabilities and fast load times. Our e-commerce solutions are designed to drive sales and improve customer engagement, with secure payment gateway integrations and intuitive product management systems.</p>
+            <p className="mb-20"><strong>End-to-end recruitment for permanent IT positions across all technology domains</strong></p>
+            <p className="mb-30">We handle the complete permanent hiring process—from sourcing and screening to final placement and onboarding. Our rigorous multi-stage evaluation ensures you get candidates who are not just technically qualified, but also the right cultural fit for your organization.</p>
+
+            <h4 className="mb-20">What We Deliver</h4>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Comprehensive Talent Sourcing</h5>
+                <p>We source candidates from multiple channels including job portals, our internal database, referrals, and social networks—giving you access to both active job seekers and passive candidates.</p>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Multi-Stage Screening</h5>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Technical assessment through coding challenges and scenario-based questions</li>
+                    <li>Behavioral evaluation to assess problem-solving and communication skills</li>
+                    <li>Cultural fit analysis to ensure alignment with your team dynamics</li>
+                    <li>Background verification and reference checks</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Interview Coordination</h5>
+                <p>We manage the entire interview process—scheduling, logistics, feedback collection, and follow-ups—saving your team valuable time.</p>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Offer Management & Onboarding</h5>
+                <p>Support with salary negotiations, offer letter processing, and onboarding documentation to ensure a smooth transition.</p>
+            </div>
+
+            <h4 className="mb-20 mt-40">Technology Roles We Recruit For</h4>
+
+            <div className="row mb-30">
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Software Development</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Full-Stack Developers (MERN, MEAN, Django, .NET, Spring Boot)</li>
+                        <li>Frontend Developers (React, Angular, Vue.js, Next.js)</li>
+                        <li>Backend Developers (Node.js, Python, Java, .NET, Go)</li>
+                        <li>Mobile Developers (iOS, Android, React Native, Flutter)</li>
+                        <li>API Developers & Integration Specialists</li>
+                        <li>Embedded Systems & IoT Developers</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Quality Assurance</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Manual QA Engineers</li>
+                        <li>Automation Test Engineers (Selenium, Cypress, Appium)</li>
+                        <li>Performance Testing Engineers</li>
+                        <li>Security Testing Specialists</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Cloud & DevOps</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>DevOps Engineers (AWS, Azure, GCP)</li>
+                        <li>Cloud Architects and Engineers</li>
+                        <li>Site Reliability Engineers (SRE)</li>
+                        <li>Infrastructure Engineers</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Data & Analytics</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Data Engineers</li>
+                        <li>Data Analysts</li>
+                        <li>Business Intelligence Developers</li>
+                        <li>Big Data Engineers</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Design & Product</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>UI/UX Designers</li>
+                        <li>Product Designers</li>
+                        <li>User Researchers</li>
+                        <li>Visual Designers</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Leadership & Management</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Technical Architects</li>
+                        <li>Solution Architects</li>
+                        <li>Engineering Managers</li>
+                        <li>Project Managers</li>
+                        <li>Scrum Masters</li>
+                        <li>Technical Leads</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 className="mb-20 mt-40">Our Process</h4>
+            <div className="mb-30">
+                <div className="row">
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Requirement Discussion:</strong> Detailed job description, required skills, experience level, team culture, budget, and timeline</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Sourcing & Screening:</strong> Candidate sourcing, technical screening, behavioral interviews, and background verification initiation</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Shortlisting:</strong> Present 3-5 shortlisted candidates with detailed profiles, assessment scores, and interview summaries</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Client Interviews:</strong> Interview coordination, feedback collection, and second-round facilitation</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Offer & Onboarding:</strong> Salary negotiation, offer processing, background verification completion, joining formalities</p>
+                    </div>
+                </div>
+            </div>
         </>,
+        cta: "Start Hiring Today",
         detail_features: [
-            <>Custom Web Application Development (React, Next.js, Node.js)</>,
-            <>Mobile App Development (iOS, Android, React Native, Flutter)</>,
-            <>Progressive Web Apps (PWA)</>,
-            <>E-commerce Solutions</>,
-            <>API Development & Integration</>,
-            <>Legacy Application Modernization</>
+            <>Comprehensive Talent Sourcing</>,
+            <>Multi-Stage Technical Screening</>,
+            <>Behavioral & Cultural Fit Analysis</>,
+            <>Interview Coordination</>,
+            <>Offer Management & Onboarding</>,
+            <>90-Day Replacement Guarantee</>
         ]
     },
     {
         id: 2,
         alphabet: "C",
-        title: <>Cloud & DevOps <br /> Solutions</>,
-        img: service_img_2,
-        description: <>Scalable cloud infrastructure, CI/CD pipelines, and DevOps implementation </>,
-        detail_title: "Cloud & DevOps Solutions",
+        title: "Contract Staffing",
+        img: service_dev_img,
+        description: <>Deploy skilled IT professionals immediately without permanent hiring overhead.</>,
+        detail_title: "Contract Staffing Solutions",
         detail_description: <>
-            <p>Accelerate your software delivery and optimize your infrastructure with our Cloud and DevOps solutions. We help businesses migrate to the cloud, automate workflows, and implement CI/CD pipelines for faster and more reliable deployments. Our expertise covers major cloud platforms like AWS, Azure, and Google Cloud, ensuring your applications are secure, scalable, and cost-efficient.</p>
-            <p>We adopt a "Cloud First" approach to help you leverage the full potential of cloud computing. From designing cloud-native architectures to managing hybrid cloud environments, we provide end-to-end support. Our DevOps practices bridge the gap between development and operations, fostering collaboration and continuous improvement. We implement Infrastructure as Code (IaC) using tools like Terraform and CloudFormation to automate infrastructure provisioning and management.</p>
-            <p>Security is at the core of our cloud solutions. We implement robust security measures, including identity and access management, data encryption, and compliance monitoring, to protect your sensitive data and ensure regulatory compliance.</p>
+            <p className="mb-20"><strong>Deploy skilled IT professionals immediately without permanent hiring overhead</strong></p>
+            <p className="mb-30">Get the talent you need without the administrative burden. Our contract staffing model provides you with skilled IT professionals who remain on our payroll while working on your projects—either at your location or remotely.</p>
+
+            <h4 className="mb-20">Engagement Models</h4>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Short-Term Contract Staffing (3-6 months)</h5>
+                <p className="mb-10">Perfect for:</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Urgent project requirements</li>
+                    <li>Temporary workload spikes</li>
+                    <li>Covering employee leaves or transitions</li>
+                    <li>Specialized skills needed for specific project phases</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Long-Term Contract Staffing (6+ months)</h5>
+                <p className="mb-10">Ideal for:</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Ongoing development and maintenance work</li>
+                    <li>Building extended development teams</li>
+                    <li>Long-term project commitments with flexibility</li>
+                    <li>Scaling teams without permanent hiring</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Contract-to-Hire</h5>
+                <p className="mb-10">Best for:</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Evaluating candidates before permanent commitment</li>
+                    <li>Risk-free hiring with trial period</li>
+                    <li>Assessing technical skills and cultural fit in real work environment</li>
+                    <li>Smooth transition to your payroll after 3-6 months</li>
+                </ul>
+            </div>
+
+            <h4 className="mb-20 mt-40">What We Handle (So You Don't Have To)</h4>
+
+            <div className="row mb-30">
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Complete Payroll Management</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Monthly salary processing and disbursement</li>
+                        <li>Salary slip generation and distribution</li>
+                        <li>Tax deductions (TDS) and compliance</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Statutory Compliance</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>PF (Provident Fund) contributions and compliance</li>
+                        <li>ESI (Employee State Insurance) management</li>
+                        <li>Professional Tax processing</li>
+                        <li>Labour law adherence</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">HR Administration</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Employment contracts and documentation</li>
+                        <li>Leave and attendance tracking</li>
+                        <li>Performance monitoring support (if required)</li>
+                        <li>Exit formalities if engagement ends</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Quality Assurance</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Immediate replacement if performance issues arise</li>
+                        <li>Regular check-ins to ensure satisfaction and Performance</li>
+                        <li>Conflict resolution support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 className="mb-20 mt-40">Technology Professionals Available</h4>
+            <p className="mb-20">All roles mentioned in Permanent Staffing section, plus:</p>
+            <ul className="mb-30" style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Technical Support Engineers</li>
+                <li>Database Administrators</li>
+                <li>Systems Administrators</li>
+                <li>Network Engineers</li>
+                <li>Cybersecurity Specialists</li>
+            </ul>
+
+            <h4 className="mb-20 mt-40">Our Process</h4>
+            <div className="mb-30">
+                <div className="row">
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Requirement Briefing:</strong> Skills needed, experience level, duration, work location (onsite/remote), start date</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Resource Matching:</strong> Match from existing pre-vetted talent pool, or source and screen if specialized skill</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Candidate Presentation:</strong> Share profiles with detailed technical assessments and availability</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Interview & Selection:</strong> You conduct final interview; we handle all logistics</p>
+                    </div>
+                    <div className="col-12 mb-15">
+                        <p><strong>➔ Deployment:</strong> Contract paperwork, payroll setup, resource onboarding, and deployment</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 className="mb-20 mt-40">Key Benefits</h4>
+            <ul className="mb-30" style={{ listStyleType: 'none', paddingLeft: '0' }}>
+                <li className="mb-10">✅ Deployment within 3-7 days from existing pool</li>
+                <li className="mb-10">✅ Zero long-term commitment—scale up or down freely</li>
+                <li className="mb-10">✅ Complete HR and compliance management</li>
+                <li className="mb-10">✅ Immediate replacement guarantee</li>
+                <li className="mb-10">✅ No infrastructure or administrative setup needed</li>
+            </ul>
         </>,
+        cta: "Deploy Talent Now",
         detail_features: [
-            <>Cloud Migration & Strategy (AWS, Azure, GCP)</>,
-            <>CI/CD Pipeline Implementation</>,
-            <>Infrastructure as Code (Terraform, CloudFormation)</>,
-            <>Containerization & Orchestration (Docker, Kubernetes)</>,
-            <>Cloud Security & Compliance</>,
-            <>Serverless Architecture</>
+            <>Short-Term & Long-Term Contracts</>,
+            <>Contract-to-Hire Options</>,
+            <>Complete Payroll Management</>,
+            <>Full Statutory Compliance</>,
+            <>Immediate Replacement Guarantee</>,
+            <>Rapid 3-7 Day Deployment</>
         ]
     },
     {
         id: 3,
-        alphabet: "Q",
-        title: <>QA Testing & <br /> Automation</>,
-        img: service_img_3,
-        description: <>Comprehensive testing services including manual, automated, and performance testing</>,
-        detail_title: "QA Testing & Automation",
+        alphabet: "H",
+        title: "HR, Payroll & Compliance",
+        img: service_hr_img,
+        description: <>Complete workforce administration for your IT teams.</>,
+        detail_title: "HR, Payroll & Compliance Management",
         detail_description: <>
-            <p>Ensure the highest quality for your software products with our comprehensive QA testing and automation services. We employ rigorous testing methodologies to identify and fix bugs early in the development cycle. Our team specializes in both manual and automated testing to guarantee your applications are reliable, secure, and perform flawlessly under any conditions.</p>
-            <p>We offer a full spectrum of testing services, including functional testing, regression testing, performance testing, and security testing. Our test automation frameworks, built using industry-standard tools like Selenium and Cypress, help reduce testing time and increase test coverage. We integrate testing into your CI/CD pipeline to enable continuous testing and faster feedback loops.</p>
-            <p>Our performance testing services ensure that your applications can handle high traffic loads and deliver a smooth user experience. We simulate real-world scenarios to identify bottlenecks and optimize system performance. With our QA services, you can release software with confidence and minimize the risk of post-production issues.</p>
+            <p className="mb-20"><strong>Complete workforce administration for your IT teams</strong></p>
+            <p className="mb-30">Focus on your core business while we handle the entire HR-payroll-compliance function for your IT workforce. We ensure 100% statutory compliance and eliminate administrative burden.</p>
+
+            <h4 className="mb-20">Services Included</h4>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Payroll Processing</h5>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Salary calculation based on attendance, leaves, and other variables</li>
+                    <li>Monthly salary disbursement to employee bank accounts</li>
+                    <li>Professional salary slip generation</li>
+                    <li>Annual tax statements (Form 16)</li>
+                    <li>Full & Final settlement for exiting employees</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Statutory Compliance</h5>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>PF registration and monthly contributions</li>
+                    <li>ESI registration and compliance management</li>
+                    <li>Professional Tax registration and payment</li>
+                    <li>Shops & Establishment Act compliance</li>
+                    <li>Payment of Wages Act adherence</li>
+                    <li>Bonus Act and Gratuity Act compliance</li>
+                    <li>Labour law compliance and audit support</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">HR Administration</h5>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Offer letter and employment contract preparation</li>
+                    <li>Employee onboarding documentation and orientation</li>
+                    <li>Leave and attendance management system</li>
+                    <li>Background verification coordination</li>
+                    <li>Employee grievance handling</li>
+                    <li>Exit interview and documentation</li>
+                    <li>Relieving letters and experience certificates</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">Compliance Reporting</h5>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Monthly compliance reports</li>
+                    <li>Audit-ready documentation</li>
+                    <li>Government filing and submission support</li>
+                    <li>Compliance calendar and deadline tracking</li>
+                </ul>
+            </div>
+
+            <h4 className="mb-20 mt-40">Who This Is For</h4>
+            <ul className="mb-30" style={{ listStyleType: 'none', paddingLeft: '0' }}>
+                <li className="mb-10">✅ Companies with existing IT teams wanting to outsource HR functions</li>
+                <li className="mb-10">✅ Businesses expanding teams and needing scalable HR infrastructure</li>
+                <li className="mb-10">✅ Organizations wanting to ensure 100% labour law compliance</li>
+                <li className="mb-10">✅ Companies looking to reduce HR administrative costs</li>
+            </ul>
+
+            <h4 className="mb-20 mt-40">Key Benefits</h4>
+            <ul className="mb-30" style={{ listStyleType: 'none', paddingLeft: '0' }}>
+                <li className="mb-10">✅ Eliminate HR administrative overhead</li>
+                <li className="mb-10">✅ Ensure 100% compliance with law</li>
+                <li className="mb-10">✅ Reduce risk of statutory penalties and legal issues</li>
+                <li className="mb-10">✅ Access to HR expertise without hiring full-time HR team</li>
+                <li className="mb-10">✅ Scalable solution that grows with your team</li>
+                <li className="mb-10">✅ Single point of contact for all HR matters</li>
+            </ul>
         </>,
+        cta: "Simplify Your HR Operations",
         detail_features: [
-            <>Manual & Automated Testing</>,
-            <>Performance & Load Testing</>,
-            <>Security & Penetration Testing</>,
-            <>Mobile App Testing</>,
-            <>API Testing</>,
-            <>Test Automation Framework Development (Selenium, Cypress)</>
+            <>End-to-End Payroll Processing</>,
+            <>100% Statutory Compliance</>,
+            <>Complete HR Administration</>,
+            <>Labour Law Audit Support</>,
+            <>Compliance Reporting</>,
+            <>Scalable HR Infrastructure</>
         ]
     },
+    // SECONDARY SERVICE
     {
         id: 4,
-        alphabet: "U",
-        title: <>UI/UX Design & <br /> Modernization</>,
-        img: service_img_4,
-        description: <>User-centric design solutions and interface modernization </>,
-        detail_title: "UI/UX Design & Modernization",
+        alphabet: "D",
+        title: "Project-Based Development",
+        img: service_dev_img,
+        description: <>End-to-end software development using our skilled talent network.</>,
+        detail_title: "Project-Based Development Services",
         detail_description: <>
-            <p>Create engaging and intuitive digital experiences with our UI/UX design services. We focus on understanding your users to design interfaces that are not only visually stunning but also easy to use. Whether you need a new product design or want to modernize an existing application, our design team delivers solutions that enhance user satisfaction and drive business results.</p>
-            <p>Our design process begins with in-depth user research to understand the needs, behaviors, and pain points of your target audience. We create user personas, user journeys, and wireframes to visualize the structure and flow of the application. Our visual designers then bring the interface to life with modern aesthetics, consistent branding, and interactive elements.</p>
-            <p>We also specialize in legacy application modernization, transforming outdated interfaces into modern, responsive, and user-friendly experiences. We ensure accessibility compliance (WCAG) so that your digital products are usable by everyone, regardless of their abilities.</p>
+            <p className="mb-20"><strong>End-to-end software development using our skilled talent network</strong></p>
+            <p className="mb-30">For clients who prefer complete project outsourcing, we undertake end-to-end development using our vetted network of IT professionals. We handle everything from requirements gathering to deployment and support.</p>
+
+            <h4 className="mb-20">What We Build</h4>
+
+            <div className="row mb-30">
+                <div className="col-md-6 mb-25">
+                    <h5 className="mb-10">Web Applications</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Custom web applications using React, Next.js, Node.js</li>
+                        <li>Progressive Web Apps (PWAs) for offline-capable experiences</li>
+                        <li>Single Page Applications (SPAs)</li>
+                        <li>RESTful and GraphQL API development</li>
+                        <li>Third-party API integrations</li>
+                        <li>Legacy application modernization</li>
+                        <li>Responsive, scalable, and secure web solutions</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-25">
+                    <h5 className="mb-10">Mobile Applications</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Native iOS apps (Swift, Objective-C)</li>
+                        <li>Native Android apps (Kotlin, Java)</li>
+                        <li>Cross-platform solutions (React Native, Flutter)</li>
+                        <li>Mobile app UI/UX design</li>
+                        <li>App Store and Play Store deployment</li>
+                        <li>Mobile backend development</li>
+                        <li>Push notifications and real-time features</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-25">
+                    <h5 className="mb-10">E-commerce Solutions</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Custom e-commerce platforms</li>
+                        <li>Payment gateway integrations</li>
+                        <li>Inventory management systems</li>
+                        <li>Shopping cart and checkout flows</li>
+                        <li>Product catalog management</li>
+                        <li>Order tracking and fulfillment</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-25">
+                    <h5 className="mb-10">Cloud Solutions</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Cloud migration (AWS, Azure, Google Cloud)</li>
+                        <li>Cloud-native application development</li>
+                        <li>Serverless architecture implementation</li>
+                        <li>Microservices architecture</li>
+                        <li>Auto-scaling and load balancing</li>
+                        <li>Cloud cost optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 className="mb-20 mt-40">Our Development Approach</h4>
+
+            <div className="row mb-30">
+                <div className="col-md-4 mb-20">
+                    <h5 className="mb-10">Agile Methodology</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>2-week sprint cycles</li>
+                        <li>Regular sprint demos and feedback sessions</li>
+                        <li>Flexible to changing requirements</li>
+                        <li>Continuous integration and deployment</li>
+                    </ul>
+                </div>
+                <div className="col-md-4 mb-20">
+                    <h5 className="mb-10">Quality Assurance</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>QA testing integrated in every sprint</li>
+                        <li>Automated testing where applicable</li>
+                        <li>Performance and security testing</li>
+                        <li>User acceptance testing support</li>
+                    </ul>
+                </div>
+                <div className="col-md-4 mb-20">
+                    <h5 className="mb-10">Transparent Communication</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Dedicated project manager assigned</li>
+                        <li>Daily/weekly progress updates</li>
+                        <li>Sprint review and retrospective meetings</li>
+                        <li>Clear documentation throughout</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 className="mb-20 mt-40">Technology Stack We Use</h4>
+            <div className="mb-30">
+                <p className="mb-10"><strong>Frontend:</strong> React.js, Next.js, Angular, Vue.js, HTML5, CSS3, Tailwind CSS</p>
+                <p className="mb-10"><strong>Backend:</strong> Node.js, Python (Django, Flask), Java (Spring Boot), .NET Core, PHP (Laravel)</p>
+                <p className="mb-10"><strong>Mobile:</strong> React Native, Flutter, iOS (Swift), Android (Kotlin)</p>
+                <p className="mb-10"><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis, Firebase</p>
+                <p className="mb-10"><strong>Cloud:</strong> AWS, Azure, Google Cloud Platform</p>
+                <p className="mb-10"><strong>DevOps:</strong> Docker, Kubernetes, Jenkins, GitLab CI/CD, Terraform</p>
+            </div>
         </>,
+        cta: "Discuss Your Project",
         detail_features: [
-            <>User Research & Persona Development</>,
-            <>Wireframing & Prototyping</>,
-            <>Visual Design & Branding</>,
-            <>Interaction Design</>,
-            <>Usability Testing</>,
-            <>Accessibility Compliance (WCAG)</>
+            <>Web & Mobile App Development</>,
+            <>E-commerce Platforms</>,
+            <>Cloud Migration & Solutions</>,
+            <>Agile Development Process</>,
+            <>Full QA & Testing</>,
+            <>Dedicated Project Management</>
         ]
     },
-    {
-        id: 5,
-        alphabet: "E",
-        title: <>Enterprise <br /> Solutions</>,
-        img: service_img_2,
-        description: <>Custom enterprise software solutions tailored to your business</>,
-        detail_title: "Custom Enterprise Solutions",
-        detail_description: <>
-            <p>Empower your organization with custom enterprise software solutions designed to streamline operations and boost productivity. We understand the unique challenges of large-scale businesses and build tailored software that integrates seamlessly with your existing systems. From ERP and CRM systems to workflow automation tools, we deliver scalable solutions that grow with your business.</p>
-            <p>We work closely with your stakeholders to analyze your business processes and identify areas for improvement. Our team designs and develops custom software solutions that address your specific requirements and provide a competitive edge. We have extensive experience in integrating disparate systems, ensuring data consistency and smooth information flow across your organization.</p>
-            <p>Our enterprise solutions are built on robust and scalable architectures, capable of handling large volumes of data and users. We provide comprehensive support and maintenance services to ensure your mission-critical applications remain operational and up-to-date.</p>
-        </>,
-        detail_features: [
-            <>Custom ERP & CRM Development</>,
-            <>Business Process Automation</>,
-            <>Enterprise Application Integration</>,
-            <>Data Analytics & Business Intelligence</>,
-            <>Supply Chain Management Systems</>,
-            <>HR & Payroll Management Solutions</>
-        ]
-    },
-    {
-        id: 6,
-        alphabet: "S",
-        title: <>Software Product <br /> Engineering</>,
-        img: service_img_3,
-        description: <>End-to-end product development from concept to deployment with agile methodologies</>,
-        detail_title: "Software Product Engineering",
-        detail_description: <>
-            <p>Turn your innovative ideas into market-ready products with our end-to-end software product engineering services. We handle the entire product lifecycle, from conceptualization and design to development, testing, and deployment. Using agile methodologies, we ensure rapid iteration and delivery, helping you launch high-quality products faster and stay ahead of the competition.</p>
-            <p>We act as your strategic partner, providing technical expertise and industry insights to help you make informed decisions. Our team works collaboratively with you to define the product roadmap, prioritize features, and develop a Minimum Viable Product (MVP) to validate your concept. We then scale the product based on user feedback and market demand.</p>
-            <p>Our product engineering services cover a wide range of domains, including SaaS, fintech, healthcare, and e-commerce. We leverage the latest technologies and frameworks to build future-proof products that deliver exceptional value to your users.</p>
-        </>,
-        detail_features: [
-            <>Product Strategy & Roadmap</>,
-            <>MVP Development</>,
-            <>Full-Cycle Product Development</>,
-            <>SaaS Product Engineering</>,
-            <>Product Modernization & Re-engineering</>,
-            <>Maintenance & Support</>
-        ]
-    },
-    {
-        id: 7,
-        alphabet: "P",
-        title: <>End-To-End IT <br /> Project Delivery</>,
-        img: service_img_1,
-        description: <>Turn ideas into working digital solutions without unnecessary delays or confusion</>,
-        link: "/end-to-end-it-project-delivery",
-        detail_title: "End-To-End IT Project Delivery",
-        detail_description: <>
-            <p>Purnavi IT Solutions approaches project delivery with a direct, execution-first mindset. When a business hands over an idea, the objective is simple: turn it into a working digital solution without unnecessary delays, confusion, or back-and-forth. The team takes responsibility for every step, whether it's building a web application, developing a mobile product, or engineering a full software platform from scratch.</p>
-            <p>The development process is supported by strong UI and UX practices, modern cloud and DevOps implementations, and a quality assurance approach that relies on both manual scrutiny and automation to keep the output clean, reliable, and ready for scale. Each project is handled with a structure that keeps clients in control while allowing the team to focus on actual delivery rather than corporate theatrics.</p>
-            <p>The goal isn't to chase trends or overload businesses with jargon; it's to make sure the final product works, performs, and aligns with what the client needs today and what they may expect tomorrow. With clear communication, transparent updates, and an emphasis on measurable results, the company ensures that projects don't just get completed — they get completed properly, with long-term value embedded into every build.</p>
-        </>,
-        detail_features: [
-            <>Execution-First Mindset</>,
-            <>Full-Cycle Development (Web, Mobile, Platform)</>,
-            <>Strong UI/UX Practices</>,
-            <>Modern Cloud & DevOps Implementation</>,
-            <>Manual & Automated QA</>,
-            <>Transparent Communication & Updates</>
-        ]
-    },
-    {
-        id: 8,
-        alphabet: "H",
-        title: <>Workforce Hiring <br /> Under Our Payroll</>,
-        img: service_img_4,
-        description: <>Skilled professionals directly under our payroll for ready-to-work talent</>,
-        link: "/workforce-hiring",
-        detail_title: "Workforce Hiring Under Our Payroll",
-        detail_description: <>
-            <p>Many companies struggle with slow recruitment cycles, inconsistent talent quality, and the overhead that comes with maintaining a growing technical workforce. Purnavi IT Solutions addresses this by providing skilled professionals directly under its payroll, allowing businesses to onboard ready-to-work talent without being dragged into a lengthy hiring process.</p>
-            <p>The people offered through this model are screened, trained, and prepared for real project environments, covering critical roles across development, quality engineering, design, cloud and data operations, project oversight, and ongoing technical support. Instead of dealing with administrative complexities, businesses get access to a reliable pool of professionals who can join ongoing work immediately and adapt to internal processes without friction.</p>
-            <p>This setup gives companies the freedom to scale their teams based on actual demand, avoid unnecessary overhead, and maintain accountability without compromising on talent quality. It's a straightforward way to strengthen a team, stabilize delivery timelines, and keep operations running smoothly, backed by a partner that takes responsibility for both performance and consistency.</p>
-        </>,
-        detail_features: [
-            <>Ready-to-Work Talent</>,
-            <>Screened & Trained Professionals</>,
-            <>Roles: Dev, QA, Design, Cloud, Data, PM</>,
-            <>Immediate Onboarding</>,
-            <>Scalable Teams</>,
-            <>Reduced Administrative Overhead</>
-        ]
-    },
-    {
-        id: 9,
-        alphabet: "C",
-        title: <>Client-Centric <br /> Project Outsourcing</>,
-        img: service_img_2,
-        description: <>Dedicated teams and managed IT services with complete ownership and agile execution</>,
-        link: "/client-centric-project-outsourcing",
-        detail_title: "Client-Centric Project Outsourcing",
-        detail_description: <>
-            <p>In today's fast-paced digital landscape, businesses need more than just a vendor; they need a partner who understands their vision and takes ownership of their success. Our Client-Centric Project Outsourcing model is designed to bridge the gap between your internal goals and external execution. We provide dedicated teams that integrate seamlessly with your operations, ensuring that culture, communication, and quality are never compromised.</p>
-            <p>We move beyond the traditional transactional outsourcing model by adopting a results-oriented approach. Whether you need to scale your development capacity, modernize legacy systems, or build a new product from the ground up, our teams work with an agile mindset to deliver incremental value. We handle the heavy lifting of project management, technical architecture, and quality assurance, allowing you to focus on your core business strategy while maintaining full visibility and control over the project's progress.</p>
-            <p>Transparency and accountability are at the heart of our service. We believe in open communication, regular updates, and a shared commitment to your milestones. By aligning our incentives with your success, we ensure that every deliverable meets your standards and drives tangible business outcomes. With Purnavi IT Solutions, you get the flexibility of outsourcing with the reliability and dedication of an in-house team.</p>
-        </>,
-        detail_features: [
-            <>Dedicated Development Teams</>,
-            <>Managed IT Services</>,
-            <>Agile Execution & Delivery</>,
-            <>Complete Project Ownership</>,
-            <>Scalable Support Models</>,
-            <>Transparent Reporting & Metrics</>
-        ]
-    },
+    // INFORMATIONAL SECTIONS
     {
         id: 10,
         alphabet: "A",
-        title: "About Us",
+        title: "Who We Are",
         img: service_img_1,
         description: <>A No-nonsense, Execution-first technology partner.</>,
         link: "/about-us",
-        detail_title: "About Us",
+        detail_title: "Who We Are",
         detail_description: <>
-            <p>We are a no-nonsense, execution-first technology partner committed to turning your ambitious ideas into working digital solutions—without the corporate delays or unnecessary jargon. We exist to simplify the complex journey of software development, ensuring your product is built right, delivered fast, and prepared to scale.</p>
-            <h4 className="mb-20">🎯 Our Philosophy: Results Over Rhetoric</h4>
-            <p>At Purnavi IT Solutions, the objective is simple: deliver working software and measurable results.</p>
-            <p><strong>Execution-First Mindset:</strong> We focus on getting the job done. We take end-to-end responsibility for project success, ensuring projects are completed properly and aligned with your long-term value.</p>
-            <p><strong>Full-Stack Responsibility:</strong> We handle the entire lifecycle—from design and development to cloud deployment and quality assurance. You hand us the idea; we deliver the finished, scalable product.</p>
-            <p><strong>Agile & Iterative:</strong> We use an agile development process that is transparent, adaptive, and designed to deliver value at every stage, cutting through delays and confusion.</p>
-            <h4 className="mb-20">🛠️ What We Do: End-to-End Technical Mastery</h4>
-            <p>We leverage modern, high-demand frameworks and robust process discipline to guarantee high performance and stability.</p>
-            <p><strong>Modern Development:</strong> Robust, scalable applications (Web, Mobile, PWA, E-commerce) using React, Next.js, Node.js, Flutter, React Native.</p>
-            <p><strong>Cloud & DevOps:</strong> Accelerate delivery with automation, CI/CD, and "Cloud First" strategies using AWS, Azure, GCP, Docker, Kubernetes, Terraform.</p>
-            <p><strong>Quality Assurance:</strong> Guarantee reliability through comprehensive, integrated testing using Selenium, Cypress, Performance & Security Testing.</p>
-            <p><strong>UI/UX Design:</strong> Design intuitive interfaces that drive business results, not just visual appeal, with User Research, Prototyping, WCAG Accessibility.</p>
-            <p><strong>Enterprise Solutions:</strong> Custom ERP/CRM, Supply Chain, and process automation software with robust, scalable architectures for mission-critical systems.</p>
-            <h4 className="mb-20">👥 Strategic Advantage: Talent Without the Headache</h4>
-            <p>We tackle the painful challenges of recruitment head-on, giving you immediate access to top-tier technical capacity.</p>
-            <p><strong>Workforce Hiring Under Our Payroll:</strong> Tired of slow recruitment cycles and inconsistent talent quality? We offer a straightforward solution: We provide skilled professionals directly under our payroll. These are screened, trained, and project-ready experts (in development, QA, design, and DevOps) who can integrate with your team instantly.</p>
-            <p>This model allows you to scale immediately based on demand, not HR lead times, avoid administrative overhead and recruitment complexities, and maintain accountability with a partner responsible for performance and consistency.</p>
-            <p>We are Purnavi IT Solutions. We don't chase trends. We build what works.</p>
+            <p>Purnavi IT Solutions Pvt. Ltd. is a dedicated and forward thinking IT staffing, recruitment, and technology services company committed to helping organizations build high-performing teams and achieve sustainable digital growth. With a strong foundation in talent acquisition and a steadily expanding portfolio in custom technology development, we serve as a strategic partner to businesses seeking reliable, skilled, and future ready IT capabilities.</p>
+            <p>Our primary focus is to empower organizations by connecting them with exceptional IT professionals who bring technical expertise, industry experience, and the ability to deliver real business impact. Over the years, we have developed a robust hiring ecosystem backed by proven recruitment methodologies, a wide talent network, domain specific hiring specialists, and a process driven engagement model that ensures companies receive the right talent at the right time.</p>
+            <p>In addition to staffing and recruitment, Purnavi IT Solutions has strengthened its service offerings to include selective end-to-end technology development projects. For clients who require complete ownership from planning and architecture to development, deployment, and ongoing support. We provide a dedicated project execution team capable of handling assignments of varying scale and complexity. This dual capability staffing plus development enables us to support clients with flexible engagement models based on their business needs.</p>
+
+            <h4 className="mb-20">Our Core Areas of Expertise</h4>
+
+            <div className="mb-30">
+                <h5 className="mb-10">1. Permanent IT Staffing</h5>
+                <p>We help organizations build strong inhouse teams by identifying, evaluating, and onboarding fulltime professionals who fit both the technical requirements and company culture. Our structured hiring framework ensures:</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Deep screening for technical and softskill competencies</li>
+                    <li>Role-based shortlisting to reduce client workload</li>
+                    <li>Faster hiring cycles powered by our extensive talent network</li>
+                    <li>High retention through quality driven candidate selection</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">2. Contract & Contract to Hire Staffing</h5>
+                <p>To meet dynamic project needs, we offer flexible staffing solutions that allow businesses to scale their workforce without longterm commitments. With contract and contract to hire models, clients benefit from:</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Rapid deployment of skilled IT professionals</li>
+                    <li>Cost-effective workforce scalability</li>
+                    <li>Trial periods before fulltime absorption</li>
+                    <li>Reduced hiring risks and faster project delivery</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">3. Workforce & HR Management</h5>
+                <p>Beyond recruitment, we provide comprehensive workforce management services covering payroll, compliance, and HR administration. Our solutions ensure that clients remain fully compliant while reducing operational burden. This includes:</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Complete payroll processing</li>
+                    <li>PF, ESI, PT, and statutory compliance</li>
+                    <li>Attendance & leave management</li>
+                    <li>End-to-end onboarding and exit formalities</li>
+                    <li>HR documentation, reporting, and audit support</li>
+                </ul>
+            </div>
+
+            <div className="mb-30">
+                <h5 className="mb-10">4. Custom IT Development Services</h5>
+                <p>For organizations that prefer to outsource entire projects rather than hire and manage teams inhouse, Purnavi IT Solutions delivers complete development services. We engage with clients to understand their vision, convert ideas into technical roadmaps, and execute projects with a focus on quality, transparency, and timely delivery. Our capabilities include:</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    <li>Web and mobile application development</li>
+                    <li>Custom enterprise software solutions</li>
+                    <li>UI/UX design and implementation</li>
+                    <li>QA & testing services</li>
+                    <li>Maintenance, enhancements, and long-term product support</li>
+                </ul>
+                <p className="mt-10">Our project execution approach is rooted in collaboration, clear communication, and accountability ensuring that clients receive solutions aligned with their goals, timelines, and business standards.</p>
+            </div>
+
+            <h4 className="mb-20">Our Commitment</h4>
+            <p>Whether your requirement is to hire skilled IT professionals or outsource an end-to-end technology project, Purnavi IT Solutions Pvt. Ltd. delivers excellence through:</p>
+            <ul className="mb-20" style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
+                <li>Quality driven recruitment</li>
+                <li>Transparent processes and timelines</li>
+                <li>Strong domain expertise</li>
+                <li>A reliable and accountable delivery model</li>
+                <li>Talent and technology solutions tailored to your business needs</li>
+            </ul>
+            <p>We take pride in partnering with organizations across industries to support their transformation journey with the right people, the right technology, and the right solutions.</p>
         </>,
         detail_features: [
-            <>Execution-First Mindset</>,
+            <>Execution First Mindset</>,
             <>Full-Stack Responsibility</>,
             <>Agile & Iterative Process</>,
             <>Modern Development Frameworks</>,
@@ -239,75 +567,246 @@ const service_data = [
     {
         id: 11,
         alphabet: "W",
-        title: "Why Choose Us?",
+        title: "What We Do",
         img: service_img_2,
         description: <>Offering a fully integrated, modern, and accountable approach.</>,
-        link: "/why-choose-us",
-        detail_title: "Why Choose Purnavi IT Solutions?",
+        link: "/service-details/11",
+        detail_title: "What We Do",
         detail_description: <>
-            <p>We're not just a vendor; we're your execution-first technology partner. We eliminate the typical bottlenecks of software development—from slow talent acquisition to technical debt—by offering a fully integrated, modern, and accountable approach.</p>
-            <h4 className="mb-20">1. Speed, Quality, and Accountability</h4>
-            <p>We guarantee a reliable outcome by combining modern technology with rigorous processes.</p>
-            <p><strong>Execution-First Delivery:</strong> We operate with a direct, "turn-it-into-a-working-solution" mindset. We take full responsibility for the entire project lifecycle, ensuring the final product works, performs, and aligns with your business goals—without the unnecessary delays or corporate theatrics.</p>
-            <p><strong>Modern Architecture (Built to Scale):</strong> We adopt a "Cloud First" approach and build with future-proof technologies like React, Flutter, AWS, and Kubernetes. Our solutions are inherently scalable, secure, and cost-efficient from day one.</p>
-            <p><strong>DevOps & CI/CD Integration:</strong> Quality and speed are non-negotiable. We implement CI/CD Pipelines and Infrastructure as Code (IaC) (using Terraform/CloudFormation) to automate workflows and ensure faster, more reliable deployments and continuous improvement.</p>
-            <p><strong>Guaranteed Quality Assurance:</strong> We integrate rigorous testing—from functional and Performance & Load Testing to Security & Penetration Testing—into the CI/CD process. Our use of tools like Selenium and Cypress ensures your product is flawless and ready for high traffic.</p>
-            <h4 className="mb-20">2. Your Talent Problem Solved</h4>
-            <p>The biggest challenge in tech is finding great people. We solve that by simplifying talent acquisition with our unique staffing model.</p>
-            <p><strong>Ready-to-Work Professionals:</strong> We provide skilled developers, QA engineers, designers, and cloud experts directly under our payroll.</p>
-            <p><strong>Zero Recruitment Overhead:</strong> Say goodbye to slow recruitment cycles and inconsistent talent. You gain access to a reliable, pre-vetted pool of professionals who can join your team and adapt to your process immediately.</p>
-            <p><strong>Flexibility and Scale:</strong> Our model gives you the freedom to scale your technical teams based on actual demand, maintaining accountability and consistent quality without administrative drag.</p>
-            <h4 className="mb-20">3. Comprehensive, End-to-End Expertise</h4>
-            <p>We don't do partial solutions. We cover the entire digital stack, allowing us to manage your project holistically.</p>
-            <p><strong>Full Spectrum of Services:</strong> From creating engaging UI/UX Designs (including WCAG Accessibility Compliance) and Custom Web/Mobile Apps to developing complex Custom ERP & CRM Systems and Legacy Application Modernization.</p>
-            <p><strong>Product Engineering Partner:</strong> We treat your idea like our own product, handling the full Software Product Engineering lifecycle—from defining the Product Roadmap and MVP Development to ongoing maintenance and support.</p>
+            <p className="mb-40">We provide comprehensive IT staffing and development services that define our excellence and commitment to your business growth:</p>
+
+            {/* Service 1 */}
+            <h4 className="mb-20">1. Permanent IT Staffing & Recruitment</h4>
+            <div className="mb-40">
+                <p>End-to-end recruitment for permanent IT positions across all technology domains. We handle the complete permanent hiring process—from sourcing and screening to final placement and onboarding.</p>
+                <div className="mb-20">
+                    <p className="mb-10"><strong>What We Deliver:</strong></p>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Comprehensive talent sourcing from multiple channels</li>
+                        <li>Multi-stage screening (technical, behavioral, cultural fit)</li>
+                        <li>Interview coordination and logistics management</li>
+                        <li>Offer management & onboarding support</li>
+                    </ul>
+                </div>
+
+                <div className="tp-service-details-cta">
+                    <Link href="/service-details/1" className="tp-btn">
+                        Learn More About Permanent Staffing <i className="fa-regular fa-arrow-right-long ml-10"></i>
+                    </Link>
+                </div>
+            </div>
+
+            {/* Service 2 */}
+            <h4 className="mb-20">2. Contract Staffing Solutions</h4>
+            <div className="mb-40">
+                <p>Deploy skilled IT professionals immediately without permanent hiring overhead. Our contract staffing model provides skilled IT professionals on our payroll while working on your projects.</p>
+
+                <div className="mb-20">
+                    <p className="mb-10"><strong>Engagement Models:</strong></p>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Short-Term Contract Staffing (3-6 months)</li>
+                        <li>Long-Term Contract Staffing (6+ months)</li>
+                        <li>Contract-to-Hire with smooth transition</li>
+                    </ul>
+                </div>
+
+                <div className="tp-service-details-cta">
+                    <Link href="/service-details/2" className="tp-btn">
+                        Learn More About Contract Staffing <i className="fa-regular fa-arrow-right-long ml-10"></i>
+                    </Link>
+                </div>
+            </div>
+
+            {/* Service 3 */}
+            <h4 className="mb-20">3. HR, Payroll & Compliance Management</h4>
+            <div className="mb-40">
+                <p>Complete workforce administration for your IT teams. Focus on your core business while we handle the entire HR-payroll-compliance function. We ensure 100% statutory compliance and eliminate administrative burden.</p>
+
+                <div className="mb-20">
+                    <p><strong>Services Included:</strong></p>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Payroll Processing: Salary calculation, disbursement, Form 16, F&F</li>
+                        <li>Statutory Compliance: PF, ESI, PT, Labour law audits</li>
+                        <li>HR Administration: Onboarding, leave management, exit documentation</li>
+                        <li>Compliance Reporting: Monthly reports, audit documentation</li>
+                    </ul>
+                </div>
+
+                <div className="tp-service-details-cta">
+                    <Link href="/service-details/3" className="tp-btn">
+                        Learn More About HR Services <i className="fa-regular fa-arrow-right-long ml-10"></i>
+                    </Link>
+                </div>
+            </div>
+
+            {/* Service 4 */}
+            <h4 className="mb-20">4. Project-Based Development Services</h4>
+            <div className="mb-40">
+                <p>End-to-end software development using our skilled talent network. We undertake complete project outsourcing—from requirements gathering to deployment and support.</p>
+
+                <div className="mb-20">
+                    <p><strong>What We Build:</strong></p>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Web Applications (React, Next.js, Node.js)</li>
+                        <li>Mobile Applications (iOS, Android, React Native, Flutter)</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Cloud Solutions (AWS, Azure, GCP)</li>
+                    </ul>
+                </div>
+
+                <div className="tp-service-details-cta">
+                    <Link href="/service-details/4" className="tp-btn">
+                        Learn More About Development Services <i className="fa-regular fa-arrow-right-long ml-10"></i>
+                    </Link>
+                </div>
+            </div>
         </>,
         detail_features: [
-            <>Execution-First Delivery</>,
-            <>Modern Architecture (Cloud First)</>,
-            <>DevOps & CI/CD Integration</>,
-            <>Guaranteed Quality Assurance</>,
-            <>Ready-to-Work Professionals</>,
-            <>Zero Recruitment Overhead</>,
-            <>Comprehensive End-to-End Expertise</>
+            <>Permanent IT Staffing</>,
+            <>Contract Staffing Solutions</>,
+            <>HR, Payroll & Compliance</>,
+            <>Project-Based Development</>,
+            <>Vetted Talent Network</>,
+            <>Full Project Ownership</>
         ]
     },
     {
         id: 12,
         alphabet: "W",
-        title: "What We Do",
+        title: "Why Choose Us",
         img: service_img_3,
         description: <>Delivering comprehensive IT solutions from development to deployment.</>,
-        link: "/what-we-do",
-        detail_title: "What We Do - Our Core Services",
+        link: "/service-details/12",
+        detail_title: "Why Choose Purnavi IT Solutions",
         detail_description: <>
-            <p>At Purnavi IT Solutions, we deliver end-to-end technology solutions that transform ideas into scalable, high-performance digital products. Our approach is straightforward: we take ownership of the entire development lifecycle, ensuring that every project is executed with precision, efficiency, and a commitment to measurable results.</p>
-            <h4 className="mb-20">💻 Full-Stack Development Services</h4>
-            <p>We build modern web and mobile applications using cutting-edge frameworks like React, Next.js, Node.js, Flutter, and React Native. Whether you need a responsive website, a native mobile app, or a cross-platform solution, our full-stack development team creates robust, scalable applications tailored to your business needs.</p>
-            <p><strong>Web Development:</strong> Custom web applications, Progressive Web Apps (PWAs), and e-commerce platforms designed for performance and user engagement.</p>
-            <p><strong>Mobile Development:</strong> Native iOS and Android apps, as well as cross-platform solutions that deliver seamless experiences across all devices.</p>
-            <h4 className="mb-20">☁️ Cloud & DevOps Excellence</h4>
-            <p>We accelerate your software delivery through modern cloud infrastructure and DevOps practices. Our team implements CI/CD pipelines, Infrastructure as Code (IaC) using Terraform and CloudFormation, and containerization with Docker and Kubernetes. We work with major cloud platforms including AWS, Azure, and Google Cloud to ensure your applications are secure, scalable, and cost-efficient.</p>
-            <p><strong>Cloud Migration:</strong> Seamless transition to cloud environments with minimal downtime and optimized performance.</p>
-            <p><strong>DevOps Implementation:</strong> Automated workflows, continuous integration, and deployment pipelines that reduce time-to-market.</p>
-            <h4 className="mb-20">🧪 Quality Assurance & Testing</h4>
-            <p>We ensure the highest quality standards through comprehensive testing services. Our QA team employs both manual and automated testing methodologies, including functional testing, performance testing, security testing, and penetration testing. Using industry-standard tools like Selenium and Cypress, we integrate testing into the CI/CD pipeline for continuous quality assurance.</p>
-            <p><strong>Test Automation:</strong> Reduce testing time and increase coverage with robust automation frameworks.</p>
-            <p><strong>Performance Testing:</strong> Ensure your applications can handle high traffic loads and deliver smooth user experiences.</p>
-            <h4 className="mb-20">🎨 UI/UX Design & Modernization</h4>
-            <p>We create intuitive, visually stunning interfaces that enhance user satisfaction and drive business results. Our design process includes user research, wireframing, prototyping, and visual design, ensuring that every interface is user-centric and accessible. We also specialize in legacy application modernization, transforming outdated systems into modern, responsive experiences.</p>
-            <p><strong>User Research:</strong> Deep dive into user needs and behaviors to inform design decisions.</p>
-            <p><strong>Accessibility:</strong> WCAG-compliant designs that ensure usability for all users.</p>
-            <h4 className="mb-20">🏢 Enterprise & Product Engineering</h4>
-            <p>We develop custom enterprise solutions including ERP and CRM systems, business process automation tools, and data analytics platforms. Our product engineering services cover the entire product lifecycle, from concept and MVP development to full-scale deployment and ongoing maintenance. We handle complex integrations, legacy system modernization, and scalable architecture design for mission-critical applications.</p>
-            <p><strong>Custom Solutions:</strong> Tailored software that addresses your unique business challenges.</p>
-            <p><strong>Product Development:</strong> From idea to market-ready product, we manage every stage with agile methodologies.</p>
-            <h4 className="mb-20">🤝 Strategic Delivery Models</h4>
-            <p>Beyond traditional development services, we offer flexible engagement models that address your specific needs:</p>
-            <p><strong>End-to-End IT Project Delivery:</strong> Complete ownership of projects from requirement gathering to deployment, with transparent communication and measurable results.</p>
-            <p><strong>Workforce Hiring Under Our Payroll:</strong> Access skilled, pre-vetted professionals (developers, QA engineers, designers, DevOps specialists) directly under our payroll for immediate team scaling.</p>
-            <p><strong>Client-Centric Project Outsourcing:</strong> Dedicated teams that integrate seamlessly with your operations, providing the flexibility of outsourcing with the reliability of an in-house team.</p>
-            <p>At Purnavi IT Solutions, we don't just build software—we build partnerships. We combine technical excellence with business acumen to deliver solutions that work, perform, and drive long-term value for your organization.</p>
+            <h4 className="mb-20">Our Core Strength: IT Staffing Excellence</h4>
+            <p>At the heart of our organization lies a deep and proven expertise in IT staffing. This is not just a service we provide, but a capability we have refined through years of industry experience, extensive market understanding, and a strong commitment to helping companies build exceptional technology teams.</p>
+            <p>One of our greatest advantages is our access to a large and consistently updated pool of pre vetted talent. Every professional we present to our clients has been thoroughly evaluated through multi level screening, technical assessments, project portfolio review, and role based interviews. This ensures that businesses receive candidates who are not only technically capable, but also aligned with the expectations of modern IT environments.</p>
+            <p>Our ability to deploy skilled professionals quickly is another key strength. Whether the requirement is for permanent hiring, contract staffing, or urgent project based support, our teams work with precision to deliver suitable talent within tight timelines. This fast turnaround is especially valuable for organizations operating in competitive markets where project delays can impact business outcomes.</p>
+
+            <h5 className="mb-10">Comprehensive Workforce Management</h5>
+            <p>In addition to staffing, we take complete responsibility for all human resource processes associated with contract employees. Companies do not need to invest time or effort in payroll processing, compliance management, provident fund, employee state insurance, professional tax, or any statutory requirements. We manage all of this seamlessly, allowing clients to focus entirely on running their business while we handle every aspect of workforce administration.</p>
+
+            <h5 className="mb-10">Flexible Hiring Models</h5>
+            <p>We also offer flexible hiring models that accommodate the evolving needs of modern organizations. Whether a company prefers full time employees, short term contract professionals, contract to hire options, or an entire team staffed for a specific project, we provide staffing structures that allow effortless scalability without any long term commitments.</p>
+
+            <h5 className="mb-10">Quality & Cost Efficiency</h5>
+            <p>Quality is central to our approach. For permanent staffing, we provide a ninety day replacement assurance to protect our clients from hiring mismatches. For contract staffing, any performance concerns are addressed immediately with quick replacement options. This ensures that productivity remains uninterrupted and organizational goals continue to move forward without compromise.</p>
+            <p>Our solutions also help companies save significantly on recruitment costs while still gaining access to highly skilled professionals. By combining our recruitment expertise with operational efficiency, we deliver a staffing experience that is cost conscious, dependable, and consistently aligned with client expectations.</p>
+
+            <h4 className="mb-20 mt-30">Our Growing Capability: Development Services</h4>
+            <p>In addition to staffing, our organization is steadily expanding its presence in the development services space. This includes handling complete end to end project execution for clients who prefer a fully managed development model.</p>
+            <p>We take ownership from the very beginning, starting with idea evaluation and requirement understanding, and continue through architecture planning, design, development, deployment, and post launch support. Dedicated project managers oversee every stage, ensuring smooth communication and complete clarity throughout the engagement.</p>
+            <p>All development work is carried out by skilled professionals from our verified talent network. These are experts with proven experience across diverse industries, modern technologies, and real world project scenarios. Clients receive the advantage of working with a team that is both technically strong and well aligned with current market standards.</p>
+            <p>We consistently work with modern and trending technology stacks that support performance, scalability, and long term reliability. Our approach follows agile delivery principles, with sprint based development, transparent progress reporting, and regular demonstrations to help clients stay updated at every stage.</p>
+            <p>Quality is built into our process. Quality assurance and testing are integrated throughout the development lifecycle rather than being treated as a final step. This ensures fewer errors, smoother releases, and a more stable final product that is ready for real world use.</p>
+
+            <h4 className="mb-20 mt-30">Technology Skills We Staff For</h4>
+            <p>The professionals we provide are experienced across a wide range of modern technologies. These skills also represent the core stacks we utilize in our development projects.</p>
+
+            <div className="row mb-30">
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Web Development</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>React JS</li>
+                        <li>Angular</li>
+                        <li>Vue JS</li>
+                        <li>Next JS</li>
+                        <li>Node JS</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Dot Net Core</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Mobile Application Development</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>iOS using Swift</li>
+                        <li>Android using Kotlin and Java</li>
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>Xamarin</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Cloud and DevOps</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Amazon Web Services</li>
+                        <li>Microsoft Azure</li>
+                        <li>Google Cloud Platform</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Jenkins</li>
+                        <li>Terraform</li>
+                        <li>CI/CD pipelines</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">Data Engineering and Analytics</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Structured Query Language (SQL)</li>
+                        <li>NoSQL</li>
+                        <li>Big Data frameworks</li>
+                        <li>ETL pipelines</li>
+                        <li>Data warehousing</li>
+                        <li>Power BI</li>
+                        <li>Tableau</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">QA and Testing</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Manual testing</li>
+                        <li>Selenium automation</li>
+                        <li>Appium</li>
+                        <li>Cypress</li>
+                        <li>API testing</li>
+                        <li>Performance testing and optimization</li>
+                    </ul>
+                </div>
+                <div className="col-md-6 mb-20">
+                    <h5 className="mb-10">UI and UX Design</h5>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>Sketch</li>
+                        <li>User research</li>
+                        <li>Prototyping</li>
+                        <li>Wireframing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 className="mb-20 mt-30">Non IT Staffing Capabilities</h4>
+            <p>Along with strong IT staffing capabilities, we also support businesses with a wide range of non IT hiring requirements across multiple industries. Our non IT staffing solutions cover roles that are essential for smooth business operations and organizational growth.</p>
+            <p>We cater to various sectors such as finance, administration, human resources, operations, sales, marketing, logistics, customer service, and manufacturing. Our team sources candidates through domain specific recruiters to ensure that every professional is well suited for the responsibilities of the role.</p>
+
+            <h5 className="mb-10">Common Non-IT Positions We Staff:</h5>
+            <div className="row">
+                <div className="col-md-6">
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Administrative executives</li>
+                        <li>Office managers</li>
+                        <li>Customer support executives</li>
+                        <li>Sales and marketing professionals</li>
+                        <li>Business development executives</li>
+                        <li>Human resource executives</li>
+                    </ul>
+                </div>
+                <div className="col-md-6">
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                        <li>Finance and accounting roles</li>
+                        <li>Back office staff</li>
+                        <li>Operations coordinators</li>
+                        <li>Store and warehouse employees</li>
+                        <li>Procurement and supply chain staff</li>
+                        <li>Supervisors and junior management roles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p className="mt-20">Our non IT staffing services follow the same quality driven approach as our IT hiring solutions, ensuring reliable, qualified, and committed professionals who contribute effectively to organizational success.</p>
         </>,
         detail_features: [
             <>Full-Stack Web & Mobile Development</>,

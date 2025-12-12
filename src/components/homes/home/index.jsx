@@ -11,6 +11,7 @@ import SliderArea from "./slider-area";
 import FaqArea from "./faq-area";
 import BlogArea from "./blog-area";
 import Footer from "@/src/layout/footers/footer";
+import CtaBanner from "./cta-banner";
 
 const HomeOne = () => {
   return (
@@ -27,6 +28,7 @@ const HomeOne = () => {
         {/* <TestimonialArea /> */}
         <SliderArea />
         <FaqArea />
+        <CtaBanner />
         <BlogArea />
         <Footer />
       </main>

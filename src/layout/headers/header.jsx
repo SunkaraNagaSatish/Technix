@@ -54,7 +54,7 @@ const HeaderOne = () => {
                                     <i className="fa-solid fa-envelope"></i></span>asish@social.auctus.com
                                  </a>
                               </li>
-                              <li>
+                              {/* <li>
                                  <div className="tp-header-lang-wrapper d-flex align-items-center">
                                     <div className="tp-header-lang-img">
                                        <Image src={LangLogo} alt="theme-pure" />
@@ -71,7 +71,7 @@ const HeaderOne = () => {
                                        </ul>
                                     </div>
                                  </div>
-                              </li>
+                              </li> */}
                            </ul>
                         </div>
                      </div>

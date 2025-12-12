@@ -2,15 +2,20 @@ import Link from "next/link";
 
 
 const social_links = [
-  {
-    link: "https://www.instagram.com/purnaviitsolutions?igsh=MW1zbjJqZjc5dTM3Yw==",
-    target: "_blank",
-    icon: "fa-brands fa-instagram",
-  },
-  {
+   {
     link: "https://www.linkedin.com/company/purnavi-it-solutions",
     target: "_blank",
     icon: "fa-brands fa-linkedin-in",
+  },
+  {
+    link: "http://twitter.com",
+    target: "_blank",
+    icon: "fab fa-twitter",
+  },
+     {
+    link: "http://facebook.com",
+    target: "_blank",
+    icon: "fab fa-facebook-f",
   },
 ];
 
@@ -40,7 +45,7 @@ export default SocialLinks;
 
 
 const copy_right_text = {
-  copy_right: <>© Copyright <span>©{new Date().getFullYear()}</span> Purnavi. All Rights Reserved </>,
+  copy_right: <>© Copyright <span>©{new Date().getFullYear()}</span> Purnavi IT Solutions Pvt. Ltd. All Rights Reserved </>,
 }
 const { copy_right } = copy_right_text
 
