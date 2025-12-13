@@ -2,18 +2,14 @@
 
 const menu_data = [
   {
-    
+
     mega_menu: false,
     has_dropdown: false,
     // home_icon: <HomeIcon />,
     title: "Home",
     link: "/",
     active: "",
-    sub_menus: [
-      // { link: "/", title: "Home 1" },
-      // { link: "/home-2", title: "Home 2" },
-      // { link: "/home-3", title: "Home 3" }, 
-    ],
+    sub_menus: [],
   },
   {
     id: 2,

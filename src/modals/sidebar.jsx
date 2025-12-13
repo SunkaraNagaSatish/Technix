@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ImagePopup from './ImagePopup';
 import React, { useState } from 'react';
 
-import Logo from "@assets/img/logo/logo.svg";
+import Logo from "@assets/img/logo/logos.png";
 import sidebar_img_1 from "@assets/img/portfolio/img-1.jpg";
 import sidebar_img_2 from "@assets/img/portfolio/img-2.jpg";
 import sidebar_img_3 from "@assets/img/portfolio/img-3.jpg";
@@ -21,7 +21,7 @@ const images = [
 ]
 
 
-const Sidebar = ({ sidebarOpen, setSidebarOpen, home_three }) => {
+const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     // photoIndex
     const [photoIndex, setPhotoIndex] = useState(null);
     // image open state
@@ -36,7 +36,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, home_three }) => {
 
     return (
         <>
-            <div className={`offcanvas__area ${sidebarOpen ? "offcanvas-opened" : ""} ${home_three ? "home-3-pos" : ""}`}>
+            <div className={`offcanvas__area ${sidebarOpen ? "offcanvas-opened" : ""}`}>
                 <div className="offcanvas__wrapper">
                     <div className="offcanvas__close">
                         <button className="offcanvas__close-btn offcanvas-close-btn" onClick={() => setSidebarOpen(false)}>
