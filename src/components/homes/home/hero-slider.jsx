@@ -37,8 +37,8 @@ const slider_data = [
     bg_img: "/assets/img/hero/hero-2.jpg",
     sub_title_1: "Best",
     sub_title_2: "IT Solutions",
-    hero_title_1: "Your Trusted IT Staffing Partner",
-    hero_title_2: "&",
+    hero_title_1: "Your Trusted Staffing Partner",
+    hero_title_2: " &",
     hero_support: "Technology Solutions Provider",
   },
 ];
@@ -92,7 +92,7 @@ const HeroSlider = () => {
                                   <AngleArrow />
                                 </span>
                                 <h3 className="tp-hero-title">
-                                  {item.hero_title_1} <LineArrow />
+                                  {item.hero_title_1} 
                                   <span className="title-color">
                                     {item.hero_title_2}
                                   </span>{" "}
@@ -147,8 +147,8 @@ const HeroSlider = () => {
               <Image src={service_shape} alt="theme-pure" />
             </div>
             <p>
-               Connecting businesses with skilled <span>IT professionals</span> through permanent staffing, 
-              contract hiring, and workforce outsourcing—while also delivering select project-based 
+               Connecting businesses with skilled <span>IT & Non-IT professionals</span> through permanent staffing, 
+              contract hiring, and workforce outsourcing while also delivering select project based 
               development solutions.
             </p>
             <div className="tp-hero-service-quote">

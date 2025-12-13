@@ -19,20 +19,20 @@ const service_data = [
         detail_title: "Permanent IT Staffing & Recruitment",
         detail_description: <>
             <p className="mb-20"><strong>End-to-end recruitment for permanent IT positions across all technology domains</strong></p>
-            <p className="mb-30">We handle the complete permanent hiring process—from sourcing and screening to final placement and onboarding. Our rigorous multi-stage evaluation ensures you get candidates who are not just technically qualified, but also the right cultural fit for your organization.</p>
+            <p className="mb-30">We handle the complete permanent hiring process from sourcing and screening to final placement and onboarding. Our rigorous multi stage evaluation ensures you get candidates who are not just technically qualified, but also the right cultural fit for your organization.</p>
 
             <h4 className="mb-20">What We Deliver</h4>
 
             <div className="mb-30">
                 <h5 className="mb-10">Comprehensive Talent Sourcing</h5>
-                <p>We source candidates from multiple channels including job portals, our internal database, referrals, and social networks—giving you access to both active job seekers and passive candidates.</p>
+                <p>We source candidates from multiple channels including job portals, our internal database, referrals, and social networks giving you access to both active job seekers and passive candidates.</p>
             </div>
 
             <div className="mb-30">
                 <h5 className="mb-10">Multi-Stage Screening</h5>
                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                     <li>Technical assessment through coding challenges and scenario-based questions</li>
-                    <li>Behavioral evaluation to assess problem-solving and communication skills</li>
+                    <li>Behavioral evaluation to assess problem solving and communication skills</li>
                     <li>Cultural fit analysis to ensure alignment with your team dynamics</li>
                     <li>Background verification and reference checks</li>
                 </ul>
@@ -40,7 +40,7 @@ const service_data = [
 
             <div className="mb-30">
                 <h5 className="mb-10">Interview Coordination</h5>
-                <p>We manage the entire interview process—scheduling, logistics, feedback collection, and follow-ups—saving your team valuable time.</p>
+                <p>We manage the entire interview process scheduling, logistics, feedback collection, and follow ups saving your team valuable time.</p>
             </div>
 
             <div className="mb-30">
@@ -151,7 +151,7 @@ const service_data = [
         detail_title: "Contract Staffing Solutions",
         detail_description: <>
             <p className="mb-20"><strong>Deploy skilled IT professionals immediately without permanent hiring overhead</strong></p>
-            <p className="mb-30">Get the talent you need without the administrative burden. Our contract staffing model provides you with skilled IT professionals who remain on our payroll while working on your projects—either at your location or remotely.</p>
+            <p className="mb-30">Get the talent you need without the administrative burden. Our contract staffing model provides you with skilled IT professionals who remain on our payroll while working on your projects either at your location or remotely.</p>
 
             <h4 className="mb-20">Engagement Models</h4>
 
@@ -172,13 +172,13 @@ const service_data = [
                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                     <li>Ongoing development and maintenance work</li>
                     <li>Building extended development teams</li>
-                    <li>Long-term project commitments with flexibility</li>
+                    <li>Long term project commitments with flexibility</li>
                     <li>Scaling teams without permanent hiring</li>
                 </ul>
             </div>
 
             <div className="mb-30">
-                <h5 className="mb-10">Contract-to-Hire</h5>
+                <h5 className="mb-10">Contract to Hire</h5>
                 <p className="mb-10">Best for:</p>
                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                     <li>Evaluating candidates before permanent commitment</li>
@@ -260,11 +260,11 @@ const service_data = [
 
             <h4 className="mb-20 mt-40">Key Benefits</h4>
             <ul className="mb-30" style={{ listStyleType: 'none', paddingLeft: '0' }}>
-                <li className="mb-10">✅ Deployment within 3-7 days from existing pool</li>
-                <li className="mb-10">✅ Zero long-term commitment—scale up or down freely</li>
-                <li className="mb-10">✅ Complete HR and compliance management</li>
-                <li className="mb-10">✅ Immediate replacement guarantee</li>
-                <li className="mb-10">✅ No infrastructure or administrative setup needed</li>
+                <li className="mb-10">Deployment within 3-7 days from existing pool</li>
+                <li className="mb-10">Zero long-term commitment scale up or down freely</li>
+                <li className="mb-10">Complete HR and compliance management</li>
+                <li className="mb-10">Immediate replacement guarantee</li>
+                <li className="mb-10">No infrastructure or administrative setup needed</li>
             </ul>
         </>,
         cta: "Deploy Talent Now",
@@ -286,7 +286,7 @@ const service_data = [
         detail_title: "HR, Payroll & Compliance Management",
         detail_description: <>
             <p className="mb-20"><strong>Complete workforce administration for your IT teams</strong></p>
-            <p className="mb-30">Focus on your core business while we handle the entire HR-payroll-compliance function for your IT workforce. We ensure 100% statutory compliance and eliminate administrative burden.</p>
+            <p className="mb-30">Focus on your core business while we handle the entire HR-payroll compliance function for your IT workforce. We ensure 100% statutory compliance and eliminate administrative burden.</p>
 
             <h4 className="mb-20">Services Included</h4>
 
@@ -331,7 +331,7 @@ const service_data = [
                 <h5 className="mb-10">Compliance Reporting</h5>
                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                     <li>Monthly compliance reports</li>
-                    <li>Audit-ready documentation</li>
+                    <li>Audit ready documentation</li>
                     <li>Government filing and submission support</li>
                     <li>Compliance calendar and deadline tracking</li>
                 </ul>

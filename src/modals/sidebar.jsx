@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { useRouter } from 'next/router';
 
-import Logo from "@assets/img/logo/logos.png";
+import Logo from "@assets/img/logo/sidebar.png";
 import menu_data from '../layout/headers/menu-data';
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {

@@ -258,6 +258,7 @@
 
     &-bottom {
         z-index: 5;
+        background: var(--tp-common-white);
 
         &-space {
             padding-right: 118px;
@@ -929,10 +930,10 @@
    ENHANCED NAVIGATION BAR STYLES
    ======================================== */
 
-/* Navigation Bar with Footer-Matching Dark Navy Background */
+/* Navigation Bar with White Background */
 .tp-header-bottom {
-    background: #020C1B !important;
-    box-shadow: 0 4px 20px rgba(2, 12, 27, 0.4);
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ========================================
@@ -972,9 +973,9 @@
     padding-left: 15px !important;
 }
 
-/* Make Navigation Links White */
+/* Make Navigation Links Black */
 .tp-header-bottom .tp-main-menu ul>li>a {
-    color: #ffffff !important;
+    color: #000000 !important;
     transition: all 0.3s ease;
 }
 
@@ -984,7 +985,7 @@
 }
 
 .tp-header-bottom .tp-main-menu ul>li>a i {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .tp-header-bottom .tp-main-menu ul>li:hover>a {
@@ -992,21 +993,21 @@
 }
 
 .tp-header-bottom .tp-main-menu ul>li.has-dropdown>a::after {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .tp-header-bottom .tp-main-menu ul>li:hover.has-dropdown>a::after {
     color: var(--tp-theme-secondary) !important;
 }
 
-/* Menu Icon White */
+/* Menu Icon Black */
 .tp-header-bottom .tp-main-menu-area .header-icon svg path {
-    stroke: #ffffff;
+    stroke: #000000;
 }
 
-/* Search Button White */
+/* Search Button Black */
 .tp-header-bottom .tp-header-search button {
-    color: #ffffff !important;
+    color: #000000 !important;
     transition: all 0.3s ease;
 }
 

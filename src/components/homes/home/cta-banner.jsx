@@ -37,7 +37,7 @@ const CtaBanner = () => {
                                         Full-Stack IT Solutions & <span>Workforce Hiring</span>
                                     </h2>
                                     <p className="tp-cta-banner-desc">
-                                        Need IT talent or project execution support? We've got you covered.
+                                        Need IT & Non-IT talent or project execution support? We've got you covered.
                                     </p>
                                     <div className="tp-cta-banner-contact">
                                         <div className="tp-cta-banner-contact-item">
