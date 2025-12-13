@@ -1,38 +1,18 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import ImagePopup from './ImagePopup';
-import React, { useState } from 'react';
+import React from 'react';
+import { useRouter } from 'next/router';
 
 import Logo from "@assets/img/logo/logos.png";
-import sidebar_img_1 from "@assets/img/portfolio/img-1.jpg";
-import sidebar_img_2 from "@assets/img/portfolio/img-2.jpg";
-import sidebar_img_3 from "@assets/img/portfolio/img-3.jpg";
-import sidebar_img_4 from "@assets/img/portfolio/img-4.jpg";
-import sidebar_img_5 from "@assets/img/portfolio/img-5.jpg";
-import sidebar_img_6 from "@assets/img/portfolio/img-6.jpg";
-import MobileMenus from '../layout/headers/mobile-menus';
-const images = [
-    { id: 1, img: sidebar_img_1 },
-    { id: 2, img: sidebar_img_2 },
-    { id: 3, img: sidebar_img_3 },
-    { id: 4, img: sidebar_img_4 },
-    { id: 5, img: sidebar_img_5 },
-    { id: 6, img: sidebar_img_6 },
-]
-
+import menu_data from '../layout/headers/menu-data';
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
-    // photoIndex
-    const [photoIndex, setPhotoIndex] = useState(null);
-    // image open state
-    const [isOpen, setIsOpen] = useState(false);
-    // handleImagePopup
-    const handleImagePopup = (i) => {
-        setPhotoIndex(i);
-        setIsOpen(true);
+    const router = useRouter();
+
+    // Handle menu item click - close sidebar and navigate
+    const handleMenuClick = (link) => {
+        setSidebarOpen(false);
+        router.push(link);
     };
-    //  images
-    const img = images.map((item) => item.img.src);
 
     return (
         <>
@@ -47,30 +27,30 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         </button>
                     </div>
                     <div className="offcanvas__content">
-                        <div className="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
-                            <div className="offcanvas__logo logo">
-                                <Link href="/">
-                                    <Image src={Logo} alt="logo" />
-                                </Link>
+                        <div className="offcanvas__top mb-30 d-flex justify-content-between align-items-center">
+                            <div className="offcanvas__logo logo" onClick={() => handleMenuClick('/')}>
+                                <Image src={Logo} alt="logo" style={{ cursor: 'pointer' }} />
                             </div>
                         </div>
-                        <div className="mobile-menu fix d-lg-none"></div>
-                        <div className="tp-mobile-menu-pos mean-container d-lg-none">
-                            <MobileMenus />
+
+                        {/* Mobile Menu - Direct Implementation for better click handling */}
+                        <div className="mobile-menu-wrapper">
+                            <nav className="mobile-nav">
+                                <ul className="mobile-menu-list">
+                                    {menu_data.map((menu, i) => (
+                                        <li key={i} className="mobile-menu-item">
+                                            <button
+                                                onClick={() => handleMenuClick(menu.link)}
+                                                className={`mobile-menu-link ${router.pathname === menu.link ? 'active' : ''}`}
+                                            >
+                                                {menu.title}
+                                            </button>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </nav>
                         </div>
-                        <div className="offcanvas__popup">
-                            <p>Web designing in a powerful way of just not an only professions. We have tendency to believe the idea that smart looking .</p>
-                            <div className="offcanvas__popup-gallery">
-                                <h4 className="offcanvas__title">Gallery</h4>
-                                {images.map((item, i) =>
-                                    <a key={i} style={{ cursor: "pointer" }}
-                                        onClick={() => handleImagePopup(i)}
-                                        className="popup-image">
-                                        <Image src={item.img} alt="theme-pure" />
-                                    </a>
-                                )}
-                            </div>
-                        </div>
+
                         <div className="offcanvas__contact">
                             <h4 className="offcanvas__title">Contacts</h4>
                             <div className="offcanvas__contact-content d-flex">
@@ -84,7 +64,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                             <div className="offcanvas__contact-content d-flex">
                                 <div className="offcanvas__contact-content-icon">
                                     <i className="fa-solid fa-envelope"></i>
-
                                 </div>
                                 <div className="offcanvas__contact-content-content">
                                     <a href="mailto:asish@social.auctus.com">asish@social.auctus.com</a>
@@ -100,26 +79,17 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                             </div>
                         </div>
                         <div className="offcanvas__social">
-                            <a className="icon facebook" href="#"><i className="fab fa-facebook-f"></i></a>
-                            <a className="icon twitter" href="#"><i className="fab fa-twitter"></i></a>
-                            {/* <a className="icon youtube" href="#"><i className="fab fa-youtube"></i></a> */}
-                            <a className="icon linkedin" href="#"><i className="fab fa-linkedin"></i></a>
+                            <a className="icon linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a className="icon instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className={`body-overlay ${sidebarOpen && "opened"}`} onClick={() => setSidebarOpen(false)}></div>
-
-            {/* image light box start */}
-            {isOpen && (
-                <ImagePopup
-                    images={img}
-                    setIsOpen={setIsOpen}
-                    photoIndex={photoIndex}
-                    setPhotoIndex={setPhotoIndex}
-                />
-            )}
-            {/* image light box end */}
         </>
     );
 };
