@@ -13,186 +13,142 @@ import thumb_1 from "@assets/img/blog/details/blog-1.jpg";
 import thumb_2 from "@assets/img/blog/details/blog-2.jpg";
 import thumb_3 from "@assets/img/blog/details/blog-3.jpg";
 
-import person_1 from "@assets/img/blog/details/comment-1.jpg";
-import person_2 from "@assets/img/blog/details/comment-2.jpg";
-
-import quate from "@assets/img/blog/details/quate.jpg"; 
+import quate from "@assets/img/blog/details/quate.jpg";
 import RightSymbol from '@/src/svg/right-symbol';
 import VideoPopup from '@/src/modals/video-popup';
-import ReplyIcon from '@/src/svg/reply-icon';
 
-const single_post_details  = {
+const single_post_details = {
    thumb: thumb_1,
-   date: "02 Apr 2021",
-   comments: "Comments (03)",
-   upload_time: "3 min Read",
-   title_1: <>The whimsically named Egg Canvas brainchild</>,
-   des_1: <>he whimsically named Egg Canvas is the brainchild of Erica Choi, a design director and photo
-   grapher based in York. Why the name “Egg Canvas Erica was inspired by her Korean childhood
-    nickname, which means egg, while “canvas” medium with wh art is created. “Egg Canvas
-   therefore, is her life—creating beautiful things each day
-   a blank canvas.</>,
-   des_2: <>We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service.</>,
-   des_3: <>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum rhon
-   cus, dolor eget viverra pretium, dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus. Vestibulum non justo fun consectetur, cursus ante, tincidunt sapien. Nulla quis diam sit amet turpis interd enim. Vivamus fauc ex sed nibh egestas elementum. Mauris et bibendum</>,
+   comments: "Insights",
+   upload_time: "6 min Read",
+   title_1: <>Why Contract Staffing is Transforming the IT Industry</>,
+   des_1: <>The IT industry is undergoing a fundamental shift in how companies approach talent acquisition and workforce management. With technology evolving rapidly and project requirements becoming increasingly specialized, traditional hiring methods are no longer sufficient to meet the dynamic needs of modern businesses. Contract staffing has emerged as a strategic solution that offers flexibility, access to specialized skills, and cost efficiency.</>,
+   des_2: <>Organizations across India are recognizing that contract staffing allows them to quickly scale their teams based on project demands. Whether it's a six month development project or an ongoing support requirement, contract professionals bring immediate value without the long term commitments and overhead costs associated with permanent hires.</>,
+   des_3: <>At Purnavi IT Solutions, we understand the nuances of IT staffing and have developed a comprehensive approach to matching the right talent with the right opportunities. Our extensive network of vetted professionals, combined with our deep understanding of technical requirements, enables us to provide staffing solutions that truly make a difference for our clients.</>,
    quate_icon: quate,
-   blockquote: <>Your time is limited, so don’t waste it living someone else’s life.
-   Don’t be trapped by dogma – which is living with the results</>,
-   writer: "Jamil",
-   title_2: <>Let our investment management team</>,
+   blockquote: <>The future of work is flexible. Companies that embrace contract staffing gain a competitive advantage by accessing top talent exactly when they need it, without the constraints of traditional employment models.</>,
+   writer: "Purnavi IT Solutions",
+   title_2: <>Key Benefits of Partnering with an IT Staffing Company</>,
    postbox_list: [
       {
          id: 1,
          active: "",
-         title: "Lorem Ipsum generators on the tend to repeat.",
+         title: "Access to a pre-vetted pool of skilled IT professionals",
          icon: <RightSymbol />
       },
       {
          id: 2,
          active: "active",
-         title: "If you are going to use a passage..",
+         title: "Reduced time to hire and faster project kickoffs",
          icon: <RightSymbol />
       },
       {
          id: 3,
          active: "",
-         title: "series of manual and semi-manual activities.",
+         title: "Complete payroll and compliance management handled for you",
          icon: <RightSymbol />
       },
       {
          id: 4,
          active: "",
-         title: "Lorem Ipsum generators on the tend to repeat.",
+         title: "Flexibility to scale teams up or down based on project needs",
          icon: <RightSymbol />
       },
       {
          id: 5,
          active: "",
-         title: "If you are going to use a passage.",
+         title: "Risk mitigation with replacement guarantees and quality assurance",
          icon: <RightSymbol />
       },
    ],
    thumb_list: thumb_2,
    video_thumb: thumb_3,
-   title_3: <>“Amazing Beach Scenery & Relaxing Ocean Sounds”</>,
-   des_4: <>We have covered many special events such as fireworks, fairs, parades, races, walks, awards
-   ceremonies, fashion shows, sporting events, and even a memorial service.Lorem ipsum dolor
-   sit amet, consectetur adipiscing elit. vestibulum rhoncus, dolor eget viverra pretium, dolor
-   ellus aliquet nunc,</>,
-   tags: ["Business",  "Design", "apps", "data"],
-   comment_reply: [
-      {
-         id: 1,
-         img: person_1,
-         children_cls: "",
-         name: "Eleanor Fant",
-         date: "July 14, 2022",
-         comment: <>There are many variations of passages of Lorem Ipsum available, but the leap into electronic
-         type setting, remaining essentiallyuncha opularisedthe with the release of Letrasetsheets
-         containingth leap electrtypesetting remainingmajority have. There are many variations
-         of passages of Lorem Ipsum</> ,
-         reply_icon: <ReplyIcon />
-         
-      },
-      {
-         id: 1,
-         img: person_2,
-         children_cls: "children",
-         name: "Eleanor Fant",
-         date: "July 14, 2022",
-         comment: <>There are many variations of passages of Lorem Ipsum available, but the
-         majority have. There are many variations of passages</> , 
-         
-      }
-   ]
-
-
+   title_3: <>"Building Your Dream Team with the Right Staffing Partner"</>,
+   des_4: <>Whether you are looking for permanent IT professionals, contract developers, or complete project teams, choosing the right staffing partner is crucial. Look for a partner who understands your industry, has a proven track record, and offers transparent communication throughout the engagement. At Purnavi IT Solutions, we pride ourselves on being more than just a staffing agency. We are your strategic partner in building high performing technology teams.</>,
+   tags: ["IT Staffing", "Recruitment", "Contract Hiring", "Workforce"],
 }
-const {thumb, date, comments, upload_time, title_1, des_1, des_2, des_3, quate_icon, blockquote, writer, title_2, postbox_list, thumb_list, video_thumb, title_3, des_4, tags, comment_reply}  =  single_post_details
+const { thumb, comments, upload_time, title_1, des_1, des_2, des_3, quate_icon, blockquote, writer, title_2, postbox_list, thumb_list, video_thumb, title_3, des_4, tags } = single_post_details
 const BlogDetailsPostbox = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
+   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
-    return (
-        <>
-            <section className="postbox__area pt-120 pb-100">
+   return (
+      <>
+         <section className="postbox__area pt-120 pb-100">
             <div className="container">
                <div className="row">
                   <div className="col-xxl-8 col-xl-8 col-lg-8">
                      <div className="postbox__wrapper">
                         <article className="postbox__item format-image mb-50 transition-3">
                            <div className="postbox__thumb m-img">
-                              <Image src={thumb} alt="theme-pure" />
+                              <Image src={thumb} alt="IT Staffing Solutions" />
                            </div>
                            <div className="postbox__content">
                               <div className="postbox__meta">
-                                 <span><i className="fa-light fa-calendar-days"></i>{date}</span>
-                                 <span><Link href="#"><i className="fal fa-comments"></i>{comments}</Link></span>
+                                 <span><i className="fa-light fa-briefcase"></i>{comments}</span>
                                  <span><Link href="#"><i className="fa-regular fa-clock"></i>{upload_time}</Link></span>
                               </div>
                               <h3 className="postbox__title">{title_1}</h3>
                               <div className="postbox__text">
-                                 <p>{des_1}</p> 
-                                    <p>{des_2}</p>
-                                    <p>{des_3}</p>
+                                 <p>{des_1}</p>
+                                 <p>{des_2}</p>
+                                 <p>{des_3}</p>
                                  <div className="postbox__blockquote p-relative">
                                     <div className="postbox__blockquote-shape">
-                                       <Image src={quate_icon} alt="theme-pure" />
+                                       <Image src={quate_icon} alt="quote" />
                                     </div>
                                     <blockquote>
                                        <p>{blockquote}</p>
                                        <cite>{writer}</cite>
                                     </blockquote>
                                  </div>
-   
+
                                  <div className="postbox__list">
                                     <h3 className="postbox__list-title">{title_2}</h3>
                                     <div className="row">
                                        <div className="col-xl-7 col-lg-12">
                                           <div className="postbox__list-content">
                                              <ul>
-                                                {postbox_list.map((item, i) => 
+                                                {postbox_list.map((item, i) =>
                                                    <li key={i}><span className={item.active}>{item.icon}
                                                    </span>{item.title}
                                                    </li>
-                                                   
-                                                )} 
+
+                                                )}
                                              </ul>
                                           </div>
                                        </div>
                                        <div className="col-xl-5 col-lg-12">
                                           <div className="posbox__list-img">
-                                             <Image src={thumb_list} alt="theme-pure" />
+                                             <Image src={thumb_list} alt="IT Team" />
                                           </div>
                                        </div>
                                     </div>
                                  </div>
-   
+
                                  <div className="postbox__thumb m-img p-relative">
-                                    <Image src={video_thumb} alt="theme-pure" />
+                                    <Image src={video_thumb} alt="Staffing Solutions" />
                                     <div className="tp-video-play play-btn text-center">
-                                       <a className="popup-video" 
-                                       onClick={() => setIsVideoOpen(true)} 
+                                       <a className="popup-video"
+                                          onClick={() => setIsVideoOpen(true)}
                                        ><i className="fa-sharp fa-solid fa-play"></i></a>
                                     </div>
                                     <span className="postbox-details-desc-thumb-caption">{title_3} </span>
                                  </div>
-                                 <p>{des_4}</p> 
+                                 <p>{des_4}</p>
 
                                  <div className="postbox__details-share-wrapper">
                                     <div className="row">
                                        <div className="col-lg-7">
                                           <div className="postbox__details-tag tagcloud">
-                                             <span>Tag:</span>
-                                             {tags.map((tag, i) => <Link href="#" key={i}>{tag}</Link>)} 
+                                             <span>Topics:</span>
+                                             {tags.map((tag, i) => <Link href="#" key={i}>{tag}</Link>)}
                                           </div>
                                        </div>
                                        <div className="col-lg-5">
                                           <div className="postbox__details-share text-lg-end">
-                                             <span>Share:</span> 
-                                             <a href="#"><i className="fa-brands fa-youtube"></i></a>
-                                             <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                             <span>Share:</span>
+                                             <a href="#"><i className="fa-brands fa-linkedin"></i></a>
                                              <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                                             <a href="#"><i className="fab fa-twitter"></i></a>
                                           </div>
                                        </div>
                                     </div>
@@ -201,40 +157,23 @@ const BlogDetailsPostbox = () => {
                               </div>
                            </div>
                         </article>
-                        <div className="postbox__comment mb-50">
-                           <h3 className="postbox__comment-title">(04) Comment</h3>
-                           <ul>
-                              {comment_reply.map((comment_reply, index) =>
-                                 <li key={index} className={comment_reply?.children_cls}>
-                                    <div className="postbox__comment-box p-relative">
-                                       <div className="postbox__comment-info d-flex">
-                                             <div className="postbox__comment-avater mr-20">
-                                                <Image src={comment_reply.img} alt="theme-pure" />
-                                             </div>
-                                             <div className="postbox__comment-name">
-                                                <h5>{comment_reply.name}</h5>
-                                                <span className="post-meta">{comment_reply.date}</span>
-                                             </div>
-                                       </div>
-                                       <div className="postbox__comment-text ml-65">
-                                          <p>{comment_reply.comment}</p>
-                                          {comment_reply.reply_icon &&
-                                          <div className="postbox__comment-reply">
-                                             <span>
-                                                <ReplyIcon /> 
-                                                </span>
-                                          </div> 
-                                          }
-                                       </div>
-                                    </div>
-                                 </li>
-                              )} 
-                           </ul>
-                        </div>
-                        <div className="postbox__comment-form">
-                           <h3 className="postbox__comment-form-title">Write a comment</h3> 
-                           <CommentForm />
-                           <p className="ajax-response"></p>
+
+                        {/* Contact CTA instead of comments */}
+                        <div className="postbox__contact-cta mb-50" style={{
+                           background: 'linear-gradient(135deg, #020C1B 0%, #0a1929 100%)',
+                           padding: '40px',
+                           borderRadius: '16px',
+                           textAlign: 'center'
+                        }}>
+                           <h3 style={{ color: '#ffffff', marginBottom: '15px', fontSize: '24px' }}>
+                              Need IT Staffing Solutions?
+                           </h3>
+                           <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '25px' }}>
+                              Let us help you find the right talent for your projects. Contact our team today.
+                           </p>
+                           <Link href="/contact" className="tp-btn">
+                              Get In Touch
+                           </Link>
                         </div>
                      </div>
                   </div>
@@ -244,7 +183,7 @@ const BlogDetailsPostbox = () => {
                         <SearchArea />
                         <RecentPost />
                         <Category />
-                        <Tags /> 
+                        <Tags />
                      </div>
                   </div>
                </div>
@@ -253,12 +192,12 @@ const BlogDetailsPostbox = () => {
 
 
          <VideoPopup
-         isVideoOpen={isVideoOpen}
-         setIsVideoOpen={setIsVideoOpen}
-         videoId={"EW4ZYb3mCZk"} 
+            isVideoOpen={isVideoOpen}
+            setIsVideoOpen={setIsVideoOpen}
+            videoId={"EW4ZYb3mCZk"}
          />
-        </>
-    );
+      </>
+   );
 };
 
 export default BlogDetailsPostbox;

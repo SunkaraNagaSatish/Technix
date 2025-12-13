@@ -17,24 +17,26 @@ const about_data = [
         id: 1,
         img: about_img_1,
         title: "IT Staffing & Workforce Solutions",
-        description: <>Connecting you with skilled IT professionals <br /> through flexible engagement models like <br /> contract-to-hire and full compliance.</>,
+        description: <>Connecting you with skilled IT professionals through flexible engagement models like contract-to-hire and full compliance.</>,
         link: "/service-details/1",
     },
     {
         id: 2,
         img: about_img_2,
         title: "Project-Based Development Services",
-        description: <>End-to-end application development <br /> using our vetted talent network <br /> with complete project ownership.</>,
-        link: "/service-details/2",
+        description: <>End-to-end application development using our vetted talent network with complete project ownership.</>,
+        link: "/service-details/4",
     },
     {
         id: 3,
         img: about_img_3,
-        title: "Client-Centric Project Outsourcing",
-        description: <>Dedicated teams, managed IT services, <br /> agile execution, scalable support <br /> with complete ownership</>,
-        link: "/service-details/9",
+        title: "HR, Payroll & Compliance Management",
+        description: <>Complete workforce administration including payroll processing, statutory compliance, and HR documentation.</>,
+        link: "/service-details/3",
     },
 ]
+
+
 
 const setting = {
     slidesPerView: 3,

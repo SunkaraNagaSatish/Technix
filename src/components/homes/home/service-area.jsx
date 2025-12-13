@@ -25,49 +25,49 @@ const serviceIcons = {
    2: "fa-solid fa-file-contract", // Contract Staffing
    3: "fa-solid fa-clipboard-check", // HR, Payroll & Compliance
    4: "fa-solid fa-code", // Project-Based Development
-   10: "fa-solid fa-building", // Who We Are
-   11: "fa-solid fa-cogs", // What We Do
-   12: "fa-solid fa-award", // Why Choose Us
+   // 10: "fa-solid fa-building", // Who We Are
+   // 11: "fa-solid fa-cogs", // What We Do
+   // 12: "fa-solid fa-award", // Why Choose Us
 };
 
 const counter_content = [
-   {
-      id: 1,
-      count: 10,
-      info: "Experience",
-      cls: "",
-      cls_2: "purecounter",
-      icon: "+",
-   },
-   {
-      id: 2,
-      count: 255,
-      info: "square area",
-      cls: "purecounter",
-      cls_2: "",
-      icon: "",
-   },
-   {
-      id: 3,
-      count: 310,
-      info: "square area",
-      cls: "purecounter",
-      cls_2: "",
-      icon: "",
-   },
+   // {
+   //    id: 1,
+   //    count: 10,
+   //    info: "Experience",
+   //    cls: "",
+   //    cls_2: "purecounter",
+   //    icon: "+",
+   // },
+   // {
+   //    id: 2,
+   //    count: 255,
+   //    info: "square area",
+   //    cls: "purecounter",
+   //    cls_2: "",
+   //    icon: "",
+   // },
+   // {
+   //    id: 3,
+   //    count: 310,
+   //    info: "square area",
+   //    cls: "purecounter",
+   //    cls_2: "",
+   //    icon: "",
+   // },
 ]
 const ServiceArea = () => {
 
    const setting = {
-      type: 'loop',
+      type: 'slide',
       drag: 'free',
       pagination: false,
       arrows: false,
-      perPage: 5,
+      perPage: 4,
       gap: '30px',
       breakpoints: {
          1800: {
-            perPage: 5,
+            perPage: 4,
          },
          1500: {
             perPage: 4,
@@ -130,7 +130,7 @@ const ServiceArea = () => {
                      <div className="tp-service-slider-wrapper">
                         <Splide options={setting} ref={splideRef}
                            className="service-active splide">
-                           {service_data.map((item, i) =>
+                           {service_data.filter(item => ![10, 11, 12].includes(item.id)).map((item, i) =>
                               <SplideSlide key={i}>
                                  <div className="tp-service-wrapper tp-service-wrapper-no-img p-relative mb-55">
                                     <div className="tp-service-designation">

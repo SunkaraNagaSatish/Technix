@@ -1,16 +1,16 @@
-import HomeIcon from "@/src/svg/home-icon";
+// import HomeIcon from "@/src/svg/home-icon";
 
 const menu_data = [
   {
-    id: 1,
+    
     mega_menu: false,
-    has_dropdown: true,
-    home_icon: <HomeIcon />,
+    has_dropdown: false,
+    // home_icon: <HomeIcon />,
     title: "Home",
     link: "/",
     active: "",
     sub_menus: [
-      { link: "/", title: "Home 1" },
+      // { link: "/", title: "Home 1" },
       // { link: "/home-2", title: "Home 2" },
       // { link: "/home-3", title: "Home 3" }, 
     ],
@@ -26,13 +26,13 @@ const menu_data = [
   {
     id: 3,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Clients",
     link: "/service",
     active: "",
     sub_menus: [
-      { link: "/service", title: "Service" },
-      { link: "/service-details/1", title: "Services Details" },
+      // { link: "/service", title: "Service" },
+      // { link: "/service-details/1", title: "Services Details" },
     ],
   },
   {
@@ -47,13 +47,13 @@ const menu_data = [
   {
     id: 5,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Blog Page",
     link: "/blog",
     active: "",
     sub_menus: [
-      { link: "/blog", title: "Blog" },
-      { link: "/blog-details", title: "Blog Details" },
+      // { link: "/blog", title: "Blog" },
+      // { link: "/blog-details", title: "Blog Details" },
     ],
   },
   {

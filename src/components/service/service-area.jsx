@@ -55,7 +55,7 @@ const ServiceArea = () => {
                             <div className="tp-about-call fadeUp">
                                 <a href="tel:01310-069824">
                                     <p><i className="fa-solid fa-phone"></i>
-                                        Provide IT services to hundreds customers <span>+91 123 456 789</span>
+                                       Full-Stack IT Solutions & Workforce Hiring <span>+91 9381736309</span>
                                     </p>
                                 </a>
                             </div>

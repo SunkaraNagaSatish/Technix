@@ -78,7 +78,7 @@ const Sidebar = ({sidebarOpen, setSidebarOpen, home_three}) => {
                             <i className="fa-sharp fa-solid fa-location-dot"></i>
                             </div>
                             <div className="offcanvas__contact-content-content">
-                            v<a href="https://share.google/QO69FW6TSpXLmLgoM">Hyderabad, Telangana, India</a>
+                            <a href="https://share.google/QO69FW6TSpXLmLgoM">Hyderabad, Telangana, India</a>
                             </div>
                         </div>
                         <div className="offcanvas__contact-content d-flex">
@@ -102,7 +102,7 @@ const Sidebar = ({sidebarOpen, setSidebarOpen, home_three}) => {
                     <div className="offcanvas__social"> 
                            <a className="icon facebook" href="#"><i className="fab fa-facebook-f"></i></a>
                         <a className="icon twitter" href="#"><i className="fab fa-twitter"></i></a>
-                        <a className="icon youtube" href="#"><i className="fab fa-youtube"></i></a>
+                        {/* <a className="icon youtube" href="#"><i className="fab fa-youtube"></i></a> */}
                         <a className="icon linkedin" href="#"><i className="fab fa-linkedin"></i></a>
                     </div>
                  </div>

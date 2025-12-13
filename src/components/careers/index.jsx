@@ -169,7 +169,7 @@ const Careers = () => {
                                     <div className="why-register-benefits">
                                         {why_register_benefits.map((benefit, index) => (
                                             <div key={index} className="benefit-item d-flex align-items-start mb-20">
-                                                <span className="benefit-icon">✅</span>
+                                                <span className="benefit-icon"></span>
                                                 <p className="benefit-text">{benefit}</p>
                                             </div>
                                         ))}

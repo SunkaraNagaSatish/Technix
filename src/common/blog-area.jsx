@@ -38,10 +38,10 @@ const BlogArea = ({service, compact}) => {
                                 <Link href="/blog-details">
                                     <Image src={item.img} alt="theme-pure" />
                                 </Link>
-                                <div className={`tp-blog-3-user ${item.cls}`}>
+                                {/* <div className={`tp-blog-3-user ${item.cls}`}>
                                     <Image src={item?.user} alt="theme-pure" />
                                     <p>By: {item.user_name}</p>
-                                </div>
+                                </div> */}
                                 </div>
                                 <div className="tp-blog-3-content">
                                 <div className="tp-blog-date">

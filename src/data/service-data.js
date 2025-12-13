@@ -339,20 +339,20 @@ const service_data = [
 
             <h4 className="mb-20 mt-40">Who This Is For</h4>
             <ul className="mb-30" style={{ listStyleType: 'none', paddingLeft: '0' }}>
-                <li className="mb-10">✅ Companies with existing IT teams wanting to outsource HR functions</li>
-                <li className="mb-10">✅ Businesses expanding teams and needing scalable HR infrastructure</li>
-                <li className="mb-10">✅ Organizations wanting to ensure 100% labour law compliance</li>
-                <li className="mb-10">✅ Companies looking to reduce HR administrative costs</li>
+                <li className="mb-10">Companies with existing IT teams wanting to outsource HR functions</li>
+                <li className="mb-10">Businesses expanding teams and needing scalable HR infrastructure</li>
+                <li className="mb-10">Organizations wanting to ensure 100% labour law compliance</li>
+                <li className="mb-10">Companies looking to reduce HR administrative costs</li>
             </ul>
 
             <h4 className="mb-20 mt-40">Key Benefits</h4>
             <ul className="mb-30" style={{ listStyleType: 'none', paddingLeft: '0' }}>
-                <li className="mb-10">✅ Eliminate HR administrative overhead</li>
-                <li className="mb-10">✅ Ensure 100% compliance with law</li>
-                <li className="mb-10">✅ Reduce risk of statutory penalties and legal issues</li>
-                <li className="mb-10">✅ Access to HR expertise without hiring full-time HR team</li>
-                <li className="mb-10">✅ Scalable solution that grows with your team</li>
-                <li className="mb-10">✅ Single point of contact for all HR matters</li>
+                <li className="mb-10">Eliminate HR administrative overhead</li>
+                <li className="mb-10">Ensure 100% compliance with law</li>
+                <li className="mb-10">Reduce risk of statutory penalties and legal issues</li>
+                <li className="mb-10">Access to HR expertise without hiring full-time HR team</li>
+                <li className="mb-10">Scalable solution that grows with your team</li>
+                <li className="mb-10">Single point of contact for all HR matters</li>
             </ul>
         </>,
         cta: "Simplify Your HR Operations",
