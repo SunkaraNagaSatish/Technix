@@ -17,7 +17,7 @@ import fun_fact_shape_3 from "@assets/img/fun-fact/shape-3.png";
 import fun_fact_shape_4 from "@assets/img/fun-fact/shape-4.png";
 import fun_fact_shape_5 from "@assets/img/fun-fact/shadow.png";
 
-import reload_img from "@assets/img/fun-fact/world.png";
+import reload_img from "@assets/img/fun-fact/chrono.png";
 
 // Service icons mapping
 const serviceIcons = {
