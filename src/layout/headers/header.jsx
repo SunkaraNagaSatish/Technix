@@ -8,6 +8,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import HomeIcon from '@/src/svg/home-icon';
 import SearchPopup from '@/src/modals/search-popup';
 import Sidebar from '@/src/modals/sidebar';
+import ContactPopup from '@/src/modals/contact-popup';
 import Logo from "@assets/img/logo/logos.png";
 
 const HeaderOne = () => {
@@ -15,6 +16,7 @@ const HeaderOne = () => {
    const langToggleRef = useRef(null);
    const [searchOpen, setSearchOpen] = useState(false)
    const [sidebarOpen, setSidebarOpen] = useState(false)
+   const [contactOpen, setContactOpen] = useState(false)
 
    const [isLangListOpen, setIsLangListOpen] = useState(false);
    useEffect(() => {
@@ -127,7 +129,7 @@ const HeaderOne = () => {
                                  <button onClick={() => setSearchOpen(true)}><i className="fa-regular fa-magnifying-glass"></i></button>
                               </div>
                               <div className="tp-header-btn d-none d-xl-block pl-40">
-                                 <Link className="tp-btn" href="/contact">Get Started Today</Link>
+                                 <button className="tp-btn" onClick={() => setContactOpen(true)}>Get in Touch</button>
                               </div>
                            </div>
                         </div>
@@ -138,6 +140,7 @@ const HeaderOne = () => {
          </header>
          <SearchPopup searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
          <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+         <ContactPopup isOpen={contactOpen} setIsOpen={setContactOpen} />
       </>
    );
 };

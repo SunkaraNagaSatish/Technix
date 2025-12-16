@@ -597,7 +597,23 @@
     }
 
     .tp-header-bottom-space {
-        padding: 10px 15px !important;
+        padding: 0 !important;
+    }
+
+    /* Remove any container padding on mobile */
+    .tp-header-bottom .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .tp-header-bottom .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .tp-header-bottom [class*="col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .tp-header-logo img {
@@ -605,24 +621,110 @@
         height: auto !important;
     }
 
+    /* Fix the header main left alignment on mobile */
+    .tp-header-main-left {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Logo positioning */
+    .tp-header-logo {
+        height: auto !important;
+        padding-left: 15px !important;
+        line-height: normal !important;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Hamburger button - flush to right edge */
     .tp-header-hamburger-btn {
-        margin-right: 10px;
+        position: relative !important;
+        right: 0 !important;
+        top: auto !important;
+        height: 70px !important;
+        width: 70px !important;
+        line-height: 70px !important;
+        flex-shrink: 0;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        border-radius: 0 !important;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Ensure no gap below header */
+    .tp-header-area {
+        margin-bottom: 0 !important;
+    }
+
+    .tp-header-bottom {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* Adjust hamburger for medium screens */
+    .tp-header-hamburger-btn {
+        height: 65px !important;
+        width: 65px !important;
+        line-height: 65px !important;
+    }
+
+    .hamburger-btn span svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tp-header-logo img {
+        max-width: 160px !important;
+    }
+
+    .tp-header-hamburger-btn {
+        height: 60px !important;
+        width: 60px !important;
+        line-height: 60px !important;
     }
 }
 
 @media (max-width: 576px) {
+    .tp-header-logo {
+        padding-left: 10px !important;
+    }
+
     .tp-header-logo img {
-        max-width: 150px !important;
+        max-width: 140px !important;
     }
 
     .tp-header-hamburger-btn {
-        background-size: contain !important;
-        min-width: 50px;
+        height: 55px !important;
+        width: 55px !important;
+        line-height: 55px !important;
+        background-size: cover !important;
     }
 
     .hamburger-btn span svg {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tp-header-logo img {
+        max-width: 120px !important;
+    }
+
+    .tp-header-hamburger-btn {
+        height: 50px !important;
+        width: 50px !important;
+        line-height: 50px !important;
+    }
+
+    .hamburger-btn span svg {
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -737,7 +839,17 @@
     .tp-hero-area,
     .tp-slider-area {
         min-height: auto !important;
-        padding: 60px 0 !important;
+        padding: 0 0 60px 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .tp-hero-space {
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .tp-hero-content {
+        padding-top: 80px !important;
     }
 
     .tp-hero-title {
