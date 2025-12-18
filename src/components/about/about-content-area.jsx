@@ -111,7 +111,7 @@ const AboutContentArea = () => {
                     <div className="row justify-content-center mb-60">
                         <div className="col-lg-8 text-center">
                             <span className="tp-section-title__pre justify-content-center">
-                                Core <span className="title-pre-color">Values</span>
+                                <span className="title-pre-color">Core Values</span>
                                 <AngleArrow />
                             </span>
                             <h2 className="tp-section-title text-white">

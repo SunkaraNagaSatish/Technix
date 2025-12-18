@@ -13,7 +13,7 @@ const ServiceArea = () => {
                         <div className="col-lg-6">
                             <div className="tp-service-breadcrumb-title-wrapper">
                                 <span className="tp-section-title__pre">
-                                    service <span className="title-pre-color">IT Solutions</span>
+                                    Service <span className="title-pre-color">IT Solutions</span>
                                     <AngleArrow />
                                 </span>
                                 <h3 className="tp-section-title">
@@ -55,7 +55,7 @@ const ServiceArea = () => {
                             <div className="tp-about-call fadeUp">
                                 <a href="tel:01310-069824">
                                     <p><i className="fa-solid fa-phone"></i>
-                                       Full-Stack IT Solutions & Workforce Hiring <span>+91 9381736309</span>
+                                        Full-Stack IT Solutions & Workforce Hiring <span>+91 9381736309</span>
                                     </p>
                                 </a>
                             </div>

@@ -201,7 +201,7 @@ const ServiceArea = () => {
                         <div className="tp-fun-fact-content">
                            <div className="tp-fun-fact-title-wrapper">
                               <span className="tp-section-title__pre">
-                                 about <span className="title-pre-color">Purnavi IT</span>
+                                 About <span className="title-pre-color">Purnavi IT</span>
                                  <AngleArrow />
                               </span>
                               <h3 className="tp-section-title">Building Digital Success

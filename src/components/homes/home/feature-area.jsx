@@ -56,7 +56,7 @@ const FeatureArea = ({ about }) => {
                         <div className="col-lg-6">
                             <div className="tp-feature-title-wrapper">
                                 <span className="tp-section-title__pre">
-                                    why choose <span className="title-pre-color">Purnavi IT</span>
+                                    Why Choose <span className="title-pre-color">Purnavi IT</span>
                                     <AngleArrow />
                                 </span>
                                 <h3 className="tp-section-title">Your Trusted <span className="title-color">Tech Partner</span>

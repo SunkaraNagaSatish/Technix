@@ -1,7 +1,6 @@
-
-@forward '../css/font-awesome-pro.css';
+// Font Awesome loaded via link tag in _document.jsx
 @forward '../css/spacing.css';
-@forward '../css/animate.css'; 
+@forward '../css/animate.css';
 
 
 @forward 'theme';
@@ -10,4 +9,3 @@
 
 @forward '../css/magnific-popup.css';
 // @forward '../css/spacing';
- 

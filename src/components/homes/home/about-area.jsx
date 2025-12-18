@@ -112,7 +112,7 @@ const AboutArea = () => {
                                     <div className="col-lg-8">
                                         <div className="tp-about-title-wrapper p-relative">
                                             <span className="tp-section-title__pre">
-                                                best <span className="title-pre-color">it service</span>
+                                                Best <span className="title-pre-color">IT Service</span>
                                                 <AngleArrow />
                                             </span>
                                             <h3 className="tp-section-title">What We Do - Our Services

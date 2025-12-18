@@ -35,7 +35,7 @@ const SupportArea = () => {
         <>
             <section className="tp-support-feature-area pb-100">
             <div className="container container-large">
-               <div className="row">
+               {/* <div className="row">
                 {support_content.map((item, i) =>
                     <div key={i} className="col-lg-4">
                         <div className="tp-support-feature-item d-flex p-relative fadeRight">
@@ -54,7 +54,7 @@ const SupportArea = () => {
                         </div>
                     </div>                
                 )}  
-               </div>
+               </div> */}
             </div>
          </section>
         </>
