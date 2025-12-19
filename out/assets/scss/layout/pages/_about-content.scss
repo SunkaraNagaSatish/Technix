@@ -1,0 +1,590 @@
+/* ========================================
+   ABOUT PAGE CONTENT STYLES
+   ======================================== */
+
+/* Hero Section */
+.tp-about-content-hero {
+    background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-about-content-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 195, 154, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.tp-about-content-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(25, 42, 86, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.tp-about-hero-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.tp-about-hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #192a56;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.tp-about-hero-title .title-gradient {
+    background: linear-gradient(135deg, #00c39a 0%, #00a085 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tp-about-hero-desc {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #4a5568;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Core Business Cards */
+.tp-about-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    height: 100%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #00c39a 0%, #00a085 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.tp-about-card:hover::before {
+    transform: scaleX(1);
+}
+
+.tp-about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 195, 154, 0.12);
+}
+
+.tp-about-card-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.tp-about-card-primary .tp-about-card-icon {
+    background: linear-gradient(135deg, rgba(0, 195, 154, 0.15) 0%, rgba(0, 160, 133, 0.1) 100%);
+    color: #00c39a;
+}
+
+.tp-about-card-secondary .tp-about-card-icon {
+    background: linear-gradient(135deg, rgba(25, 42, 86, 0.1) 0%, rgba(25, 42, 86, 0.05) 100%);
+    color: #192a56;
+}
+
+.tp-about-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #192a56;
+    margin-bottom: 18px;
+}
+
+.tp-about-card-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #5a6a85;
+    margin-bottom: 0;
+}
+
+.tp-about-card-text strong {
+    color: #00c39a;
+    font-weight: 600;
+}
+
+/* Highlight Box */
+.tp-about-highlight-box {
+    background: linear-gradient(135deg, #192a56 0%, #1e3a6e 100%);
+    border-radius: 20px;
+    padding: 40px 50px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-about-highlight-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 195, 154, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.tp-about-highlight-box p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tp-about-highlight-box p strong {
+    color: #00c39a;
+}
+
+.tp-about-highlight-box i {
+    color: #00c39a;
+    font-size: 18px;
+    margin: 0 8px;
+    opacity: 0.7;
+}
+
+/* Journey Section */
+.tp-about-journey-section {
+    background: #ffffff;
+    position: relative;
+}
+
+.tp-about-journey-title-wrapper {
+    padding-right: 30px;
+}
+
+.tp-about-journey-content {
+    padding-left: 30px;
+    border-left: 3px solid rgba(0, 195, 154, 0.2);
+}
+
+.tp-about-journey-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.tp-about-journey-text:last-child {
+    margin-bottom: 0;
+}
+
+.tp-about-journey-text strong {
+    color: #00c39a;
+    font-weight: 600;
+}
+
+/* Values Section */
+.tp-about-values-section {
+    background: linear-gradient(135deg, #192a56 0%, #0f1c3f 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-about-values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300c39a' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.tp-about-value-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 35px 30px;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-about-value-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00c39a 0%, transparent 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.tp-about-value-card:hover::before {
+    transform: scaleX(1);
+}
+
+.tp-about-value-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+}
+
+.tp-about-value-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00c39a 0%, #00a085 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0, 195, 154, 0.3);
+}
+
+.tp-about-value-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.tp-about-value-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
+}
+
+.tp-about-value-text strong {
+    color: #00c39a;
+    font-weight: 600;
+}
+
+/* Business Model Section */
+.tp-about-business-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.tp-about-expertise-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 45px 40px;
+    height: 100%;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-about-expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+.tp-about-expertise-header {
+    margin-bottom: 25px;
+}
+
+.tp-about-expertise-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, rgba(0, 195, 154, 0.15) 0%, rgba(0, 195, 154, 0.08) 100%);
+    color: #00a085;
+}
+
+.tp-about-expertise-badge.secondary {
+    background: linear-gradient(135deg, rgba(25, 42, 86, 0.12) 0%, rgba(25, 42, 86, 0.06) 100%);
+    color: #192a56;
+}
+
+.tp-about-expertise-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #192a56;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tp-about-expertise-title i {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.tp-about-expertise-primary .tp-about-expertise-title i {
+    background: linear-gradient(135deg, #00c39a 0%, #00a085 100%);
+    color: #ffffff;
+}
+
+.tp-about-expertise-secondary .tp-about-expertise-title i {
+    background: linear-gradient(135deg, #192a56 0%, #1e3a6e 100%);
+    color: #ffffff;
+}
+
+.tp-about-expertise-intro {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #5a6a85;
+    margin-bottom: 25px;
+}
+
+.tp-about-expertise-intro strong {
+    color: #192a56;
+}
+
+.tp-about-expertise-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #192a56;
+    margin-bottom: 18px;
+}
+
+.tp-about-expertise-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tp-about-expertise-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #4a5568;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.tp-about-expertise-list li:last-child {
+    margin-bottom: 0;
+}
+
+.tp-about-expertise-list li span {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.tp-about-expertise-list li span svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Commitment Section */
+.tp-about-commitment-section {
+    background: linear-gradient(135deg, #00c39a 0%, #00a085 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-about-commitment-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.tp-about-commitment-section::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.tp-about-commitment-wrapper {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.tp-about-commitment-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin: 0 auto 30px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.tp-about-commitment-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.tp-about-commitment-text {
+    font-size: 20px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.tp-about-commitment-text strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.tp-about-commitment-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tp-btn-lg {
+    padding: 18px 35px;
+    font-size: 16px;
+}
+
+.tp-btn-outline {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    padding: 16px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tp-btn-outline:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #00c39a;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .tp-about-hero-title {
+        font-size: 36px;
+    }
+
+    .tp-about-hero-desc {
+        font-size: 18px;
+    }
+
+    .tp-about-journey-content {
+        padding-left: 0;
+        border-left: none;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 3px solid rgba(0, 195, 154, 0.2);
+    }
+
+    .tp-about-journey-title-wrapper {
+        padding-right: 0;
+    }
+
+    .tp-about-highlight-box {
+        padding: 30px;
+    }
+
+    .tp-about-highlight-box p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tp-about-hero-title {
+        font-size: 28px;
+    }
+
+    .tp-about-hero-desc {
+        font-size: 16px;
+    }
+
+    .tp-about-card {
+        padding: 30px 25px;
+    }
+
+    .tp-about-expertise-card {
+        padding: 30px 25px;
+    }
+
+    .tp-about-commitment-title {
+        font-size: 28px;
+    }
+
+    .tp-about-commitment-text {
+        font-size: 17px;
+    }
+
+    .tp-about-commitment-cta {
+        flex-direction: column;
+    }
+}
