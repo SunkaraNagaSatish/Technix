@@ -52,16 +52,16 @@ const IndustryArea = ({service}) => {
                                     <div className="tp-industry-thumb-wrapper d-flex">
                                         <div className="tp-industry-thumb text-center">
                                             <Image src={industry_icon_1} alt="theme-pure" />
-                                            <h4 className="tp-industry-title">Business</h4>
+                                            <h4 className="tp-industry-title">IT & Non-IT Staffing</h4>
                                         </div>
                                         <div className="tp-industry-thumb text-center">
                                             <Image src={industry_icon_2} alt="theme-pure" />
                                             <h4 className="tp-industry-title">It Consultancy</h4>
                                         </div>
-                                        <div className="tp-industry-thumb text-center">
+                                        {/* <div className="tp-industry-thumb text-center">
                                             <Image src={industry_icon_3} alt="theme-pure" />
                                             <h4 className="tp-industry-title">Cloud Server</h4>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="tp-industry-btn">
                                         <span className="icon">

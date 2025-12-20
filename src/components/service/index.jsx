@@ -11,18 +11,11 @@ import AngleArrow from "@/src/svg/angle-arrow";
 
 const Sevice = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
+    name: '',
+    company: '',
     phone: '',
-    experience: '',
-    currentLocation: '',
-    preferredLocation: '',
-    noticePeriod: '',
-    currentCTC: '',
-    expectedCTC: '',
-    skills: '',
-    linkedIn: '',
-    resume: null
+    email: '',
+    comments: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
@@ -35,12 +28,7 @@ const Sevice = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setFormData(prev => ({
-      ...prev,
-      resume: e.target.files[0]
-    }));
-  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,20 +37,13 @@ const Sevice = () => {
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
-      setSubmitMessage('Thank you for registering! Our team will review your profile and get back to you soon.');
+      setSubmitMessage('Thank you for reaching out! Our team will get back to you soon.');
       setFormData({
-        fullName: '',
-        email: '',
+        name: '',
+        company: '',
         phone: '',
-        experience: '',
-        currentLocation: '',
-        preferredLocation: '',
-        noticePeriod: '',
-        currentCTC: '',
-        expectedCTC: '',
-        skills: '',
-        linkedIn: '',
-        resume: null
+        email: '',
+        comments: ''
       });
     }, 1500);
   };
@@ -84,13 +65,13 @@ const Sevice = () => {
               <div className="col-xl-8 col-lg-10">
                 <div className="section-header text-center mb-50">
                   <span className="tp-section-title__pre">
-                    Register Your <span className="title-pre-color">Profile</span>
+                    Get in <span className="title-pre-color">Touch</span>
                     <AngleArrow />
                   </span>
                   <h3 className="tp-section-title">
-                    Submit Your <span className="title-color">Details</span>
+                    Connect with <span className="title-color">us</span>
                   </h3>
-                  <p className="mt-15">Fill out the form below to join our talent network</p>
+                  <p className="mt-15">Fill out the form below and we'll get back to you shortly</p>
                 </div>
               </div>
             </div>
@@ -107,28 +88,28 @@ const Sevice = () => {
                     <div className="row">
                       <div className="col-md-6 mb-25">
                         <div className="form-group">
-                          <label htmlFor="fullName">Full Name *</label>
+                          <label htmlFor="name">Your Name *</label>
                           <input
                             type="text"
-                            id="fullName"
-                            name="fullName"
-                            value={formData.fullName}
+                            id="name"
+                            name="name"
+                            value={formData.name}
                             onChange={handleInputChange}
-                            placeholder="Enter your full name"
+                            placeholder="Enter your name"
                             required
                           />
                         </div>
                       </div>
                       <div className="col-md-6 mb-25">
                         <div className="form-group">
-                          <label htmlFor="email">Email Address *</label>
+                          <label htmlFor="company">Company Name *</label>
                           <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
+                            type="text"
+                            id="company"
+                            name="company"
+                            value={formData.company}
                             onChange={handleInputChange}
-                            placeholder="Enter your email"
+                            placeholder="Enter your company name"
                             required
                           />
                         </div>
@@ -149,132 +130,28 @@ const Sevice = () => {
                       </div>
                       <div className="col-md-6 mb-25">
                         <div className="form-group">
-                          <label htmlFor="experience">Total Experience *</label>
-                          <select
-                            id="experience"
-                            name="experience"
-                            value={formData.experience}
+                          <label htmlFor="email">Email *</label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
                             onChange={handleInputChange}
+                            placeholder="Enter your email"
                             required
-                          >
-                            <option value="">Select Experience</option>
-                            <option value="fresher">Fresher</option>
-                            <option value="1-2">1-2 Years</option>
-                            <option value="2-4">2-4 Years</option>
-                            <option value="4-6">4-6 Years</option>
-                            <option value="6-10">6-10 Years</option>
-                            <option value="10+">10+ Years</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-25">
-                        <div className="form-group">
-                          <label htmlFor="currentLocation">Current Location *</label>
-                          <input
-                            type="text"
-                            id="currentLocation"
-                            name="currentLocation"
-                            value={formData.currentLocation}
-                            onChange={handleInputChange}
-                            placeholder="e.g., Hyderabad"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-25">
-                        <div className="form-group">
-                          <label htmlFor="preferredLocation">Preferred Location</label>
-                          <input
-                            type="text"
-                            id="preferredLocation"
-                            name="preferredLocation"
-                            value={formData.preferredLocation}
-                            onChange={handleInputChange}
-                            placeholder="e.g., Bangalore, Remote"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-md-4 mb-25">
-                        <div className="form-group">
-                          <label htmlFor="noticePeriod">Notice Period</label>
-                          <select
-                            id="noticePeriod"
-                            name="noticePeriod"
-                            value={formData.noticePeriod}
-                            onChange={handleInputChange}
-                          >
-                            <option value="">Select Notice Period</option>
-                            <option value="immediate">Immediate</option>
-                            <option value="15days">15 Days</option>
-                            <option value="30days">30 Days</option>
-                            <option value="60days">60 Days</option>
-                            <option value="90days">90 Days</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="col-md-4 mb-25">
-                        <div className="form-group">
-                          <label htmlFor="currentCTC">Current CTC (LPA)</label>
-                          <input
-                            type="text"
-                            id="currentCTC"
-                            name="currentCTC"
-                            value={formData.currentCTC}
-                            onChange={handleInputChange}
-                            placeholder="e.g., 8 LPA"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-md-4 mb-25">
-                        <div className="form-group">
-                          <label htmlFor="expectedCTC">Expected CTC (LPA)</label>
-                          <input
-                            type="text"
-                            id="expectedCTC"
-                            name="expectedCTC"
-                            value={formData.expectedCTC}
-                            onChange={handleInputChange}
-                            placeholder="e.g., 12 LPA"
                           />
                         </div>
                       </div>
                       <div className="col-md-12 mb-25">
                         <div className="form-group">
-                          <label htmlFor="skills">Key Skills *</label>
-                          <input
-                            type="text"
-                            id="skills"
-                            name="skills"
-                            value={formData.skills}
+                          <label htmlFor="comments">Comments</label>
+                          <textarea
+                            id="comments"
+                            name="comments"
+                            value={formData.comments}
                             onChange={handleInputChange}
-                            placeholder="e.g., Java, React, AWS, Docker"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-25">
-                        <div className="form-group">
-                          <label htmlFor="linkedIn">LinkedIn Profile</label>
-                          <input
-                            type="url"
-                            id="linkedIn"
-                            name="linkedIn"
-                            value={formData.linkedIn}
-                            onChange={handleInputChange}
-                            placeholder="https://linkedin.com/in/yourprofile"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-25">
-                        <div className="form-group">
-                          <label htmlFor="resume">Upload Resume * (PDF, DOC, DOCX)</label>
-                          <input
-                            type="file"
-                            id="resume"
-                            name="resume"
-                            onChange={handleFileChange}
-                            accept=".pdf,.doc,.docx"
-                            required
+                            placeholder="Tell us about your requirements..."
+                            rows="5"
                           />
                         </div>
                       </div>
@@ -290,7 +167,7 @@ const Sevice = () => {
                             </>
                           ) : (
                             <>
-                              Register Your Profile <i className="fa-solid fa-arrow-right"></i>
+                              Submit <i className="fa-solid fa-arrow-right"></i>
                             </>
                           )}
                         </button>

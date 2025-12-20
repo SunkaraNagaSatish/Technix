@@ -49,7 +49,7 @@ const BrandArea = () => {
   
     return (
         <>
-        <div id="mousemove" ref={mouseRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="tp-brand-area pt-160 p-relative">
+        {/* <div id="mousemove" ref={mouseRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="tp-brand-area pt-160 p-relative">
             <div className="container container-large">
                <div className="tp-brand-shape">
                   <Image className="bg-shape" src={bg_shape} alt="theme-pure" />
@@ -69,7 +69,7 @@ const BrandArea = () => {
                   </div>
                </div>
             </div>
-         </div>
+         </div> */}
         </>
     );
 };

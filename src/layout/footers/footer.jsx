@@ -23,19 +23,13 @@ const footer_content = {
         { title: "Permanent IT Staffing", link: "/service-details" },
         { title: "Contract Staffing Solutions", link: "/service-details" },
         { title: "HR & Payroll Management", link: "/service-details" },
-        { title: "Talent Outsourcing", link: "/service-details" },
         { title: "Project-Based Development", link: "/end-to-end-it-project-delivery" },
-        { title: "Web & Mobile Apps", link: "/service-details" },
-        { title: "Cloud & DevOps", link: "/service-details" },
-        { title: "QA Testing Services", link: "/service-details" },
     ],
     quick_links: [
         { title: "About Us", link: "/about" },
         { title: "All Services", link: "/service-details" },
         { title: "Careers", link: "/career" },
         { title: "Contact Us", link: "/contact" },
-        { title: "Privacy Policy", link: "/privacy-policy" },
-        { title: "Terms & Conditions", link: "/terms-conditions" },
     ]
 
 
@@ -148,15 +142,9 @@ const Footer = () => {
 
                     <div className="tp-footer-copyright-area p-relative">
                         <div className="row">
-                            <div className="col-md-12 col-lg-6">
-                                <div className="tp-footer-copyright-inner">
+                            <div className="col-md-12">
+                                <div className="tp-footer-copyright-inner text-center">
                                     <p><CopyRight /> </p>
-                                </div>
-                            </div>
-                            <div className="col-md-12 col-lg-6">
-                                <div className="tp-footer-copyright-inner text-lg-end">
-                                    <Link href="#">Terms and conditions</Link>
-                                    <Link className="ml-50" href="#"> Privacy policy</Link>
                                 </div>
                             </div>
                         </div>

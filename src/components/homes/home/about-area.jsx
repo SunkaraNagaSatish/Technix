@@ -93,7 +93,7 @@ const AboutArea = () => {
 
     return (
         <>
-            <section className="tp-about-area pb-45 box-plr p-relative">
+            {/* <section className="tp-about-area pb-45 box-plr p-relative">
                 <div className="tp-about-shape d-none d-xl-block">
                     <Image className="shape-1 d-none" src={shape_1} alt="theme-pure" />
                 </div>
@@ -171,7 +171,7 @@ const AboutArea = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 };

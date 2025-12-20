@@ -82,7 +82,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                             <a className="icon linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin"></i>
                             </a>
-                            <a className="icon instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a className="icon instagram" href="https://www.instagram.com/purnaviitsolutions/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-instagram"></i>
                             </a>
                         </div>

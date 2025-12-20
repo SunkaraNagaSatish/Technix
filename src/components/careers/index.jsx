@@ -132,7 +132,7 @@ const Careers = () => {
                 <Breadcrumb top_title="Careers" page_title="Join Our Talent Network" />
 
                 {/* Hero Section */}
-                <section className="careers-hero-area pt-100 pb-80">
+                {/* <section className="careers-hero-area pt-100 pb-80">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-xl-10 col-lg-11">
@@ -155,10 +155,10 @@ const Careers = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Why Register Section */}
-                <section className="why-register-area pb-100">
+                {/* <section className="why-register-area pb-100">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-xl-8 col-lg-10">
@@ -178,7 +178,7 @@ const Careers = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Current Openings Section */}
                 <section className="current-openings-area pt-100 pb-100" style={{ backgroundColor: '#f8f9fa' }}>
@@ -455,7 +455,24 @@ const Careers = () => {
                                             </div>
                                         </div>
                                     </form>
+                                </div><br />
+                                <div className="row justify-content-center">
+                            <div className="col-xl-8 col-lg-10">
+                                <div className="why-register-wrapper">
+                                    <h3 className="why-register-title text-center mb-40">
+                                        Why Register <span className="title-color">With Us</span>
+                                    </h3>
+                                    <div className="why-register-benefits">
+                                        {why_register_benefits.map((benefit, index) => (
+                                            <div key={index} className="benefit-item d-flex align-items-start mb-20">
+                                                <span className="benefit-icon"></span>
+                                                <p className="benefit-text">{benefit}</p>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>

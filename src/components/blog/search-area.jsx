@@ -3,7 +3,7 @@ import React from 'react';
 const SearchArea = () => {
     return (
         <>
-           <div className="sidebar__widget mb-30">
+           {/* <div className="sidebar__widget mb-30">
                 <div className="sidebar__widget-content">
                     <h3 className="sidebar__widget-title">Search Here</h3>
                     <div className="sidebar__search">
@@ -15,7 +15,7 @@ const SearchArea = () => {
                         </form>
                     </div>
                 </div>
-            </div> 
+            </div>  */}
         </>
     );
 };

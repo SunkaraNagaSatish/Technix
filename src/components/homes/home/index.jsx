@@ -7,9 +7,7 @@ import ServiceArea from "./service-area";
 import BrandArea from "./brand-area";
 import SupportArea from "./support-area";
 import SliderArea from "./slider-area";
-import FaqArea from "./faq-area";
 import Footer from "@/src/layout/footers/footer";
-import CtaBanner from "./cta-banner";
 
 const HomeOne = () => {
   return (
@@ -24,8 +22,6 @@ const HomeOne = () => {
         <BrandArea />
         <SupportArea />
         <SliderArea />
-        <FaqArea />
-        <CtaBanner />
         <Footer />
       </main>
     </>

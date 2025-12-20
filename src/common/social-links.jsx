@@ -2,7 +2,7 @@ import Link from "next/link";
 
 
 const social_links = [
-   {
+  {
     link: "https://www.linkedin.com/company/purnavi-it-solutions",
     target: "_blank",
     icon: "fa-brands fa-linkedin-in",
@@ -12,10 +12,15 @@ const social_links = [
     target: "_blank",
     icon: "fab fa-twitter",
   },
-     {
+  {
     link: "http://facebook.com",
     target: "_blank",
     icon: "fab fa-facebook-f",
+  },
+  {
+    link: "https://www.instagram.com/purnaviitsolutions/",
+    target: "_blank",
+    icon: "fab fa-instagram",
   },
 ];
 

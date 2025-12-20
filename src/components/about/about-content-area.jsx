@@ -60,13 +60,13 @@ const AboutContentArea = () => {
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-lg-10">
-                            <div className="tp-about-highlight-box text-center">
+                            {/* <div className="tp-about-highlight-box text-center">
                                 <p>
                                     <i className="fa-solid fa-quote-left"></i>
                                     We combine technical talent acquisition with project delivery capabilities to serve as a <strong>comprehensive technology partner</strong> for businesses worldwide.
                                     <i className="fa-solid fa-quote-right"></i>
                                 </p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

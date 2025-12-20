@@ -48,15 +48,7 @@ const PostboxArea = () => {
                            </article>
 
                         )}
-                        <div className="basic-pagination text-center">
-                           <nav>
-                              <ul>
-                                 <li>
-                                    <span className="current">1</span>
-                                 </li>
-                              </ul>
-                           </nav>
-                        </div>
+                       
                      </div>
                   </div>
                   <div className="col-xxl-4 col-xl-4 col-lg-4">
