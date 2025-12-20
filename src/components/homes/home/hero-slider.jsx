@@ -62,7 +62,7 @@ const HeroSlider = () => {
 
   return (
     <>
-      <section className="tp-hero-area tp-hero-space pb-95 overflow-hidden" style={{ paddingLeft: '0' }}>
+      <section className="tp-hero-area tp-hero-space pb-40 overflow-hidden" style={{ paddingLeft: '0' }}>
         <div className="tp-hero-wrapper p-relative">
           <div className="hero-active-1 swiper-container">
             <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>
@@ -92,7 +92,7 @@ const HeroSlider = () => {
                                   <AngleArrow />
                                 </span>
                                 <h3 className="tp-hero-title">
-                                  {item.hero_title_1} 
+                                  {item.hero_title_1}
                                   <span className="title-color">
                                     {item.hero_title_2}
                                   </span>{" "}
@@ -147,8 +147,8 @@ const HeroSlider = () => {
               <Image src={service_shape} alt="theme-pure" />
             </div>
             <p>
-               Connecting businesses with skilled <span>IT & Non-IT professionals</span> through permanent staffing, 
-              contract hiring, and workforce outsourcing while also delivering select project based 
+              Connecting businesses with skilled <span>IT & Non-IT professionals</span> through permanent staffing,
+              contract hiring, and workforce outsourcing while also delivering select project based
               development solutions.
             </p>
             <div className="tp-hero-service-quote">

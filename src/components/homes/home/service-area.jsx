@@ -109,7 +109,7 @@ const ServiceArea = () => {
       <>
          <div className="tp-service-funfact-box">
 
-            <section className="tp-service-area pt-85 pb-50">
+            <section className="tp-service-area pt-40 pb-30">
                <div className="container-fluid">
                   <div className="row">
 
@@ -166,7 +166,7 @@ const ServiceArea = () => {
                </div>
             </section>
 
-            <section className="tp-fun-fact-area pt-80 pb-65 p-relative">
+            <section className="tp-fun-fact-area pt-40 pb-40 p-relative">
                <div className="container container-1400">
 
                   <div className="tp-fun-fact-shape">

@@ -129,7 +129,7 @@ const Careers = () => {
         <>
             <HeaderOne />
             <main>
-                <Breadcrumb top_title="Careers" page_title="Join Our Talent Network" />
+                <Breadcrumb top_title="Careers" page_title="Join Our Talent Network" bg_image="/assets/img/breadcrumb/careers-bg.jpg" />
 
                 {/* Hero Section */}
                 {/* <section className="careers-hero-area pt-100 pb-80">
@@ -241,10 +241,10 @@ const Careers = () => {
                         <div className="row justify-content-center">
                             <div className="col-12">
                                 <div className="section-header text-center mb-50">
-                                    <span className="tp-section-title__pre">
+                                    {/* <span className="tp-section-title__pre">
                                         Register Your <span className="title-pre-color">Profile</span>
                                         <AngleArrow />
-                                    </span>
+                                    </span> */}
                                     <h3 className="tp-section-title">
                                         Submit Your <span className="title-color">Details</span>
                                     </h3>

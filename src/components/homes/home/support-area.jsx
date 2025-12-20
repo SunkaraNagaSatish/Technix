@@ -5,24 +5,24 @@ import React from 'react';
 // support data  
 const support_content = [
     {
-        id: 1, 
-        count: 8, 
+        id: 1,
+        count: 8,
         symbol: "hr",
         cls: "fadeLeft",
         title: "Quick Result",
         info: <>Average time to resolve <br /> cyber attack.</>
     },
     {
-        id: 2, 
-        count: 3, 
+        id: 2,
+        count: 3,
         symbol: "hr",
         cls: "",
         title: "Quick Reply",
         info: <>Average time to resolve <br /> cyber attack.</>
     },
     {
-        id: 3, 
-        count: 94, 
+        id: 3,
+        count: 94,
         symbol: "%",
         cls: "fadeRight",
         title: "Quick Response",
@@ -33,9 +33,9 @@ const support_content = [
 const SupportArea = () => {
     return (
         <>
-            <section className="tp-support-feature-area pb-100">
-            <div className="container container-large">
-               {/* <div className="row">
+            <section className="tp-support-feature-area pb-50">
+                <div className="container container-large">
+                    {/* <div className="row">
                 {support_content.map((item, i) =>
                     <div key={i} className="col-lg-4">
                         <div className="tp-support-feature-item d-flex p-relative fadeRight">
@@ -55,8 +55,8 @@ const SupportArea = () => {
                     </div>                
                 )}  
                </div> */}
-            </div>
-         </section>
+                </div>
+            </section>
         </>
     );
 };

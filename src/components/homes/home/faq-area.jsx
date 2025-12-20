@@ -16,7 +16,7 @@ const FaqArea = () => {
 
    return (
       <>
-         <section className="tp-support-area tp-support-bg p-relative pb-110">
+         <section className="tp-support-area tp-support-bg p-relative pb-50">
             <div className="container container-large">
                <div className="tp-support-shape">
                   <Image className="shape-1" src={shape_1} alt="theme-pure" />
@@ -25,10 +25,10 @@ const FaqArea = () => {
                <div className="row justify-content-center">
                   <div className="col-xxl-8 col-xl-10">
                      <div className="tp-support-title-wrapper text-center">
-                        <span className="tp-section-title__pre">
+                        {/* <span className="tp-section-title__pre">
                            About Our <span className="title-pre-color">Services</span>
                            <AngleArrow />
-                        </span>
+                        </span> */}
                         <h3 className="tp-section-title">Frequently Asked <span className="title-color">Questions</span>
                            <span className="title-center-shape">
                               <LineArrowTwo />

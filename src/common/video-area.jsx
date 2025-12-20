@@ -9,22 +9,22 @@ const VideoArea = ({service})  => {
 
     return (
         <>
-            <div className={`tp-video-area ${service ? "pt-80" : "pt-50"}`}>
+            {/* <div className={`tp-video-area ${service ? "pt-80" : "pt-50"}`}>
                 <div className="container-fluid gx-0">
                     <div className="row gx-0">
                     <div className="col-xl-12">
-                        {/* <div className="tp-video-breadcrumb p-relative">
+                        <div className="tp-video-breadcrumb p-relative">
                             <Image src={video_img} alt="theme-pure" />
                             <div className="tp-video-play text-center">
                                 <a className="popup-video" 
                                 onClick={() => setIsVideoOpen(true)}  
                                 ><i className="fa-sharp fa-solid fa-play"></i></a>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
              {/* video modal start */}
             <VideoPopup
                 isVideoOpen={isVideoOpen}

@@ -13,7 +13,7 @@ const Contact = () => {
         <>
             <HeaderOne />
             <main>
-                <Breadcrumb top_title="Contact Us" page_title="Contact Us" />
+                <Breadcrumb top_title="" page_title="" bg_image="/assets/img/breadcrumb/contact-bg.jpg" />
                 <ContactArea />
                 <FaqArea />
                 <CtaBanner />

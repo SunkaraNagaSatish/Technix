@@ -52,7 +52,7 @@ const Sevice = () => {
     <>
       <HeaderOne />
       <main>
-        <Breadcrumb top_title="Clients" page_title="Clients" />
+        <Breadcrumb top_title="Clients" page_title="Clients" bg_image="/assets/img/breadcrumb/clients-bg.jpg" />
         <ServiceArea />
         <VideoArea service={true} />
         <IndustryArea service={true} />
