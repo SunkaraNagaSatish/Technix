@@ -43,13 +43,13 @@ const Footer = () => {
         <>
             <footer className="tp-footer-area p-relative">
                 <div className="tp-footer-bg" style={{ backgroundImage: `url(/assets/img/footer/footer-bg.jpg)` }}></div>
-                <div className="tp-footer-top-shape" style={{ backgroundImage: `url(/assets/img/footer/footer-top-bg.png)` }}></div>
+                {/* <div className="tp-footer-top-shape" style={{ backgroundImage: `url(/assets/img/footer/footer-top-bg.png)` }}></div> */}
 
                 <div className="container container-large">
 
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="tp-footer-top-area">
+                            {/* <div className="tp-footer-top-area">
                                 <div className="row align-items-center">
                                     <div className="col-lg-6">
                                         <div className="tp-footer-top-contact">
@@ -68,7 +68,7 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

@@ -36,7 +36,7 @@ const ServiceDetailsArea = ({ service }) => {
    return (
       <>
          <div className={themeClass}>
-            <section className="tp-service-details-area pt-120 pb-120">
+            <section className="tp-service-details-area pt-70 pb-70">
                {/* Floating dots decoration */}
                <div className="floating-dots">
                   <span></span>

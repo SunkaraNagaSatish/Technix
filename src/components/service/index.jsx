@@ -59,11 +59,11 @@ const Sevice = () => {
         <BrandArea service={true} />
 
         {/* Registration Form Section */}
-        <section id="register-form" className="register-form-area pt-100 pb-100">
+        <section id="register-form" className="register-form-area pt-60 pb-60">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
-                <div className="section-header text-center mb-50">
+                <div className="section-header text-center mb-30">
                   <span className="tp-section-title__pre">
                     Get in <span className="title-pre-color">Touch</span>
                     <AngleArrow />

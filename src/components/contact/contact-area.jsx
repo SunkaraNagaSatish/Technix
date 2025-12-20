@@ -6,7 +6,7 @@ import React from 'react';
 const ContactArea = () => {
     return (
         <>
-            <section className="tp-contact-area pt-120 pb-90">
+            <section className="tp-contact-area pt-70 pb-60">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -17,7 +17,7 @@ const ContactArea = () => {
                                 </div>
                                 <div className="tp-contact-content">
 
-                                    <div className="tp-contact-content-mail d-flex align-items-center mb-10">
+                                    <div className="tp-contact-content-mail d-flex align-items-center mb-8">
                                         <div className="tp-contact-content-mail-icon">
                                             <span>
                                                 <EmailIconOne />
@@ -30,7 +30,7 @@ const ContactArea = () => {
                                         </div>
                                     </div>
 
-                                    <div className="tp-contact-content-mail d-flex align-items-center mb-35">
+                                    <div className="tp-contact-content-mail d-flex align-items-center mb-20">
                                         <div className="tp-contact-content-mail-icon">
                                             <span>
                                                 <EmailIconOne />

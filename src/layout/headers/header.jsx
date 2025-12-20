@@ -39,7 +39,7 @@ const HeaderOne = () => {
    return (
       <>
          <header className="tp-header-area tp-header-height p-relative">
-            <div className="tp-header-top d-none d-xl-block" style={{ paddingLeft: '20px', paddingRight: '20px' }}>
+            {/* <div className="tp-header-top d-none d-xl-block" style={{ paddingLeft: '20px', paddingRight: '20px' }}>
                <div className="container-fluid">
                   <div className="row align-items-center">
                      <div className="col-xxl-6 col-xl-8">
@@ -56,7 +56,7 @@ const HeaderOne = () => {
                                     <i className="fa-solid fa-envelope"></i></span>asish@social.auctus.com
                                  </a>
                               </li>
-                              {/* <li>
+                              <li>
                                  <div className="tp-header-lang-wrapper d-flex align-items-center">
                                     <div className="tp-header-lang-img">
                                        <Image src={LangLogo} alt="theme-pure" />
@@ -73,7 +73,7 @@ const HeaderOne = () => {
                                        </ul>
                                     </div>
                                  </div>
-                              </li> */}
+                              </li>
                            </ul>
                         </div>
                      </div>
@@ -82,16 +82,16 @@ const HeaderOne = () => {
                            <div className="header-call">
                               <a href="tel:+919381736309"><i className="fa-solid fa-phone"></i> +91 9381736309</a>
                            </div>
-                           {/* <div className="header-social d-xxl-block d-none">
+                           <div className="header-social d-xxl-block d-none">
                               <Link href="#"><i className="fa-brands fa-facebook"></i> Facebook</Link>
                               <Link href="#"><i className="fa-brands fa-twitter"></i> Skype</Link>
                               <Link href="#"><i className="fa-brands fa-linkedin"></i> Linkedin</Link>
-                           </div> */}
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
             <div id="header-sticky"
                className={`tp-header-bottom header__sticky p-relative ${sticky && "tp-header-sticky"}`}>
                <div className="tp-header-bottom-space p-relative" style={{ paddingLeft: '0', paddingRight: '0' }}>

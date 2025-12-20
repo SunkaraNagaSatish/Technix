@@ -8,7 +8,7 @@ const AboutContentArea = () => {
     return (
         <>
             {/* Hero Section */}
-            <section className="tp-about-content-hero pt-100 pb-80">
+            <section className="tp-about-content-hero pt-60 pb-50">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-10">
@@ -32,10 +32,10 @@ const AboutContentArea = () => {
             </section>
 
             {/* Core Business Section */}
-            <section className="tp-about-core-section pb-80">
+            <section className="tp-about-core-section pb-50">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 mb-40">
+                        <div className="col-lg-6 mb-25">
                             <div className="tp-about-card tp-about-card-primary">
                                 <div className="tp-about-card-icon">
                                     <i className="fa-solid fa-bullseye"></i>
@@ -46,7 +46,7 @@ const AboutContentArea = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-6 mb-40">
+                        <div className="col-lg-6 mb-25">
                             <div className="tp-about-card tp-about-card-secondary">
                                 <div className="tp-about-card-icon">
                                     <i className="fa-solid fa-rocket"></i>
@@ -73,10 +73,10 @@ const AboutContentArea = () => {
             </section>
 
             {/* Our Journey Section */}
-            <section className="tp-about-journey-section pt-80 pb-80">
+            <section className="tp-about-journey-section pt-50 pb-50">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-5 mb-40">
+                        <div className="col-lg-5 mb-25">
                             <div className="tp-about-journey-title-wrapper">
                                 <span className="tp-section-title__pre">
                                     Our <span className="title-pre-color">Journey</span>
@@ -91,7 +91,7 @@ const AboutContentArea = () => {
                                 </h2>
                             </div>
                         </div>
-                        <div className="col-lg-7 mb-40">
+                        <div className="col-lg-7 mb-25">
                             <div className="tp-about-journey-content">
                                 <p className="tp-about-journey-text">
                                     Founded with a vision to bridge the gap between talent and technology, Purnavi IT Solutions has evolved into a <strong>trusted partner</strong> for businesses looking for reliable talent acquisition and professional IT resources.
@@ -106,9 +106,9 @@ const AboutContentArea = () => {
             </section>
 
             {/* What We Stand For Section */}
-            <section className="tp-about-values-section pt-80 pb-100">
+            <section className="tp-about-values-section pt-50 pb-60">
                 <div className="container">
-                    <div className="row justify-content-center mb-60">
+                    <div className="row justify-content-center mb-40">
                         <div className="col-lg-8 text-center">
                             <span className="tp-section-title__pre justify-content-center">
                                 <span className="title-pre-color">Core Values</span>
@@ -127,7 +127,7 @@ const AboutContentArea = () => {
                         <div className="col-lg-3 col-md-6 mb-30">
                             <div className="tp-about-value-card">
                                 <div className="tp-about-value-icon">
-                                    <i className="fa-solid fa-shield-halved"></i>
+                                    <i className="fa-solid fa-bolt"></i>
                                 </div>
                                 <h4 className="tp-about-value-title">Reliability</h4>
                                 <p className="tp-about-value-text">
@@ -173,9 +173,9 @@ const AboutContentArea = () => {
             </section>
 
             {/* Business Model Section */}
-            <section className="tp-about-business-section pt-100 pb-80">
+            <section className="tp-about-business-section pt-60 pb-50">
                 <div className="container">
-                    <div className="row justify-content-center mb-60">
+                    <div className="row justify-content-center mb-40">
                         <div className="col-lg-8 text-center">
                             <span className="tp-section-title__pre justify-content-center">
                                 Business <span className="title-pre-color">Model</span>
@@ -193,7 +193,7 @@ const AboutContentArea = () => {
 
                     <div className="row">
                         {/* Core Expertise */}
-                        <div className="col-lg-6 mb-50">
+                        <div className="col-lg-6 mb-30">
                             <div className="tp-about-expertise-card tp-about-expertise-primary">
                                 <div className="tp-about-expertise-header">
                                     <div className="tp-about-expertise-badge">Core Expertise</div>
@@ -217,7 +217,7 @@ const AboutContentArea = () => {
                         </div>
 
                         {/* Growing Capability */}
-                        <div className="col-lg-6 mb-50">
+                        <div className="col-lg-6 mb-30">
                             <div className="tp-about-expertise-card tp-about-expertise-secondary">
                                 <div className="tp-about-expertise-header">
                                     <div className="tp-about-expertise-badge secondary">Growing Capability</div>
@@ -245,7 +245,7 @@ const AboutContentArea = () => {
             </section>
 
             {/* Our Commitment Section */}
-            <section className="tp-about-commitment-section pt-80 pb-100">
+            <section className="tp-about-commitment-section pt-50 pb-60">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-10">

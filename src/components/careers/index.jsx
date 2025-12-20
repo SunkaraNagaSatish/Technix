@@ -181,7 +181,7 @@ const Careers = () => {
                 </section> */}
 
                 {/* Current Openings Section */}
-                <section className="current-openings-area pt-100 pb-100" style={{ backgroundColor: '#f8f9fa' }}>
+                <section className="current-openings-area pt-60 pb-40" style={{ backgroundColor: '#f8f9fa' }}>
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-xl-8 col-lg-10">
@@ -236,10 +236,10 @@ const Careers = () => {
                 </section>
 
                 {/* Registration Form Section */}
-                <section id="register-form" className="register-form-area pt-100 pb-100">
+                <section id="register-form" className="register-form-area pt-40 pb-60">
                     <div className="container">
                         <div className="row justify-content-center">
-                            <div className="col-xl-8 col-lg-10">
+                            <div className="col-12">
                                 <div className="section-header text-center mb-50">
                                     <span className="tp-section-title__pre">
                                         Register Your <span className="title-pre-color">Profile</span>
@@ -252,9 +252,27 @@ const Careers = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row justify-content-center">
-                            <div className="col-xl-10 col-lg-11">
-                                <div className="register-form-wrapper">
+                        <div className="row align-items-start">
+                            {/* Left Column - Why Register With Us */}
+                            <div className="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                                <div className="why-register-wrapper h-100">
+                                    <h3 className="why-register-title text-center mb-40">
+                                        Why Register <span className="title-color">With Us</span>
+                                    </h3>
+                                    <div className="why-register-benefits">
+                                        {why_register_benefits.map((benefit, index) => (
+                                            <div key={index} className="benefit-item d-flex align-items-start mb-20">
+                                                <span className="benefit-icon"></span>
+                                                <p className="benefit-text">{benefit}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Column - Registration Form */}
+                            <div className="col-lg-7 col-md-12">
+                                <div className="register-form-wrapper h-100">
                                     {submitMessage && (
                                         <div className="submit-success-message mb-30">
                                             <i className="fa-solid fa-circle-check"></i>
@@ -455,24 +473,7 @@ const Careers = () => {
                                             </div>
                                         </div>
                                     </form>
-                                </div><br />
-                                <div className="row justify-content-center">
-                            <div className="col-xl-8 col-lg-10">
-                                <div className="why-register-wrapper">
-                                    <h3 className="why-register-title text-center mb-40">
-                                        Why Register <span className="title-color">With Us</span>
-                                    </h3>
-                                    <div className="why-register-benefits">
-                                        {why_register_benefits.map((benefit, index) => (
-                                            <div key={index} className="benefit-item d-flex align-items-start mb-20">
-                                                <span className="benefit-icon"></span>
-                                                <p className="benefit-text">{benefit}</p>
-                                            </div>
-                                        ))}
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
                             </div>
                         </div>
                     </div>

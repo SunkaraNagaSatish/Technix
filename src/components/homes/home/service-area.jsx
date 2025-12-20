@@ -174,7 +174,7 @@ const ServiceArea = () => {
                      <Image className="shape-2" src={fun_fact_shape_2} alt="theme-pure" />
                      <Image className="shape-3" src={fun_fact_shape_3} alt="theme-pure" />
                      <Image className="shape-4" src={fun_fact_shape_4} alt="theme-pure" />
-                     <Image className="shadow" src={fun_fact_shape_5} alt="theme-pure" />
+                     {/* <Image className="shadow" src={fun_fact_shape_5} alt="theme-pure" /> */}
                   </div>
 
                   <div className="row">
