@@ -62,7 +62,7 @@ const HeroSlider = () => {
 
   return (
     <>
-      <section className="tp-hero-area tp-hero-space pb-40 overflow-hidden" style={{ paddingLeft: '0' }}>
+      <section className="tp-hero-area tp-hero-space overflow-hidden" style={{ paddingLeft: '0', marginBottom: '0', paddingBottom: '0' }}>
         <div className="tp-hero-wrapper p-relative">
           <div className="hero-active-1 swiper-container">
             <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>

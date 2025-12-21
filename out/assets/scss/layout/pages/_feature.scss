@@ -11,6 +11,11 @@
         background: rgba(232, 247, 253, 0.5);
         overflow: hidden;
 
+        @media #{$sm,$xs} {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
         &::before {
             content: '';
             position: absolute;
